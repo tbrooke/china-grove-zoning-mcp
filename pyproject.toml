@@ -1,0 +1,12 @@
+[project]
+name = "china-grove-zoning"
+version = "0.1.0"
+description = "MCP server for China Grove zoning and land use research"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=1.26.0",
+]
+
+[project.scripts]
+china-grove-zoning = "main:mcp.run"
