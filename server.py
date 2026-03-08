@@ -13,10 +13,13 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
+import re
+
 # Resolve data paths relative to project root (one level up from mcp-server/)
 PROJECT_ROOT = Path(__file__).parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
 MARKDOWN_DIR = PROJECT_ROOT / "markdown"
+STATUTES_DIR = Path(__file__).parent / "statutes"
 
 DISTRICT_ORDER = [
     "R-P", "R-S", "R-T", "R-M", "R-MH",
@@ -70,6 +73,8 @@ mcp = FastMCP(
         "vs major thresholds, improvement requirements), use get_subdivision_requirements(). "
         "For parcel lookups by PIN, address, or owner name, use get_parcel_info() — it "
         "returns the parcel's zoning district, jurisdiction status, and property details. "
+        "For NC state zoning law, use get_160d_section() or search_160d() to look up "
+        "NCGS Chapter 160D. When the local UDO may conflict with state law, 160D controls. "
         "Always cite specific ordinance sections when answering."
     ),
 )
@@ -1025,5 +1030,185 @@ def get_parcel_info(
             f"→ District code **{zc}** can be passed directly to: "
             "get_district_info(), get_dimensional_standards(), can_i_build()"
         )
+
+    return "\n".join(lines)
+
+
+# --- NCGS Chapter 160D (State Zoning Law) ---
+
+_160D_ARTICLE_MAP = {
+    "1": "Article-01-General-Provisions.md",
+    "2": "Article-02-Planning-Jurisdiction.md",
+    "3": "Article-03-Boards.md",
+    "4": "Article-04-Administration-Enforcement-Appeals.md",
+    "5": "Article-05-Planning.md",
+    "6": "Article-06-Development-Regulation.md",
+    "7": "Article-07-Zoning-Regulation.md",
+    "8": "Article-08-Subdivision-Regulation.md",
+    "9": "Article-09-Particular-Uses-and-Areas.md",
+    "10": "Article-10-Development-Agreements.md",
+    "11": "Article-11-Building-Code-Enforcement.md",
+    "12": "Article-12-Minimum-Housing-Codes.md",
+    "13": "Article-13-Additional-Authority.md",
+    "14": "Article-14-Judicial-Review.md",
+}
+
+
+def _find_160d_section(section_num: str) -> str | None:
+    """Find and return the text of a specific 160D section from the article files."""
+    # Determine which article file to search based on section number
+    # 160D-1xx = Art 1, 160D-2xx = Art 2, ..., 160D-14xx = Art 14
+    num_part = section_num.replace("160D-", "").replace("160d-", "")
+
+    # Map section number to article
+    article_num = None
+    try:
+        sec_int = int(re.match(r"(\d+)", num_part).group(1))
+        if sec_int < 200:
+            article_num = "1"
+        elif sec_int < 300:
+            article_num = "2"
+        elif sec_int < 400:
+            article_num = "3"
+        elif sec_int < 500:
+            article_num = "4"
+        elif sec_int < 600:
+            article_num = "5"
+        elif sec_int < 700:
+            article_num = "6"
+        elif sec_int < 800:
+            article_num = "7"
+        elif sec_int < 900:
+            article_num = "8"
+        elif sec_int < 1000:
+            article_num = "9"
+        elif sec_int < 1100:
+            article_num = "10"
+        elif sec_int < 1200:
+            article_num = "11"
+        elif sec_int < 1300:
+            article_num = "12"
+        elif sec_int < 1400:
+            article_num = "13"
+        else:
+            article_num = "14"
+    except (AttributeError, ValueError):
+        return None
+
+    filename = _160D_ARTICLE_MAP.get(article_num)
+    if not filename:
+        return None
+
+    filepath = STATUTES_DIR / filename
+    if not filepath.exists():
+        return None
+
+    with open(filepath) as f:
+        content = f.read()
+
+    # Normalize the search target — try with and without "160D-" prefix
+    targets = [f"160D-{num_part}", f"§ 160D-{num_part}"]
+
+    # Find the section header and extract until the next section header
+    for target in targets:
+        pattern = re.compile(
+            rf"^##\s+.*{re.escape(target)}.*$",
+            re.MULTILINE,
+        )
+        match = pattern.search(content)
+        if match:
+            start = match.start()
+            # Find the next ## header
+            next_header = re.search(r"^## ", content[match.end():], re.MULTILINE)
+            if next_header:
+                end = match.end() + next_header.start()
+            else:
+                end = len(content)
+            return content[start:end].strip()
+
+    return None
+
+
+@mcp.tool()
+def get_160d_section(section: str) -> str:
+    """Get the text of a specific section of NCGS Chapter 160D (NC zoning enabling statute).
+
+    Chapter 160D is the state law that grants and governs local zoning authority
+    in North Carolina. When the local UDO conflicts with 160D, state law controls.
+
+    Args:
+        section: Section number, e.g. "160D-702", "702", "108.1", "160D-403".
+    """
+    # Normalize input
+    cleaned = section.strip()
+    if not cleaned.upper().startswith("160D-"):
+        cleaned = f"160D-{cleaned}"
+    num_part = cleaned.replace("160D-", "").replace("160d-", "")
+
+    result = _find_160d_section(num_part)
+    if result:
+        return result
+
+    return (
+        f"Section {cleaned} not found. Use search_160d() to search by keyword, "
+        "or try the full section number (e.g., '160D-702', '160D-108.1')."
+    )
+
+
+@mcp.tool()
+def search_160d(query: str) -> str:
+    """Search NCGS Chapter 160D for keywords or phrases.
+
+    Chapter 160D is the state law that grants and governs local zoning authority
+    in North Carolina. Use this to find relevant state law provisions, especially
+    when the local UDO may conflict with or be supplemented by state requirements.
+
+    Args:
+        query: Search term or phrase (e.g., "vested rights", "extraterritorial",
+               "board of adjustment", "variance", "quasi-judicial").
+    """
+    words = query.lower().split()
+    matches = []
+
+    if not STATUTES_DIR.is_dir():
+        return "160D statute files not found. Expected in statutes/ directory."
+
+    for md_file in sorted(STATUTES_DIR.glob("*.md")):
+        with open(md_file) as f:
+            file_lines = f.readlines()
+
+        for i, line in enumerate(file_lines, 1):
+            if all(w in line.lower() for w in words):
+                matches.append((md_file.stem, i, line.strip()[:150]))
+
+    # If single-line matching found nothing with multi-word, try 3-line windows
+    if not matches and len(words) > 1:
+        for md_file in sorted(STATUTES_DIR.glob("*.md")):
+            with open(md_file) as f:
+                file_lines = f.readlines()
+            for i in range(len(file_lines)):
+                window = " ".join(file_lines[max(0, i - 1):i + 2])
+                if all(w in window.lower() for w in words):
+                    matches.append((md_file.stem, i + 1, file_lines[i].strip()[:150]))
+
+    if not matches:
+        return f"No results found in NCGS 160D for '{query}'."
+
+    # Deduplicate
+    seen = set()
+    unique = []
+    for m in matches:
+        key = (m[0], m[1])
+        if key not in seen:
+            seen.add(key)
+            unique.append(m)
+    matches = unique
+
+    lines = [f"## NCGS 160D — {len(matches)} matches for '{query}'\n"]
+    for fname, lineno, text in matches[:30]:
+        lines.append(f"- **{fname}:{lineno}:** {text}")
+    if len(matches) > 30:
+        lines.append(f"- ... and {len(matches) - 30} more matches")
+    lines.append("\n*Use get_160d_section() to read the full text of a specific section.*")
 
     return "\n".join(lines)

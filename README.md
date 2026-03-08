@@ -15,6 +15,8 @@ An [MCP](https://modelcontextprotocol.io/) server that provides AI-powered zonin
 | `can_i_build` | Complete answer to "Can I build X in district Y?" with permissions, special requirements, and dimensional standards |
 | `search_ordinance` | Full-text search across the entire UDO |
 | `list_districts` | Quick reference of all 13 zoning district codes |
+| `get_160d_section` | Get the full text of a specific NCGS 160D section (state zoning law) |
+| `search_160d` | Search NCGS Chapter 160D by keyword or phrase |
 
 ## Setup
 
@@ -37,6 +39,7 @@ Or use directly with an MCP client by pointing it at the server entry point.
 - **UDO text**: Markdown files converted from the official PDF chapters (`../markdown/`)
 - **Structured data**: JSON files for permitted uses, dimensional standards, districts, special requirements, and subdivision procedures (`../data/`)
 - **GIS**: Rowan County ArcGIS REST services for parcel geometry, zoning districts, ETJ boundaries, and corporate limits (public, no auth required)
+- **NCGS 160D**: Full text of NC General Statute Chapter 160D — the state enabling statute for local zoning authority (`statutes/`). When the local UDO conflicts with state law, 160D controls.
 
 ## Zoning Districts
 
