@@ -1175,14 +1175,35 @@ def get_parcel_info(
             "get_district_info(), get_dimensional_standards(), can_i_build()"
         )
 
-    # §2.2I street frontage advisory
+    # §2.2I street frontage advisory — district-aware when zoning is known
     lines.append("")
+    frontage_detail = ""
+    if zoning_result and zoning_result.get("zoning"):
+        standards = _load_dimensional_standards()
+        # Find the first principal structure entry for this district (most restrictive residential)
+        district_standards = [
+            s for s in standards["principal_structures"] if s["district"] == zoning_code
+        ]
+        if district_standards:
+            ds = district_standards[0]
+            frontage = ds.get("min_street_frontage_ft")
+            width = ds.get("min_width_ft")
+            parts = []
+            if frontage:
+                parts.append(f"**{frontage} ft** street frontage")
+            if width:
+                parts.append(f"**{width} ft** lot width")
+            if parts:
+                frontage_detail = (
+                    f" This parcel is zoned **{zoning_code}** — district minimums "
+                    f"require {' and '.join(parts)}."
+                )
     lines.append(
         "⚠ **§2.2I Street Frontage Advisory:** If considering subdivision of this "
         "parcel, each resulting lot must have independent, direct frontage on a "
-        "conforming street. Flag lots (accessed only by a narrow strip) are **not "
-        "permitted**. Verify parcel dimensions and proposed lot layout with a "
-        "surveyor before proceeding."
+        f"conforming street.{frontage_detail} Flag lots (accessed only by a narrow "
+        "strip) are **not permitted**. Verify parcel dimensions and proposed lot "
+        "layout with a surveyor before proceeding."
     )
 
     return "\n".join(lines)
