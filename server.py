@@ -572,7 +572,18 @@ def get_subdivision_requirements(query: str) -> str:
             lines.append("")
         sections.append("\n".join(lines))
 
-    return "\n\n---\n\n".join(sections)
+    street_frontage_warning = (
+        "⚠ **§2.2I Street Frontage — Subdivision Threshold Check:** Before analyzing "
+        "subdivision type or process, verify that *each resulting lot* will have "
+        "independent, direct frontage on a conforming street. Minimum street frontage "
+        "varies by district (e.g., R-S requires 35 ft street frontage and 70 ft lot "
+        "width). Flag lots (accessed only by a narrow strip) are **not permitted** — "
+        "no stated exception exists. On deep lots with limited road frontage, a rear-lot "
+        "split may be geometrically impossible under this rule. Confirm parcel dimensions "
+        "and proposed lot layout with a surveyor before advising on subdivision feasibility."
+    )
+
+    return street_frontage_warning + "\n\n---\n\n" + "\n\n---\n\n".join(sections)
 
 
 @mcp.tool()
@@ -1163,6 +1174,16 @@ def get_parcel_info(
             f"→ District code **{zc}** can be passed directly to: "
             "get_district_info(), get_dimensional_standards(), can_i_build()"
         )
+
+    # §2.2I street frontage advisory
+    lines.append("")
+    lines.append(
+        "⚠ **§2.2I Street Frontage Advisory:** If considering subdivision of this "
+        "parcel, each resulting lot must have independent, direct frontage on a "
+        "conforming street. Flag lots (accessed only by a narrow strip) are **not "
+        "permitted**. Verify parcel dimensions and proposed lot layout with a "
+        "surveyor before proceeding."
+    )
 
     return "\n".join(lines)
 
