@@ -1,0 +1,92 @@
+[
+  {
+    "section": "2.1",
+    "title": "Applicability of General Provisions",
+    "summary": "General provisions apply throughout the jurisdiction regardless of the underlying regulating district.",
+    "line_start": 11
+  },
+  {
+    "section": "2.2",
+    "title": "General Lot Standards",
+    "summary": "Comprehensive lot standards including conformity requirements, lot of record provisions, orientation, infill setbacks, corner lots, principal building limits, right-of-way observation, street frontage, essential services, and encroachments.",
+    "line_start": 16
+  },
+  {
+    "section": "2.2A",
+    "title": "General Lot Conformity",
+    "summary": "No building, land or portion thereof shall be erected, used, moved, or altered except in conformity with the regulations specified for the district in which it is located.",
+    "line_start": 18
+  },
+  {
+    "section": "2.2B",
+    "title": "Lot Size Reduction Prohibited",
+    "summary": "No lot existing upon adoption of the Ordinance shall be reduced below minimum district requirements. Yards/lots created after adoption must meet minimums. Zoning Administrator determines setbacks on irregularly shaped lots based on spirit and intent of the Ordinance.",
+    "line_start": 21
+  },
+  {
+    "section": "2.2C",
+    "title": "Orientation of Lot Lines",
+    "summary": "Side lot lines shall be substantially at right angles or radial to street lines (tolerance ±15 degrees). Double-frontage lots avoided. Rear lot line intersection angle minimum 30 degrees.",
+    "line_start": 28
+  },
+  {
+    "section": "2.2D",
+    "title": "Infill Lot Setbacks (300-ft Average Rule)",
+    "summary": "Front and side yard setbacks for infill lot development shall be equal to the average for similar principal structures on the same side of the street and within the same zoning district within 300 feet of either side of the lot in question. This overrides standard district setbacks for qualifying infill lots in ALL zoning districts.",
+    "line_start": 33
+  },
+  {
+    "section": "2.2E",
+    "title": "Corner Lots",
+    "summary": "Corner lots have two front yards using minimum front setback for each frontage. Non-primary frontage setback may be reduced to minimum side setback upon ZA approval. No structure within sight triangle.",
+    "line_start": 37
+  },
+  {
+    "section": "2.2F",
+    "title": "One Principal Building Per Lot",
+    "summary": "Only one principal building and its customary accessory building(s) per lot, except as allowed for non-residential, multi-family, and mixed use developments.",
+    "line_start": 42
+  },
+  {
+    "section": "2.2G",
+    "title": "Existing Building Permits",
+    "summary": "No change required for buildings with a valid building permit secured prior to Ordinance adoption.",
+    "line_start": 46
+  },
+  {
+    "section": "2.2H",
+    "title": "Right-of-Way Observation",
+    "summary": "New lots on state/public roads with no recorded ROW must observe minimum 60-foot right-of-way (30 ft from centerline), unless otherwise specified in Appendix A.",
+    "line_start": 50
+  },
+  {
+    "section": "2.2I",
+    "title": "Street Frontage Required",
+    "summary": "All lots shall front upon a street built per Ordinance standards. Minimum street frontage per district in Chapter 7. Buildings must front directly upon a street with emergency access. Flag lots not permitted.",
+    "line_start": 54
+  },
+  {
+    "section": "2.2J",
+    "title": "Essential Services Setback Exemption",
+    "summary": "Essential services (as defined) are not subject to minimum zoning district setbacks.",
+    "line_start": 59
+  },
+  {
+    "section": "2.2K",
+    "title": "Front Setback Encroachments",
+    "summary": "Canopies, awnings, bicycle parking, outdoor seating areas, and front porches may encroach into the front setback up to 8 feet.",
+    "line_start": 62
+  },
+  {
+    "section": "2.3",
+    "title": "Uses Not Expressly Permitted by Right or Conditionally",
+    "summary": "Permitted uses and uses with supplemental regulations are allowed by right. Special uses require Town Council development plan approval. Unlisted uses evaluated by Zoning Administrator to determine nearest similar use.",
+    "line_start": 65
+  },
+  {
+    "section": "2.4",
+    "title": "Conformance with Adopted Plans",
+    "summary": "Regulations shall be consistent with the Comprehensive Plan and specific plans. All new developments must conform with adopted plans including Comprehensive Plan, small area plans, land use plans, parks and recreation plans, thoroughfare plans, and school plans.",
+    "line_start": 74
+  }
+]

@@ -1,0 +1,145 @@
+{
+  "R-P": {
+    "name": "Rural Preservation District",
+    "section": "7.2",
+    "intent": "To accommodate very low-density residential development and agricultural uses and to protect natural vistas and landscape features that define rural areas.",
+    "character": "rural/agricultural",
+    "key_rules": [
+      "Accessory buildings require 150ft setback from street ROW if in front yard",
+      "See Section 8.3 for additional accessory structure requirements"
+    ]
+  },
+  "R-S": {
+    "name": "Suburban Residential District",
+    "section": "7.3",
+    "intent": "Established for new development on the edges of Town in which the principal use of land is low density single-family residences along with their customary accessory uses.",
+    "character": "low-density suburban residential",
+    "key_rules": [
+      "No accessory building shall be erected in any front yard",
+      "Open Space Subdivision option available (4 units/acre, 20% open space, processed as Conditional Zoning per Section 15.6)",
+      "Minimum 20' between residential structures in open space subdivisions",
+      "See Section 8.3 for additional accessory structure requirements"
+    ]
+  },
+  "R-T": {
+    "name": "Town Residential District",
+    "section": "7.4",
+    "intent": "Intended for more established residential areas within the Town primarily for medium density single-family residential along with their customary accessory uses.",
+    "character": "medium-density established residential",
+    "key_rules": [
+      "No accessory building shall be erected in any front yard",
+      "See Section 8.3 for additional accessory structure requirements"
+    ]
+  },
+  "R-M": {
+    "name": "Mixed Residential District",
+    "section": "7.5",
+    "intent": "Intended primarily to create higher density residential areas providing for and encouraging a mix of housing types including single-family, two-family, and multi-family dwellings along with their customary accessory uses.",
+    "character": "higher-density mixed residential",
+    "key_rules": [
+      "All uses requiring Conditional Zoning processed per Section 15.6 and subject to Section 7.15",
+      "No modifications to approved site plan without Town Council approval (or administrative per Section 17.12)",
+      "Parcels 20,000 sq ft or less in R-M districts existing as of April 5, 2022 may develop under prior R-M rules via Minor Site Plan Review",
+      "Buildings over 20,000 sq ft must comply with current UDO standards"
+    ]
+  },
+  "R-MH": {
+    "name": "Manufactured Home District",
+    "section": "7.6",
+    "intent": "Established to provide for the proper location and planning of attractive manufactured home developments. All manufactured homes, mobile homes, and trailers shall be located within a manufactured home development within the R-MH district.",
+    "character": "manufactured home residential",
+    "key_rules": [
+      "All manufactured homes, mobile homes, and trailers must be located in R-MH district",
+      "Development standards and requirements are included"
+    ]
+  },
+  "O-I": {
+    "name": "Office and Institutional District",
+    "section": "7.7",
+    "intent": "Intended to accommodate a variety of office uses, related low intensity retail uses, and some higher density multi-family uses. Can create transitional buffers between residential and commercial districts.",
+    "character": "office/institutional transitional",
+    "key_rules": [
+      "Number and type of retail uses permitted is limited",
+      "Primary purpose is to accommodate existing and new office and institutional areas"
+    ]
+  },
+  "N-C": {
+    "name": "Neighborhood Center District",
+    "section": "7.8",
+    "intent": "Intended primarily for local centers designed to serve relatively small trading areas in developed or developing portions of China Grove. Incentive is given to encourage mixed use development.",
+    "character": "neighborhood-scale mixed use",
+    "key_rules": [
+      "All N-C districts shall be minimum 3 acres and maximum 50 acres",
+      "Commercial establishments more limited than other districts",
+      "Re-use provisions for pre-August 1, 2006 buildings 5,000 sq ft or less (Section 5.9)",
+      "Alternative compliance for building design via Conditional Zoning where 13.4.1.4 is impracticable"
+    ]
+  },
+  "C-B": {
+    "name": "Central Business District",
+    "section": "7.9",
+    "intent": "Established as the centrally located trade and commercial service area of China Grove. Designed to encourage continued use of land for community trade and commercial service uses and to permit concentrated development of permitted uses.",
+    "character": "downtown commercial core",
+    "key_rules": [
+      "Alternative compliance with building design requirements via Conditional Zoning",
+      "Re-use provisions for pre-August 1, 2006 buildings 5,000 sq ft or less (Section 5.9)",
+      "Maximum building height 60 ft (tallest of any district)"
+    ]
+  },
+  "H-B": {
+    "name": "Highway Business District",
+    "section": "7.10",
+    "intent": "Established to provide a wide array of primarily retail and service uses to a large trading area for persons residing in and/or traveling through the China Grove area. Uses shall be located and designed to promote aesthetics and safe/efficient traffic movement.",
+    "character": "highway corridor commercial",
+    "key_rules": [
+      "Any area so zoned shall have access onto an arterial or collector thoroughfare",
+      "Re-use provisions for pre-August 1, 2006 buildings 5,000 sq ft or less (Section 5.9)",
+      "Alternative compliance with building design requirements via Conditional Zoning"
+    ]
+  },
+  "C-P": {
+    "name": "Corporate Park District",
+    "section": "7.11",
+    "intent": "Established for a high quality mixture of employment and/or institutional uses of varying type, as well as limited retail and service uses in a single coordinated development creating a self-supporting advantageous business environment in an attractive corporate park setting.",
+    "character": "corporate/employment campus",
+    "key_rules": [
+      "Minimum overall development size 15 acres",
+      "Interior lots minimum 0.5 acre"
+    ]
+  },
+  "L-I": {
+    "name": "Light Industrial District",
+    "section": "7.12",
+    "intent": "Established for industrial and related uses that do not create serious negative impacts for surrounding properties.",
+    "character": "light industrial",
+    "key_rules": [
+      "Minimum overall development size 2 acres",
+      "Interior lots minimum 0.5 acre"
+    ]
+  },
+  "H-I": {
+    "name": "Heavy Industrial District",
+    "section": "7.13",
+    "intent": "Established for industrial and related uses that require isolation from many other kinds of land uses.",
+    "character": "heavy industrial",
+    "key_rules": [
+      "Minimum overall development size 5 acres",
+      "Interior lots minimum 1 acre",
+      "Largest setback requirements of any district (100ft side and rear for overall development)"
+    ]
+  },
+  "PUD": {
+    "name": "Planned Unit Development",
+    "section": "7.14",
+    "intent": "To accommodate mixed-use development compatible with desired character of the Town. Must contain at least one type of residential and at least one type of non-residential development. Permits flexibility in design not achievable under conventional zoning.",
+    "character": "mixed-use planned development",
+    "key_rules": [
+      "Minimum development size 5 acres",
+      "Must include at least one residential and one non-residential use",
+      "Processed as Conditional Zoning per Section 13.6",
+      "Permitted uses are those approved in the Conditional Zoning",
+      "Not subject to Chapter 7 dimensional/density provisions except 25ft perimeter setback from existing development",
+      "Subject to recommended design elements in Section 7.14.8"
+    ]
+  }
+}

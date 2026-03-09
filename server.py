@@ -15,11 +15,11 @@ from mcp.server.fastmcp import FastMCP
 
 import re
 
-# Resolve data paths relative to project root (one level up from mcp-server/)
-PROJECT_ROOT = Path(__file__).parent.parent
+# Resolve data paths relative to this file's directory
+PROJECT_ROOT = Path(__file__).parent
 DATA_DIR = PROJECT_ROOT / "data"
 MARKDOWN_DIR = PROJECT_ROOT / "markdown"
-STATUTES_DIR = Path(__file__).parent / "statutes"
+STATUTES_DIR = PROJECT_ROOT / "statutes"
 
 DISTRICT_ORDER = [
     "R-P", "R-S", "R-T", "R-M", "R-MH",
@@ -60,6 +60,10 @@ def _load_subdivision_index():
     return load_json("subdivision_index.json")
 
 
+def _load_general_provisions_index():
+    return load_json("general_provisions_index.json")
+
+
 # --- MCP Server ---
 
 mcp = FastMCP(
@@ -68,11 +72,15 @@ mcp = FastMCP(
         "This server provides tools for researching zoning and land use questions "
         "for the Town of China Grove, NC. Use these tools to look up permitted uses, "
         "dimensional standards (setbacks, density, height), district information, "
-        "special requirements, and subdivision procedures from the Unified Development "
-        "Ordinance (UDO). For subdivision questions (lot splits, plat approval, minor "
-        "vs major thresholds, improvement requirements), use get_subdivision_requirements(). "
+        "special requirements, general provisions, and subdivision procedures from the "
+        "Unified Development Ordinance (UDO). For subdivision questions (lot splits, plat "
+        "approval, minor vs major thresholds, improvement requirements), use "
+        "get_subdivision_requirements(). For Chapter 2 general provisions (lot standards, "
+        "infill setback rules, corner lots, ROW observation), use get_general_provisions(). "
         "For parcel lookups by PIN, address, or owner name, use get_parcel_info() — it "
         "returns the parcel's zoning district, jurisdiction status, and property details. "
+        "For infill development, use get_infill_context(pin) to find neighboring parcels "
+        "within 300 ft for setback averaging under Section 2.2D. "
         "For NC state zoning law, use get_160d_section() or search_160d() to look up "
         "NCGS Chapter 160D. When the local UDO may conflict with state law, 160D controls. "
         "Always cite specific ordinance sections when answering."
@@ -114,6 +122,8 @@ def lookup_permitted_use(use: str, district: str | None = None) -> str:
             lines.append(f"**NAICS:** {u['naics']}")
         if u.get("special_requirements"):
             lines.append(f"**Special Requirements:** Section {u['special_requirements']}")
+        if u.get("discrepancy_note"):
+            lines.append(f"\n⚠ **Ordinance Discrepancy:** {u['discrepancy_note']}")
 
         if district_upper:
             perm = u["districts"].get(district_upper)
@@ -202,6 +212,15 @@ def get_dimensional_standards(district: str) -> str:
             rear_note = entry.get("setback_rear_note")
             rear = entry.get("setback_rear_ft")
             lines.append(f"- **Rear:** {rear_note if rear_note else f'{rear}ft'}")
+
+    # Infill lot rule — applies to ALL districts
+    infill = standards.get("infill_lot_rule")
+    if infill:
+        lines.append("\n## Infill Lot Rule (Section 2.2D)")
+        lines.append(f"**Applies to:** {infill['applies_to']}")
+        lines.append(f"\n{infill['rule']}")
+        lines.append(f"\n*{infill['effect']}*")
+        lines.append(f"\n*{infill['calculation_note']}*")
 
     notes = standards.get("notes", {})
     if notes:
@@ -297,6 +316,85 @@ def get_special_requirements(section: str) -> str:
                 if all_lines[i].startswith("## Section 8."):
                     end = i
                     break
+            full_text = "".join(all_lines[start:end]).strip()
+            lines.append(f"\n**Full Text:**\n\n{full_text}")
+
+        results.append("\n".join(lines))
+
+    return "\n\n---\n\n".join(results)
+
+
+@mcp.tool()
+def get_general_provisions(section: str) -> str:
+    """Get general provisions from Chapter 2 of the UDO.
+
+    Covers: lot standards, infill setback rules (300-ft average), corner lots,
+    lot line orientation, right-of-way observation, street frontage requirements,
+    essential services exemptions, and front setback encroachments.
+
+    Args:
+        section: Section number (e.g., "2.2D", "2.2", "2.1") or keyword to search
+                 (e.g., "infill", "corner lot", "right-of-way", "encroachment").
+                 Use "all" for the complete Chapter 2 text.
+    """
+    index = _load_general_provisions_index()
+
+    if section.lower().strip() == "all":
+        # Return full Chapter 2 text
+        md_path = MARKDOWN_DIR / "Chapter-02-General-Provisions.md"
+        if md_path.exists():
+            with open(md_path) as f:
+                return f.read()
+        return "Chapter 2 markdown file not found."
+
+    # Try exact section match
+    matches = [s for s in index if s["section"] == section]
+
+    if not matches:
+        # Try partial section match (e.g., "2.2" matches 2.2, 2.2A, 2.2B, etc.)
+        matches = [s for s in index if s["section"].startswith(section)]
+
+    if not matches:
+        # Try keyword search in title
+        q = section.lower()
+        matches = [s for s in index if q in s["title"].lower()]
+
+    if not matches:
+        # Try keyword search in summary
+        q = section.lower()
+        matches = [s for s in index if q in s["summary"].lower()]
+
+    if not matches:
+        lines = [f"No general provision found for '{section}'.\n", "**Available sections:**"]
+        for s in index:
+            lines.append(f"- **{s['section']}:** {s['title']}")
+        return "\n".join(lines)
+
+    results = []
+    for match in matches:
+        lines = [f"## Section {match['section']}: {match['title']}"]
+        lines.append(f"\n**Summary:** {match['summary']}")
+
+        # Load full text from markdown
+        md_path = MARKDOWN_DIR / "Chapter-02-General-Provisions.md"
+        if md_path.exists():
+            with open(md_path) as f:
+                all_lines = f.readlines()
+            start = match["line_start"] - 1
+            # Find next section header or subsection to determine end
+            end = len(all_lines)
+            for i in range(start + 1, len(all_lines)):
+                line = all_lines[i]
+                # Stop at next ## section header
+                if line.startswith("## Section"):
+                    end = i
+                    break
+                # For subsections (2.2A, 2.2B, etc.), stop at the next lettered subsection
+                if match["section"].startswith("2.2") and len(match["section"]) > 3:
+                    # This is a sub-provision like 2.2D — stop at next lettered line
+                    if line.strip() and line[0].isupper() and len(line) > 2 and line[1] == ".":
+                        end = i
+                        break
             full_text = "".join(all_lines[start:end]).strip()
             lines.append(f"\n**Full Text:**\n\n{full_text}")
 
@@ -553,42 +651,57 @@ def search_ordinance(query: str) -> str:
         lines.append("\n*Use get_subdivision_requirements() for full details.*")
         sections.append("\n".join(lines))
 
-    # Search markdown files (multi-word: find lines where all words appear)
+    # Search general provisions index
+    gp_index = _load_general_provisions_index()
+    gp_matches = [s for s in gp_index if _any_word_matches(f"{s['title']} {s['summary']}")]
+    if gp_matches:
+        lines = [f"## General Provisions ({len(gp_matches)} matches)\n"]
+        for s in gp_matches:
+            lines.append(f"- **Section {s['section']}:** {s['title']}")
+            lines.append(f"  {s['summary'][:200]}")
+        lines.append("\n*Use get_general_provisions() for full text.*")
+        sections.append("\n".join(lines))
+
+    # Search markdown files with paragraph context (5-line window)
     md_matches = []
     if MARKDOWN_DIR.is_dir():
         for md_file in sorted(MARKDOWN_DIR.glob("*.md")):
             with open(md_file) as f:
                 file_lines = f.readlines()
-            for i, line in enumerate(file_lines, 1):
-                if _matches_text(line):
-                    md_matches.append((md_file.name, i, line.strip()[:120]))
-
-    # If multi-word query found nothing line-by-line, try paragraph-level matching
-    if not md_matches and len(words) > 1:
-        if MARKDOWN_DIR.is_dir():
-            for md_file in sorted(MARKDOWN_DIR.glob("*.md")):
-                with open(md_file) as f:
-                    file_lines = f.readlines()
-                # Check 3-line windows for all words
-                for i in range(len(file_lines)):
-                    window = " ".join(file_lines[max(0, i-1):i+2])
-                    if _matches_text(window):
-                        md_matches.append((md_file.name, i+1, file_lines[i].strip()[:120]))
+            # Use 5-line sliding window to match multi-line provisions
+            for i in range(len(file_lines)):
+                window_start = max(0, i - 2)
+                window_end = min(len(file_lines), i + 3)
+                window = " ".join(file_lines[window_start:window_end])
+                if _matches_text(window):
+                    # Build context snippet: the paragraph around the match
+                    snippet_start = max(0, i - 2)
+                    snippet_end = min(len(file_lines), i + 3)
+                    snippet = " ".join(
+                        line.strip() for line in file_lines[snippet_start:snippet_end]
+                        if line.strip()
+                    )
+                    md_matches.append((md_file.name, i + 1, snippet[:300]))
 
     if md_matches:
-        # Deduplicate
-        seen = set()
+        # Deduplicate by file and proximity (collapse matches within 5 lines)
         unique_matches = []
-        for m in md_matches:
-            key = (m[0], m[1])
-            if key not in seen:
-                seen.add(key)
-                unique_matches.append(m)
+        seen_ranges = {}
+        for fname, lineno, text in md_matches:
+            key = fname
+            if key in seen_ranges:
+                # Skip if within 5 lines of a previous match in same file
+                if any(abs(lineno - prev) < 5 for prev in seen_ranges[key]):
+                    continue
+                seen_ranges[key].append(lineno)
+            else:
+                seen_ranges[key] = [lineno]
+            unique_matches.append((fname, lineno, text))
         md_matches = unique_matches
 
         lines = [f"## Ordinance Text ({len(md_matches)} matches)\n"]
         for fname, lineno, text in md_matches[:20]:
-            lines.append(f"- **{fname}:{lineno}:** {text}")
+            lines.append(f"- **{fname}:{lineno}:**\n  {text}")
         if len(md_matches) > 20:
             lines.append(f"- ... and {len(md_matches) - 20} more matches")
         sections.append("\n".join(lines))
@@ -680,6 +793,11 @@ def can_i_build(use: str, district: str) -> str:
                 if sr_match:
                     lines.append(f"\n### Special Requirements (Section {sr}: {sr_match['title']})")
                     lines.append(sr_match["summary"])
+
+        # Add discrepancy note if present
+        if u.get("discrepancy_note"):
+            lines.append(f"\n### ⚠ Ordinance Discrepancy")
+            lines.append(u["discrepancy_note"])
 
         # Add dimensional standards
         standards = _load_dimensional_standards()
@@ -1030,6 +1148,197 @@ def get_parcel_info(
             f"→ District code **{zc}** can be passed directly to: "
             "get_district_info(), get_dimensional_standards(), can_i_build()"
         )
+
+    return "\n".join(lines)
+
+
+# --- Infill Context (GIS-based neighbor lookup) ---
+
+
+@mcp.tool()
+def get_infill_context(pin: str) -> str:
+    """Find neighboring parcels within 300 ft for infill setback averaging (Section 2.2D).
+
+    Looks up the subject parcel, then queries for nearby parcels on the same street
+    and in the same zoning district within 300 feet. Returns the list of neighboring
+    parcels that would be used for setback averaging.
+
+    NOTE: Actual structure setback distances are NOT available from GIS parcel data —
+    a site survey or building footprint data is needed. This tool identifies which
+    parcels fall within the 300-ft radius to narrow the field work.
+
+    Args:
+        pin: Parcel Identification Number (e.g., "5626-01-38-0952").
+    """
+    pin_val = pin.strip()
+
+    # Step 1: Get the subject parcel with geometry
+    result = _arcgis_query(_PARCEL_URL, {
+        "where": f"PIN = '{pin_val}'",
+        "outFields": f"{_PARCEL_OUT_FIELDS}",
+        "returnGeometry": "true",
+        "outSR": "102719",
+    })
+    features = result.get("features", [])
+
+    # Try PARCEL_ID if PIN didn't work
+    if not features:
+        result = _arcgis_query(_PARCEL_URL, {
+            "where": f"PARCEL_ID = '{pin_val}'",
+            "outFields": f"{_PARCEL_OUT_FIELDS}",
+            "returnGeometry": "true",
+            "outSR": "102719",
+        })
+        features = result.get("features", [])
+
+    if not features:
+        return f"No parcel found for PIN '{pin_val}'."
+
+    if len(features) > 1:
+        return f"Multiple parcels match '{pin_val}'. Please use a more specific PIN."
+
+    feature = features[0]
+    attr = feature["attributes"]
+    geom = feature.get("geometry", {})
+    rings = geom.get("rings")
+
+    if not rings:
+        return f"Parcel {pin_val} found but no geometry — cannot compute neighbors."
+
+    cx, cy = _centroid_from_rings(rings)
+    subject_address = attr.get("PROP_ADDRE", "")
+
+    # Step 2: Get zoning for the subject parcel
+    zoning_result = _spatial_query(_ZONING_URL, cx, cy, "zoning")
+    if not zoning_result:
+        return (
+            f"Parcel {pin_val} found but could not determine zoning district. "
+            "Cannot identify infill context without knowing the zoning district."
+        )
+
+    raw_zoning = zoning_result.get("zoning", "")
+    subject_zoning = _normalize_district_code(raw_zoning) if raw_zoning else "Unknown"
+
+    # Step 3: Buffer query — find parcels within 300 ft
+    # Build a buffer geometry around the centroid (300 ft radius)
+    buffer_params = {
+        "geometry": json.dumps({"x": cx, "y": cy}),
+        "geometryType": "esriGeometryPoint",
+        "spatialRel": "esriSpatialRelIntersects",
+        "distance": 300,
+        "units": "esriSRUnit_Foot",
+        "inSR": "102719",
+        "outFields": _PARCEL_OUT_FIELDS,
+        "returnGeometry": "true",
+        "outSR": "102719",
+        "where": "1=1",
+    }
+
+    try:
+        neighbor_result = _arcgis_query(_PARCEL_URL, buffer_params)
+    except Exception as e:
+        return f"Buffer query failed: {e}"
+
+    neighbor_features = neighbor_result.get("features", [])
+
+    # Step 4: Filter neighbors — same street, same zoning, exclude subject
+    lines = [
+        f"# Infill Context for {pin_val}",
+        f"**Subject Address:** {subject_address}",
+        f"**Subject Zoning:** {subject_zoning}",
+        f"**Search Radius:** 300 feet from parcel centroid\n",
+    ]
+
+    # Extract street name from subject address for matching
+    subject_street = ""
+    if subject_address:
+        # Remove house number to get street name
+        parts = subject_address.split()
+        if len(parts) > 1:
+            # Skip leading numbers
+            street_parts = []
+            for p in parts:
+                if not p.isdigit() and not street_parts:
+                    street_parts.append(p)
+                elif street_parts:
+                    street_parts.append(p)
+            subject_street = " ".join(street_parts).upper()
+
+    same_street_same_zone = []
+    same_zone_other_street = []
+
+    for nf in neighbor_features:
+        na = nf["attributes"]
+        n_pin = na.get("PIN", "")
+
+        # Skip subject parcel
+        if n_pin == pin_val:
+            continue
+
+        n_address = na.get("PROP_ADDRE", "")
+
+        # Get neighbor's zoning
+        n_geom = nf.get("geometry", {})
+        n_rings = n_geom.get("rings")
+        n_zoning = "Unknown"
+        if n_rings:
+            ncx, ncy = _centroid_from_rings(n_rings)
+            n_zone_result = _spatial_query(_ZONING_URL, ncx, ncy, "zoning")
+            if n_zone_result:
+                raw = n_zone_result.get("zoning", "")
+                n_zoning = _normalize_district_code(raw) if raw else "Unknown"
+
+        # Check if same zoning district
+        if n_zoning != subject_zoning:
+            continue
+
+        # Check if same street
+        on_same_street = False
+        if subject_street and n_address:
+            n_street = ""
+            n_parts = n_address.split()
+            if len(n_parts) > 1:
+                n_street_parts = []
+                for p in n_parts:
+                    if not p.isdigit() and not n_street_parts:
+                        n_street_parts.append(p)
+                    elif n_street_parts:
+                        n_street_parts.append(p)
+                n_street = " ".join(n_street_parts).upper()
+            if n_street and n_street == subject_street:
+                on_same_street = True
+
+        entry = f"- **{n_pin}** — {n_address} (Zoning: {n_zoning})"
+
+        if on_same_street:
+            same_street_same_zone.append(entry)
+        else:
+            same_zone_other_street.append(entry)
+
+    if same_street_same_zone:
+        lines.append(f"## Same Street & Same Zoning District ({len(same_street_same_zone)} parcels)\n")
+        lines.append("These parcels are most likely relevant for the Section 2.2D setback average:\n")
+        lines.extend(same_street_same_zone)
+    else:
+        lines.append("## Same Street & Same Zoning District\n")
+        lines.append("No neighboring parcels found on the same street within 300 ft in the same district.")
+
+    if same_zone_other_street:
+        lines.append(f"\n## Same Zoning District, Different Street ({len(same_zone_other_street)} parcels)\n")
+        lines.extend(same_zone_other_street)
+
+    lines.append("\n---")
+    lines.append("## Section 2.2D Infill Setback Rule")
+    lines.append(
+        "Front and side yard setbacks for infill lot development shall be equal to the "
+        "average for similar principal structures on the same side of the street and within "
+        "the same zoning district within 300 feet of either side of the lot in question."
+    )
+    lines.append(
+        "\n**⚠ Note:** This tool identifies parcels within the 300-ft radius. Actual "
+        "structure setback measurements require building footprint data, site plans, "
+        "or field survey. The Zoning Administrator determines the applicable setback average."
+    )
 
     return "\n".join(lines)
 

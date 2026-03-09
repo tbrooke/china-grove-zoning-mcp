@@ -1,0 +1,254 @@
+[
+  {
+    "section": "8.1",
+    "title": "Purpose",
+    "summary": "Establishes that certain uses may be constructed/continued/expanded if they meet mitigating conditions specific to their design and/or operation for compatibility.",
+    "line_start": 13
+  },
+  {
+    "section": "8.2",
+    "title": "Accessory Dwellings",
+    "summary": "Accessory dwellings in separate building: owner must occupy principal dwelling, max 1/2 area of principal, must meet principal structure setbacks, rear or side yard only, NC Building Standards.",
+    "line_start": 24
+  },
+  {
+    "section": "8.3",
+    "title": "Accessory Structures (Residential)",
+    "summary": "Side/rear yard only (R-P allows front if 150ft from ROW). Not closer than 3ft from other buildings. Fences, mailboxes, birdhouses exempt from permit. Height cannot exceed principal structure. On lots 1 acre or less, total accessory area max 1/2 of principal. No vehicles/trailers as accessory structures.",
+    "line_start": 39
+  },
+  {
+    "section": "8.4",
+    "title": "Adult Establishments",
+    "summary": "Must be 1,000ft from schools, churches, daycares, parks, residential uses/districts, and other adult establishments. Max one per structure/lot. No interior visibility from outside. Strict sign, color, lighting, and sound restrictions.",
+    "line_start": 99
+  },
+  {
+    "section": "8.5",
+    "title": "Agricultural Uses",
+    "summary": "ETJ farm uses exempt per NCGS 160D-903. Existing ag uses in R-S may continue/expand. Beekeeping: max 5 hives, behind residence, 50ft from property line. Accessory uses on 1+ acre properties permitted with zoning permit.",
+    "line_start": 126
+  },
+  {
+    "section": "8.6",
+    "title": "Animal Slaughtering and Processing",
+    "summary": "Min 10 acres, 100ft perimeter setbacks, 1,000ft from residential districts. No open lagoons, no overnight livestock. Waste/refuse plan required. All processing indoors.",
+    "line_start": 155
+  },
+  {
+    "section": "8.7",
+    "title": "Automotive, Boat, RV, Heavy Equipment, Manufactured Home Sales/Service and Commercial Parking Lots",
+    "summary": "Parking/display areas max 3 acres unless divided. Must be paved. Street Planting Yard required. No outdoor sound systems audible beyond property. Commercial parking lots in C-B require Conditional Rezoning.",
+    "line_start": 180
+  },
+  {
+    "section": "8.8",
+    "title": "Bed and Breakfast Homes and Inns",
+    "summary": "Homes: max 4 guest bedrooms (up to original count), max 8 guests. Inns: max 9 guest bedrooms. Must have resident manager. Min 1,500 sq ft. Guest parking in rear. One kitchen only. Max 15 days per 60-day period per patron.",
+    "line_start": 196
+  },
+  {
+    "section": "8.9",
+    "title": "Boarding Houses",
+    "summary": "Max 4 guest bedrooms (up to original count), max 8 guests. Resident manager required. Must be in originally-constructed dwelling. One kitchen. Parking in rear.",
+    "line_start": 228
+  },
+  {
+    "section": "8.10",
+    "title": "Cemeteries",
+    "summary": "Tombstones/crypts min 20ft from side/rear lot lines, 30ft from street ROW. Off-street parking for funeral processions. Direct access to major/minor thoroughfare.",
+    "line_start": 250
+  },
+  {
+    "section": "8.11",
+    "title": "Child Care Centers",
+    "summary": "Min 2,500 sq ft fenced outdoor play area (6ft fence). Hours 6am-7pm in residential districts. No 24-hour care. Parking: 1/vehicle, 1/employee, 2 per 15 children. State/federal licenses required. Must maintain residential character in residential districts.",
+    "line_start": 261
+  },
+  {
+    "section": "8.12",
+    "title": "Drinking Places (Alcoholic Beverages)",
+    "summary": "No bar/nightclub within 100ft of residential dwelling, church, civic use, or another drinking place (exception: C-B district structures fronting Main Street). No flashing lights. Sound not audible beyond property line.",
+    "line_start": 299
+  },
+  {
+    "section": "8.13",
+    "title": "Drive-Throughs",
+    "summary": "Cannot front on primary public street. Only permitted in N-C and H-B districts. Max 2 lanes on side of building (financial institutions in H-B may have up to 4). Loudspeakers 50ft min from residential structures. Type B landscaping screening required.",
+    "line_start": 312
+  },
+  {
+    "section": "8.14",
+    "title": "Duplexes (Two-Family Attached Dwellings)",
+    "summary": "Not permitted on lots greater than 3 acres. Must be visually compatible with surrounding neighborhood. Corner lot duplexes must have each unit front on a different street.",
+    "line_start": 348
+  },
+  {
+    "section": "8.15",
+    "title": "Electronic Gaming Operations",
+    "summary": "500ft from churches, schools, daycares, residential zones. 1,000ft from other gaming operations. Max 20 machines. All activity indoors. Operator must be 21+. Parking: 1 space per terminal or 1 per 100 sq ft (whichever greater).",
+    "line_start": 356
+  },
+  {
+    "section": "8.16",
+    "title": "Elementary and Secondary Schools",
+    "summary": "New construction/expansions require major site plan. Public school sites may be reserved in subdivision plans per NCGS 160A-372(c). Town cannot deny public school site plan based on road level of service.",
+    "line_start": 402
+  },
+  {
+    "section": "8.17",
+    "title": "Family Campgrounds",
+    "summary": "Min 5 acres. RV spaces 100ft from lot lines. 10% recreational area. 24ft interior roads. Water/sewer required. Central bathhouse within 300ft. Spaces rented by day only, max 30-day stay.",
+    "line_start": 411
+  },
+  {
+    "section": "8.18",
+    "title": "Family Care Homes",
+    "summary": "Per NC GS Chapters 122C, 131D, 168. Max 6 residents (plus homeowner/family). Licensed by NC DHHS. No closer than 1/2 mile from another care home. No exterior signage. No lockdown/violent residents.",
+    "line_start": 447
+  },
+  {
+    "section": "8.19",
+    "title": "Flea Markets",
+    "summary": "Must comply with Rowan County Health Dept. Vendor records required. Principal building must be enclosed; outdoor spaces on same property allowed 3 days/week. Parking: 1 space per exhibitor plus 2 per display area.",
+    "line_start": 468
+  },
+  {
+    "section": "8.20",
+    "title": "Golf Courses and Driving Ranges",
+    "summary": "No green within 150ft of property line. Lighting shielded from adjacent properties. Driving ranges not lighted for night use. Non-residential buildings 100ft from property line.",
+    "line_start": 488
+  },
+  {
+    "section": "8.21",
+    "title": "Heliports",
+    "summary": "Must meet FAA requirements. Full master plan with flight approach patterns and noise cones required. Designed by registered professional. Structures/facilities 50ft from property lines. Fuel storage 100ft from property lines.",
+    "line_start": 497
+  },
+  {
+    "section": "8.22",
+    "title": "Home Occupations",
+    "summary": "Incidental to residential use. Max 25% of floor area or 500 sq ft (whichever less). 1 non-resident employee max. No outdoor storage. No visible products from street. Hours 8am-9pm. Passenger vehicles only. Sign max 4 sq ft.",
+    "line_start": 516
+  },
+  {
+    "section": "8.23",
+    "title": "Manufactured Homes (on individual lots)",
+    "summary": "Must be multi-sectional (no single-wide). Must bear HUD tag. Towing apparatus/wheels removed. NC Dept of Insurance setup standards. Continuous masonry foundation. Min 32 sq ft front porch. Front parallel to front property line.",
+    "line_start": 554
+  },
+  {
+    "section": "8.24",
+    "title": "Manufactured Home Parks (Special Use only)",
+    "summary": "Min 5 acres, min 5 spaces, max 8 spaces/acre, max 5 units/acre. Min 60ft space width. 30ft separation between units. Paved streets, water/sewer required. 5% recreational area. Full-time on-site manager for 75+ sites.",
+    "line_start": 578
+  },
+  {
+    "section": "8.25",
+    "title": "Microbreweries and Craft Distilleries",
+    "summary": "Must include areas for demonstration, education, retail, or tasting. Max 7,000 sq ft excluding tasting areas. No open storage. No drive-through. Must have off-street/alley loading.",
+    "line_start": 681
+  },
+  {
+    "section": "8.26",
+    "title": "Mini-Warehouses",
+    "summary": "Min 2 acres. Must comply with Chapter 13 building design. Storage fronts on interior drives only (not visible from street). Outdoor storage max 10% of lot. 8ft perimeter fence. Dead storage only (no assembly/fabrication/repair). No junk storage.",
+    "line_start": 694
+  },
+  {
+    "section": "8.27",
+    "title": "Mining and Quarrying (Extraction of Earth Products)",
+    "summary": "Requires detailed site plan by NC Registered Surveyor/Engineer. Extensive application requirements including excavation extent, drainage, environmental studies, reclamation plan, dust/noise control, and operational standards.",
+    "line_start": 732
+  },
+  {
+    "section": "8.28",
+    "title": "Mixed Residential Developments",
+    "summary": "Min 2 acres, 100ft frontage. HOA required with articles approved by Town Attorney. 20% common space. Type A buffer adjoining residential zones. Paved parking/driveways. Screened solid waste storage.",
+    "line_start": 860
+  },
+  {
+    "section": "8.29",
+    "title": "Nursing and Residential Care Facilities",
+    "summary": "Parking: 1/employee (largest shift) + 1 per 3 clients. 20ft min between structures. No building over 40,000 sq ft within 500ft of residential zone. State/county licensing required.",
+    "line_start": 917
+  },
+  {
+    "section": "8.30",
+    "title": "Outdoor Storage (non-residential)",
+    "summary": "All outdoor storage in rear yard only. Must be screened from street view with opaque screen. Referenced by many commercial/industrial uses.",
+    "line_start": 938
+  },
+  {
+    "section": "8.31",
+    "title": "Parking of Recreational and Commercial Vehicles",
+    "summary": "RVs not dwelling units. Max 6 vehicles stored on residential lot. RVs stored in designated parking area, not front yard (except driveway). Commercial vehicles with 2+ axles require 1+ acre lot in residential districts.",
+    "line_start": 945
+  },
+  {
+    "section": "8.32",
+    "title": "Pet Care and Veterinary Services (outdoor kennels)",
+    "summary": "Outdoor kennels 250ft from residential zones, 50ft from other property lines. 6ft opaque fence. Noise buffering required. Clean/sanitary conditions. One sign max 9 sq ft.",
+    "line_start": 972
+  },
+  {
+    "section": "8.33",
+    "title": "Produce Stands",
+    "summary": "Permanent stands only as accessory to agricultural use (produce grown on same-owner lot). Not in ROW. 10ft from side lot lines. Non-illuminated signs max 4 sq ft. Must be maintained when not in operation.",
+    "line_start": 988
+  },
+  {
+    "section": "8.34",
+    "title": "Professional Recovery Facilities",
+    "summary": "Half-mile separation from other recovery facilities, congregate living, or family care homes. Outdoor areas in rear/side yard only, 6ft fence. Activities 8am-10pm. No facility signage beyond mailbox name.",
+    "line_start": 1006
+  },
+  {
+    "section": "8.35",
+    "title": "Recyclable Material Wholesalers (includes scrap metal, junkyard, scrap processor, auto wrecking yard)",
+    "summary": "Min 5 acres. Thoroughfare access. 200ft from residential districts. Not in flood/wetland/watershed areas. 30ft setback for materials. 8ft screening fence. NFPA compliance for combustible materials. Type A perimeter buffer.",
+    "line_start": 1030
+  },
+  {
+    "section": "8.36",
+    "title": "Rural Family Occupations",
+    "summary": "Limited non-residential in separate/residential structure exceeding home occupation allowances. Min 2 acres, max 1/4 acre or 25% for occupation. Owner must reside on property. Max 2 non-resident employees. Limited to specified professional uses. Hours 8am-9pm. No outside/heavy equipment storage.",
+    "line_start": 1069
+  },
+  {
+    "section": "8.37",
+    "title": "Solar Electric Generation",
+    "summary": "Under 6,000 sf: screening required near residential/ROW; rooftop or ground (ground limited to 1/2 of residential structure footprint). Over 6,000 sf: min 10 acres in R-P, 50ft setbacks, 10ft max height, 8ft fence, decommissioning plan with surety required.",
+    "line_start": 1133
+  },
+  {
+    "section": "8.38",
+    "title": "Waste Management and Remediation Services",
+    "summary": "Min 5 acres. Security fence. 75ft from ROW, 500ft from residential zones. No filling in floodplains/wetlands/watershed or within 100ft of stream. 300ft setback from residential for landfills. Reclamation plan required.",
+    "line_start": 1183
+  },
+  {
+    "section": "8.39",
+    "title": "Wireless Telecommunications Towers",
+    "summary": "Max 150ft height. Setback equal to tower height from all properties. 100ft from R-P/R-S/R-T lots, 40ft from others. Must support 1+ additional user. Tree preservation required in R-S. Non-shiny finish, no lights unless FAA-required.",
+    "line_start": 1215
+  },
+  {
+    "section": "8.40",
+    "title": "Wireless Communications Facilities, Small (Small Wireless Facilities)",
+    "summary": "Covers small wireless facilities per NCGS 160D-935. Detailed requirements for collocations on existing structures, new poles in ROW, and installations outside ROW. Height limits, concealment requirements, application procedures.",
+    "line_start": 1323
+  },
+  {
+    "section": "8.41",
+    "title": "Yard Sales",
+    "summary": "Permitted in all districts. Specific regulations for frequency, duration, signage, and cleanup requirements.",
+    "line_start": 1667
+  },
+  {
+    "section": "8.42",
+    "title": "Temporary Uses",
+    "summary": "Covers temporary structures, seasonal sales, construction trailers, temporary events, and other time-limited uses. Requirements for permits, duration limits, and site restoration.",
+    "line_start": 1676
+  }
+]
