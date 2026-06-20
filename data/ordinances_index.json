@@ -1,0 +1,4050 @@
+[
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-1",
+    "title": "Designation and citation of Code",
+    "line_start": 8
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-2",
+    "title": "Definitions and rules of construction",
+    "line_start": 15
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-3",
+    "title": "Provisions considered as continuation of existing ordinances",
+    "line_start": 84
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-4",
+    "title": "Catchlines of sections; history notes and references",
+    "line_start": 89
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-5",
+    "title": "Severability of parts of Code",
+    "line_start": 96
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-6",
+    "title": "General penalty; enforcement of ordinances; continuing violations",
+    "line_start": 101
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-7",
+    "title": "Amendments to Code",
+    "line_start": 174
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-8",
+    "title": "Supplementation of Code",
+    "line_start": 185
+  },
+  {
+    "chapter": "01",
+    "chapter_name": "General Provisions",
+    "filename": "Chapter-01-General-Provisions.md",
+    "section": "1-9",
+    "title": "Ordinances not affected by Code",
+    "line_start": 204
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-1",
+    "title": "Disbursement of funds",
+    "line_start": 10
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-2",
+    "title": "[Procedures for disposing of personal property valued at less than $30,000.00.]",
+    "line_start": 23
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-21",
+    "title": "Compensation of councilmembers",
+    "line_start": 50
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-22",
+    "title": "Resignation of councilmembers",
+    "line_start": 57
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-23",
+    "title": "Administrative powers of town council",
+    "line_start": 62
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-24",
+    "title": "Duties of mayor",
+    "line_start": 67
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-25",
+    "title": "Code of ethics",
+    "line_start": 74
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-52",
+    "title": "Time and place of regular meetings; attendance",
+    "line_start": 159
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-53",
+    "title": "Adjourned meetings",
+    "line_start": 164
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-54",
+    "title": "Order of business",
+    "line_start": 169
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-55",
+    "title": "Rules of procedure generally",
+    "line_start": 198
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-56",
+    "title": "Moving the previous question",
+    "line_start": 241
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-57",
+    "title": "Precedence of motions",
+    "line_start": 246
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-58",
+    "title": "Motion to adjourn",
+    "line_start": 265
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-59",
+    "title": "Disruption of meeting",
+    "line_start": 270
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-77",
+    "title": "Form",
+    "line_start": 279
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-78",
+    "title": "Ordinances to be confined to single subject; exception",
+    "line_start": 284
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-79",
+    "title": "Official copy",
+    "line_start": 289
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-80",
+    "title": "Amendments",
+    "line_start": 294
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-81",
+    "title": "Inclusion in Code",
+    "line_start": 309
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-124",
+    "title": "Duties",
+    "line_start": 324
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-147",
+    "title": "Remittance of funds; monthly report",
+    "line_start": 345
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-178",
+    "title": "Election; general duties",
+    "line_start": 354
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-179",
+    "title": "Duties as personnel director",
+    "line_start": 367
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-180",
+    "title": "Duties as purchasing agent",
+    "line_start": 392
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-199",
+    "title": "Adopted; availability",
+    "line_start": 415
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-251",
+    "title": "Composition; appointment of members",
+    "line_start": 453
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-252",
+    "title": "Term of office of members; vacancies",
+    "line_start": 458
+  },
+  {
+    "chapter": "02",
+    "chapter_name": "Administration",
+    "filename": "Chapter-02-Administration.md",
+    "section": "2-253",
+    "title": "Powers and duties",
+    "line_start": 463
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-19",
+    "title": "License required",
+    "line_start": 16
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-20",
+    "title": "Application for license; issuance",
+    "line_start": 21
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-21",
+    "title": "Grounds for denial of license",
+    "line_start": 28
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-22",
+    "title": "License fee",
+    "line_start": 33
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-23",
+    "title": "Suspension or revocation of license",
+    "line_start": 38
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-24",
+    "title": "Inspection",
+    "line_start": 43
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-25",
+    "title": "Certificate of public liability insurance",
+    "line_start": 48
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-26",
+    "title": "Disorderly conduct; sale of obscene material; obscene performances",
+    "line_start": 53
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-56",
+    "title": "License required; expiration; transfer",
+    "line_start": 62
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-57",
+    "title": "Application for license",
+    "line_start": 67
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-58",
+    "title": "Persons ineligible for license",
+    "line_start": 72
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-59",
+    "title": "Contents of license; posting",
+    "line_start": 85
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-60",
+    "title": "Revocation of license",
+    "line_start": 90
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-61",
+    "title": "Responsibility of licensee for acts of agents and employees",
+    "line_start": 95
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-62",
+    "title": "Operation generally",
+    "line_start": 100
+  },
+  {
+    "chapter": "06",
+    "chapter_name": "Amusements and Entertainment",
+    "filename": "Chapter-06-Amusements-and-Entertainment.md",
+    "section": "6-63",
+    "title": "Prohibited acts by licensee and employees",
+    "line_start": 119
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-1",
+    "title": "Definitions",
+    "line_start": 10
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-2",
+    "title": "Violation of chapter",
+    "line_start": 37
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-3",
+    "title": "Territorial applicability",
+    "line_start": 42
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-4",
+    "title": "Fees",
+    "line_start": 47
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-5",
+    "title": "Interference with animal control officer",
+    "line_start": 52
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-6",
+    "title": "Town declared a bird sanctuary",
+    "line_start": 57
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-7",
+    "title": "Permission for keeping certain animals",
+    "line_start": 62
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-8",
+    "title": "Livestock near residences",
+    "line_start": 81
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-9",
+    "title": "Rabies vaccination",
+    "line_start": 86
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-10",
+    "title": "Rabies reporting",
+    "line_start": 91
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-11",
+    "title": "Animal bites",
+    "line_start": 96
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-12",
+    "title": "Impoundment",
+    "line_start": 111
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-13",
+    "title": "Animals at large",
+    "line_start": 132
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-14",
+    "title": "Vicious animals",
+    "line_start": 137
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-15",
+    "title": "Nuisance animals",
+    "line_start": 144
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-16",
+    "title": "Right to hearing",
+    "line_start": 151
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-17",
+    "title": "Authority to destroy",
+    "line_start": 156
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-18",
+    "title": "Injured or sick animals",
+    "line_start": 161
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-19",
+    "title": "Unwanted animals",
+    "line_start": 166
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-20",
+    "title": "Cruelty to animals; maintenance of animal pens",
+    "line_start": 171
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-21",
+    "title": "Unlawful removal of vaccination tag",
+    "line_start": 178
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-22",
+    "title": "Animals at town-sponsored events",
+    "line_start": 183
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-23",
+    "title": "Urban archery deer hunting",
+    "line_start": 202
+  },
+  {
+    "chapter": "10",
+    "chapter_name": "Animals",
+    "filename": "Chapter-10-Animals.md",
+    "section": "10-24",
+    "title": "Animal waste",
+    "line_start": 223
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-1",
+    "title": "County inspections department agreement",
+    "line_start": 10
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-21",
+    "title": "Findings; purpose",
+    "line_start": 19
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-22",
+    "title": "Definitions",
+    "line_start": 24
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-23",
+    "title": "Compliance",
+    "line_start": 75
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-24",
+    "title": "Conflicting provisions",
+    "line_start": 80
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-25",
+    "title": "Violation; penalty",
+    "line_start": 85
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-26",
+    "title": "Housing inspector",
+    "line_start": 90
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-27",
+    "title": "Appeals board",
+    "line_start": 109
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-28",
+    "title": "Inspections; right of entry",
+    "line_start": 114
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-29",
+    "title": "Enforcement and appeal procedure",
+    "line_start": 119
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-30",
+    "title": "Service of complaints and orders",
+    "line_start": 138
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-31",
+    "title": "Repair or demolition authority; placarding",
+    "line_start": 143
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-32",
+    "title": "Lien for costs",
+    "line_start": 150
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-33",
+    "title": "Alternate remedies",
+    "line_start": 155
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-34",
+    "title": "Structural condition standards",
+    "line_start": 160
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-35",
+    "title": "Plumbing, heating, and electrical standards",
+    "line_start": 183
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-36",
+    "title": "Windows and ventilation",
+    "line_start": 192
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-37",
+    "title": "Size and use of rooms",
+    "line_start": 197
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-38",
+    "title": "General maintenance standards",
+    "line_start": 208
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-39",
+    "title": "Control of insects, rodents, and garbage",
+    "line_start": 225
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-40",
+    "title": "Roominghouses",
+    "line_start": 238
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-41",
+    "title": "Responsibilities of owner and occupants",
+    "line_start": 251
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-81",
+    "title": "Purpose",
+    "line_start": 270
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-82",
+    "title": "Findings; authority",
+    "line_start": 275
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-83",
+    "title": "Scope; jurisdiction",
+    "line_start": 280
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-84",
+    "title": "General definitions and interpretations",
+    "line_start": 285
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-85",
+    "title": "Special definitions",
+    "line_start": 308
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-86",
+    "title": "Duties of owner",
+    "line_start": 365
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-87",
+    "title": "Duties of occupant",
+    "line_start": 378
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-88",
+    "title": "Relationship to occupancy",
+    "line_start": 395
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-89",
+    "title": "Conflict with other provisions",
+    "line_start": 400
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-90",
+    "title": "Amendments",
+    "line_start": 405
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-121",
+    "title": "Unsafe buildings",
+    "line_start": 414
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-122",
+    "title": "Buildings not declared unsafe but not in compliance",
+    "line_start": 505
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-151",
+    "title": "Condemnation by inspector",
+    "line_start": 514
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-152",
+    "title": "Removal of condemnation notice",
+    "line_start": 519
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-153",
+    "title": "Complaint and notice of hearing; lis pendens filing",
+    "line_start": 524
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-154",
+    "title": "Order to take corrective action",
+    "line_start": 529
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-155",
+    "title": "Service of written notice",
+    "line_start": 534
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-156",
+    "title": "Appeal to town council",
+    "line_start": 539
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-157",
+    "title": "Failure to comply",
+    "line_start": 544
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-158",
+    "title": "Remedies; lien for demolition costs",
+    "line_start": 549
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-159",
+    "title": "Failure of occupant to comply; vacate",
+    "line_start": 554
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-160",
+    "title": "Demolition by owner",
+    "line_start": 559
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-181",
+    "title": "Inspector's office created; powers",
+    "line_start": 578
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-182",
+    "title": "Inspections",
+    "line_start": 591
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-183",
+    "title": "Defects to be corrected",
+    "line_start": 596
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-184",
+    "title": "Violations",
+    "line_start": 601
+  },
+  {
+    "chapter": "14",
+    "chapter_name": "Buildings and Building Regulations",
+    "filename": "Chapter-14-Buildings-and-Building-Regulations.md",
+    "section": "14-185",
+    "title": "Penalties",
+    "line_start": 606
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-1",
+    "title": "Sale of malt beverages and wine on Sunday",
+    "line_start": 12
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-2",
+    "title": "Reserved",
+    "line_start": 17
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-3",
+    "title": "Temporary signs or banners advertising fairs, carnivals and similar events",
+    "line_start": 21
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-25",
+    "title": "Definitions",
+    "line_start": 30
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-26",
+    "title": "Prohibited sales",
+    "line_start": 37
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-27",
+    "title": "General regulations",
+    "line_start": 42
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-28",
+    "title": "Frequency and length",
+    "line_start": 51
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-29",
+    "title": "Signage",
+    "line_start": 58
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-30",
+    "title": "Location",
+    "line_start": 63
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-31",
+    "title": "Penalties",
+    "line_start": 72
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-58",
+    "title": "Purpose",
+    "line_start": 81
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-59",
+    "title": "Definitions",
+    "line_start": 86
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-60",
+    "title": "License required",
+    "line_start": 103
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-61",
+    "title": "Application",
+    "line_start": 108
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-62",
+    "title": "Issuance of permit",
+    "line_start": 139
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-63",
+    "title": "Exemptions",
+    "line_start": 152
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-64",
+    "title": "Denial or revocation of permit",
+    "line_start": 165
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-65",
+    "title": "Prohibited conduct",
+    "line_start": 172
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-66",
+    "title": "Revocation of permit",
+    "line_start": 177
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-67",
+    "title": "Notice and hearing",
+    "line_start": 194
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-68",
+    "title": "Display and possession of permit and identification",
+    "line_start": 199
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-69",
+    "title": "Penalties",
+    "line_start": 204
+  },
+  {
+    "chapter": "18",
+    "chapter_name": "Businesses",
+    "filename": "Chapter-18-Businesses.md",
+    "section": "18-70",
+    "title": "Badge",
+    "line_start": 209
+  },
+  {
+    "chapter": "22",
+    "chapter_name": "Civil Emergencies",
+    "filename": "Chapter-22-Civil-Emergencies.md",
+    "section": "22-1",
+    "title": "Penalty for violation of chapter or restrictions imposed by proclamation",
+    "line_start": 12
+  },
+  {
+    "chapter": "22",
+    "chapter_name": "Civil Emergencies",
+    "filename": "Chapter-22-Civil-Emergencies.md",
+    "section": "22-2",
+    "title": "State of emergency defined; authority of mayor",
+    "line_start": 17
+  },
+  {
+    "chapter": "22",
+    "chapter_name": "Civil Emergencies",
+    "filename": "Chapter-22-Civil-Emergencies.md",
+    "section": "22-3",
+    "title": "Contents of declaration of state of emergency",
+    "line_start": 46
+  },
+  {
+    "chapter": "22",
+    "chapter_name": "Civil Emergencies",
+    "filename": "Chapter-22-Civil-Emergencies.md",
+    "section": "22-4",
+    "title": "Mutual aid agreements",
+    "line_start": 93
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-1",
+    "title": "Smoking prohibited in all town-owned buildings and parks",
+    "line_start": 12
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-19",
+    "title": "Certain conditions declared nuisance",
+    "line_start": 49
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-20",
+    "title": "Investigation",
+    "line_start": 78
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-21",
+    "title": "Order to abate",
+    "line_start": 83
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-22",
+    "title": "Abatement by town",
+    "line_start": 90
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-23",
+    "title": "Right of entry",
+    "line_start": 101
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-24",
+    "title": "Violation of county health regulations",
+    "line_start": 106
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-25",
+    "title": "Authority to abate obstructions of sewer line",
+    "line_start": 111
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-54",
+    "title": "Definitions",
+    "line_start": 122
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-55",
+    "title": "Administration",
+    "line_start": 175
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-56",
+    "title": "Exceptions",
+    "line_start": 180
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-57",
+    "title": "Nuisance vehicles prohibited",
+    "line_start": 185
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-58",
+    "title": "Nuisance vehicles unlawful; removal authorized",
+    "line_start": 192
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-59",
+    "title": "Junked motor vehicle regulated; removal authorized",
+    "line_start": 199
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-60",
+    "title": "Removal of abandoned, nuisance or junked motor vehicles\u2014Pre-towing notice requirements",
+    "line_start": 226
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-61",
+    "title": "Same\u2014Post-towing notice requirements",
+    "line_start": 233
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-62",
+    "title": "Same\u2014Exceptions to prior notice requirement",
+    "line_start": 254
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-63",
+    "title": "Same\u2014Right to hearing",
+    "line_start": 275
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-64",
+    "title": "Redemption of impounded vehicle",
+    "line_start": 280
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-65",
+    "title": "Disposition of unclaimed impounded vehicle",
+    "line_start": 285
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-66",
+    "title": "Removal of vehicles from private property",
+    "line_start": 290
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-67",
+    "title": "Nonliability of persons disposing of vehicles",
+    "line_start": 295
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-68",
+    "title": "Unlawful removal of impounded vehicle",
+    "line_start": 300
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-81",
+    "title": "Unreasonably loud noise prohibited",
+    "line_start": 311
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-82",
+    "title": "Prohibited noises enumerated",
+    "line_start": 316
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-83",
+    "title": "Permit authorized for regulated activities; application; appeal upon denial",
+    "line_start": 337
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-84",
+    "title": "Violations; penalties",
+    "line_start": 344
+  },
+  {
+    "chapter": "26",
+    "chapter_name": "Environment",
+    "filename": "Chapter-26-Environment.md",
+    "section": "26-85",
+    "title": "Unreasonable sound amplification",
+    "line_start": 353
+  },
+  {
+    "chapter": "30",
+    "chapter_name": "Fire Prevention and Protection",
+    "filename": "Chapter-30-Fire-Prevention-and-Protection.md",
+    "section": "30-1",
+    "title": "Adoption of fire prevention code",
+    "line_start": 10
+  },
+  {
+    "chapter": "30",
+    "chapter_name": "Fire Prevention and Protection",
+    "filename": "Chapter-30-Fire-Prevention-and-Protection.md",
+    "section": "30-2",
+    "title": "Fire protection service generally",
+    "line_start": 15
+  },
+  {
+    "chapter": "30",
+    "chapter_name": "Fire Prevention and Protection",
+    "filename": "Chapter-30-Fire-Prevention-and-Protection.md",
+    "section": "30-3",
+    "title": "Fire protection service outside town limits",
+    "line_start": 20
+  },
+  {
+    "chapter": "30",
+    "chapter_name": "Fire Prevention and Protection",
+    "filename": "Chapter-30-Fire-Prevention-and-Protection.md",
+    "section": "30-4",
+    "title": "Regulation of open burning",
+    "line_start": 27
+  },
+  {
+    "chapter": "30",
+    "chapter_name": "Fire Prevention and Protection",
+    "filename": "Chapter-30-Fire-Prevention-and-Protection.md",
+    "section": "30-5",
+    "title": "Knox boxes",
+    "line_start": 74
+  },
+  {
+    "chapter": "34",
+    "chapter_name": "Law Enforcement",
+    "filename": "Chapter-34-Law-Enforcement.md",
+    "section": "34-19",
+    "title": "Composition",
+    "line_start": 18
+  },
+  {
+    "chapter": "34",
+    "chapter_name": "Law Enforcement",
+    "filename": "Chapter-34-Law-Enforcement.md",
+    "section": "34-20",
+    "title": "Appointment and duties of chief of police",
+    "line_start": 23
+  },
+  {
+    "chapter": "34",
+    "chapter_name": "Law Enforcement",
+    "filename": "Chapter-34-Law-Enforcement.md",
+    "section": "34-21",
+    "title": "Operation policies",
+    "line_start": 28
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-8",
+    "title": "Security alarm systems",
+    "line_start": 12
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-9",
+    "title": "Campaign signs on state highway system roads",
+    "line_start": 29
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-33",
+    "title": "Restrictions",
+    "line_start": 53
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-34",
+    "title": "Dangerous weapons in public",
+    "line_start": 65
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-35",
+    "title": "Discharge of firearms",
+    "line_start": 81
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-36",
+    "title": "Weapons on town property",
+    "line_start": 87
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-71",
+    "title": "Purpose",
+    "line_start": 97
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-72",
+    "title": "Definitions",
+    "line_start": 101
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-73",
+    "title": "Applicability",
+    "line_start": 127
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-74",
+    "title": "Violations",
+    "line_start": 131
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-75",
+    "title": "Exceptions",
+    "line_start": 145
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-76",
+    "title": "Defense",
+    "line_start": 173
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-77",
+    "title": "Enforcement",
+    "line_start": 177
+  },
+  {
+    "chapter": "38",
+    "chapter_name": "Offenses",
+    "filename": "Chapter-38-Offenses.md",
+    "section": "38-78",
+    "title": "Penalties",
+    "line_start": 181
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-1",
+    "title": "Registered sex offenders prohibited from town parks",
+    "line_start": 10
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-19",
+    "title": "Permit for use",
+    "line_start": 32
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-20",
+    "title": "Hours",
+    "line_start": 62
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-21",
+    "title": "Vehicles",
+    "line_start": 66
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-22",
+    "title": "Destruction of town property",
+    "line_start": 72
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-23",
+    "title": "Firearms and weapons",
+    "line_start": 76
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-24",
+    "title": "Posting advertisements",
+    "line_start": 80
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-25",
+    "title": "Selling and peddling",
+    "line_start": 84
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-26",
+    "title": "Fires",
+    "line_start": 88
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-27",
+    "title": "Excavations",
+    "line_start": 96
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-28",
+    "title": "Games and sports",
+    "line_start": 100
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-29",
+    "title": "Animals at large and horseback riding",
+    "line_start": 106
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-30",
+    "title": "Injuring plant material",
+    "line_start": 112
+  },
+  {
+    "chapter": "42",
+    "chapter_name": "Parks and Recreation",
+    "filename": "Chapter-42-Parks-and-Recreation.md",
+    "section": "42-31",
+    "title": "Molesting animals",
+    "line_start": 116
+  },
+  {
+    "chapter": "43",
+    "chapter_name": "Alcoholic Beverages",
+    "filename": "Chapter-43-Alcoholic-Beverages.md",
+    "section": "43-1",
+    "title": "Definitions",
+    "line_start": 8
+  },
+  {
+    "chapter": "43",
+    "chapter_name": "Alcoholic Beverages",
+    "filename": "Chapter-43-Alcoholic-Beverages.md",
+    "section": "43-2",
+    "title": "Possession or consumption of alcoholic beverages",
+    "line_start": 57
+  },
+  {
+    "chapter": "43",
+    "chapter_name": "Alcoholic Beverages",
+    "filename": "Chapter-43-Alcoholic-Beverages.md",
+    "section": "43-3",
+    "title": "Possession, consumption, and distribution of alcoholic beverages at certain town facilities or town owned or controlled property",
+    "line_start": 70
+  },
+  {
+    "chapter": "43",
+    "chapter_name": "Alcoholic Beverages",
+    "filename": "Chapter-43-Alcoholic-Beverages.md",
+    "section": "43-4",
+    "title": "Social districts",
+    "line_start": 77
+  },
+  {
+    "chapter": "43",
+    "chapter_name": "Alcoholic Beverages",
+    "filename": "Chapter-43-Alcoholic-Beverages.md",
+    "section": "43-5",
+    "title": "Penalty",
+    "line_start": 124
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-1",
+    "title": "Definitions",
+    "line_start": 10
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-2",
+    "title": "Garbage collection and recycling",
+    "line_start": 59
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-3",
+    "title": "Leaf collection",
+    "line_start": 82
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-4",
+    "title": "Tree limbs and yard trimmings",
+    "line_start": 103
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-5",
+    "title": "Other debris and materials",
+    "line_start": 128
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-6",
+    "title": "Disposal of waste from outside corporate limits",
+    "line_start": 141
+  },
+  {
+    "chapter": "46",
+    "chapter_name": "Solid Waste",
+    "filename": "Chapter-46-Solid-Waste.md",
+    "section": "46-7",
+    "title": "Penalty",
+    "line_start": 146
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-1",
+    "title": "Moving of buildings",
+    "line_start": 12
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-2",
+    "title": "Damaging street with machinery or equipment",
+    "line_start": 19
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-3",
+    "title": "Mixing building materials on street or sidewalk",
+    "line_start": 24
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-4",
+    "title": "Vehicles dropping debris on street",
+    "line_start": 29
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-5",
+    "title": "Maintenance of parking lots and other public areas",
+    "line_start": 34
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-6",
+    "title": "Street address numbers",
+    "line_start": 43
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-7",
+    "title": "Posting of signs prohibiting the carrying of concealed weapons on certain municipal property",
+    "line_start": 62
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-31",
+    "title": "Assembly on street or sidewalk",
+    "line_start": 75
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-32",
+    "title": "Display of goods on sidewalk",
+    "line_start": 80
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-33",
+    "title": "Placing objects on street or sidewalk",
+    "line_start": 85
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-34",
+    "title": "Construction near sidewalk",
+    "line_start": 92
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-35",
+    "title": "Structures and appurtenances over sidewalk",
+    "line_start": 97
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-59",
+    "title": "Violation of article; obstructing enforcement of article",
+    "line_start": 106
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-60",
+    "title": "Visibility at intersections",
+    "line_start": 117
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-61",
+    "title": "Control of vegetation near streets",
+    "line_start": 122
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-62",
+    "title": "Notice of violation; removal of vegetation or obstruction by town",
+    "line_start": 139
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-83",
+    "title": "Policy",
+    "line_start": 152
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-84",
+    "title": "Acceptance of new streets",
+    "line_start": 157
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-85",
+    "title": "Street improvements defined",
+    "line_start": 176
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-86",
+    "title": "Petition for improvements",
+    "line_start": 181
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-87",
+    "title": "Improvement project procedure",
+    "line_start": 194
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-88",
+    "title": "Opening and improving streets without petition",
+    "line_start": 199
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-89",
+    "title": "Determination of assessments for improvements",
+    "line_start": 204
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-90",
+    "title": "Payment of assessments for improvements",
+    "line_start": 209
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-91",
+    "title": "Improvements in new subdivisions",
+    "line_start": 214
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-92",
+    "title": "Payment of costs by developer when improvements done by town",
+    "line_start": 219
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-93",
+    "title": "Notice to utilities and property owners to prepare for street improvements",
+    "line_start": 224
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-94",
+    "title": "Construction specifications for improvements",
+    "line_start": 235
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-95",
+    "title": "Closing of streets during resurfacing",
+    "line_start": 240
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-96",
+    "title": "Location of streetlights",
+    "line_start": 247
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-121",
+    "title": "Penalty for violation of article",
+    "line_start": 256
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-122",
+    "title": "Permit",
+    "line_start": 261
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-123",
+    "title": "Indemnification of town",
+    "line_start": 268
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-124",
+    "title": "Disposition of fees",
+    "line_start": 273
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-125",
+    "title": "Supervision of work",
+    "line_start": 278
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-126",
+    "title": "Street repair",
+    "line_start": 283
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-127",
+    "title": "Public safety requirements",
+    "line_start": 288
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-128",
+    "title": "Permit for sidewalk construction",
+    "line_start": 293
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-129",
+    "title": "Construction of driveways",
+    "line_start": 298
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-157",
+    "title": "Definitions",
+    "line_start": 339
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-158",
+    "title": "Exceptions to article",
+    "line_start": 352
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-159",
+    "title": "Prohibited acts by participants",
+    "line_start": 363
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-160",
+    "title": "Interference with parade",
+    "line_start": 372
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-161",
+    "title": "Picketing",
+    "line_start": 377
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-162",
+    "title": "\"Snappers\" prohibited",
+    "line_start": 390
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-193",
+    "title": "Required",
+    "line_start": 403
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-194",
+    "title": "Issuance",
+    "line_start": 408
+  },
+  {
+    "chapter": "50",
+    "chapter_name": "Streets Sidewalks and Other Public Property",
+    "filename": "Chapter-50-Streets-Sidewalks-and-Other-Public-Property.md",
+    "section": "50-195",
+    "title": "Revocation",
+    "line_start": 439
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-1",
+    "title": "Water system authority",
+    "line_start": 10
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-2",
+    "title": "Application for service",
+    "line_start": 14
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-3",
+    "title": "Meter installation",
+    "line_start": 18
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-4",
+    "title": "Deposit",
+    "line_start": 22
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-5",
+    "title": "Billing",
+    "line_start": 26
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-6",
+    "title": "Delinquency",
+    "line_start": 30
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-31",
+    "title": "Water shortage declaration",
+    "line_start": 40
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-32",
+    "title": "Mandatory conservation \u2014 Stage I",
+    "line_start": 44
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-33",
+    "title": "Mandatory conservation \u2014 Stage II",
+    "line_start": 48
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-34",
+    "title": "Mandatory conservation \u2014 Stage III",
+    "line_start": 52
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-35",
+    "title": "Mandatory conservation \u2014 Stage IV",
+    "line_start": 56
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-99",
+    "title": "Lifting restrictions",
+    "line_start": 60
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-127",
+    "title": "Purpose and policy",
+    "line_start": 70
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-128",
+    "title": "Definitions",
+    "line_start": 74
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-129",
+    "title": "Abbreviations",
+    "line_start": 118
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-130",
+    "title": "Prohibited discharge standards",
+    "line_start": 136
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-131",
+    "title": "National categorical pretreatment standards",
+    "line_start": 190
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-132",
+    "title": "Industrial waste survey and local limits",
+    "line_start": 194
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-133",
+    "title": "State requirements",
+    "line_start": 224
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-134",
+    "title": "Right of revision",
+    "line_start": 228
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-135",
+    "title": "Dilution",
+    "line_start": 232
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-136",
+    "title": "Pretreatment of wastewater",
+    "line_start": 236
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-137",
+    "title": "Accidental discharge and slug control plans",
+    "line_start": 240
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-138",
+    "title": "Hauled wastewater",
+    "line_start": 246
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-139",
+    "title": "Use of public sewers",
+    "line_start": 250
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-140",
+    "title": "Regulations for building sewers",
+    "line_start": 256
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-141",
+    "title": "Confidential information",
+    "line_start": 260
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-142",
+    "title": "Enforcement",
+    "line_start": 264
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-143",
+    "title": "Annual publication of significant noncompliance",
+    "line_start": 288
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-170",
+    "title": "Purpose of division",
+    "line_start": 296
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-171",
+    "title": "User charges",
+    "line_start": 300
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-172",
+    "title": "Surcharges",
+    "line_start": 306
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-173",
+    "title": "Pretreatment program administration charges",
+    "line_start": 317
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-200",
+    "title": "Permission to connect required",
+    "line_start": 335
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-201",
+    "title": "SIU permit required",
+    "line_start": 339
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-202",
+    "title": "Application",
+    "line_start": 347
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-203",
+    "title": "Required signature and certification",
+    "line_start": 379
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-204",
+    "title": "Application review",
+    "line_start": 383
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-205",
+    "title": "Tentative determination and draft permit",
+    "line_start": 387
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-206",
+    "title": "Synopsis and fact sheet",
+    "line_start": 391
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-207",
+    "title": "Final action",
+    "line_start": 395
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-208",
+    "title": "Hearings",
+    "line_start": 413
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-209",
+    "title": "Modification",
+    "line_start": 425
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-210",
+    "title": "Conditions",
+    "line_start": 435
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-211",
+    "title": "Duration",
+    "line_start": 477
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-212",
+    "title": "Transfer",
+    "line_start": 481
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-213",
+    "title": "Reissuance",
+    "line_start": 485
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-235",
+    "title": "Baseline monitoring reports",
+    "line_start": 493
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-236",
+    "title": "Compliance schedule progress reports",
+    "line_start": 497
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-237",
+    "title": "Reports on compliance with categorical standards",
+    "line_start": 501
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-238",
+    "title": "Periodic compliance reports",
+    "line_start": 505
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-239",
+    "title": "Reports of changed conditions",
+    "line_start": 511
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-240",
+    "title": "Reports of potential problems",
+    "line_start": 515
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-241",
+    "title": "Reports from nonpermitted users",
+    "line_start": 521
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-242",
+    "title": "Notice of violation and repeat sampling",
+    "line_start": 525
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-243",
+    "title": "Notification of hazardous waste discharge",
+    "line_start": 529
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-244",
+    "title": "Analytical requirements",
+    "line_start": 537
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-245",
+    "title": "Sample collection",
+    "line_start": 541
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-246",
+    "title": "Timing",
+    "line_start": 545
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-247",
+    "title": "Recordkeeping",
+    "line_start": 549
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-273",
+    "title": "Monitoring facilities",
+    "line_start": 557
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-274",
+    "title": "Inspection and sampling",
+    "line_start": 561
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-275",
+    "title": "Search warrants",
+    "line_start": 565
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-299",
+    "title": "Upset",
+    "line_start": 573
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-300",
+    "title": "Prohibited discharge standards defense",
+    "line_start": 581
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-301",
+    "title": "Bypass",
+    "line_start": 585
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-331",
+    "title": "Title",
+    "line_start": 601
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-332",
+    "title": "Authority",
+    "line_start": 605
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-333",
+    "title": "Purpose",
+    "line_start": 609
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-334",
+    "title": "Applicability",
+    "line_start": 619
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-335",
+    "title": "Exceptions",
+    "line_start": 625
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-336",
+    "title": "Definitions",
+    "line_start": 631
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-337",
+    "title": "Interpretation",
+    "line_start": 725
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-338",
+    "title": "Permits",
+    "line_start": 729
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-339",
+    "title": "Fees",
+    "line_start": 745
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-340",
+    "title": "Applicability and vested rights",
+    "line_start": 749
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-341",
+    "title": "Responsibility for administration",
+    "line_start": 759
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-342",
+    "title": "Variances and appeals",
+    "line_start": 763
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-343",
+    "title": "Severability",
+    "line_start": 777
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-344",
+    "title": "Regulatory consistency",
+    "line_start": 781
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-345",
+    "title": "Ultimate responsibility of discharger",
+    "line_start": 785
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-346",
+    "title": "Stormwater management",
+    "line_start": 789
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-347",
+    "title": "Stream buffers",
+    "line_start": 815
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-361",
+    "title": "Illegal discharges",
+    "line_start": 839
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-362",
+    "title": "Illicit connections",
+    "line_start": 843
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-363",
+    "title": "Waste disposal prohibitions",
+    "line_start": 849
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-364",
+    "title": "NPDES permit compliance",
+    "line_start": 853
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-395",
+    "title": "Best management practices",
+    "line_start": 861
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-396",
+    "title": "Eliminate illegal discharges",
+    "line_start": 867
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-397",
+    "title": "Eliminate or secure approval for illicit connections",
+    "line_start": 871
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-398",
+    "title": "Watercourse protection",
+    "line_start": 875
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-399",
+    "title": "Requirement to remediate",
+    "line_start": 881
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-400",
+    "title": "Requirement to monitor and analyze",
+    "line_start": 885
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-401",
+    "title": "Notification of spills",
+    "line_start": 889
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-426",
+    "title": "Authority to inspect",
+    "line_start": 903
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-427",
+    "title": "Authority to sample and test",
+    "line_start": 907
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-446",
+    "title": "Enforcement",
+    "line_start": 915
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-447",
+    "title": "Notice of violation",
+    "line_start": 939
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-448",
+    "title": "Appeal",
+    "line_start": 955
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-449",
+    "title": "Abatement",
+    "line_start": 959
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-450",
+    "title": "Charging cost and liens",
+    "line_start": 963
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-451",
+    "title": "Urgency abatement",
+    "line_start": 969
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-452",
+    "title": "Violations",
+    "line_start": 973
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-453",
+    "title": "Compensatory action",
+    "line_start": 977
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-454",
+    "title": "Public nuisance",
+    "line_start": 981
+  },
+  {
+    "chapter": "54",
+    "chapter_name": "Utilities",
+    "filename": "Chapter-54-Utilities.md",
+    "section": "54-455",
+    "title": "Acts potentially resulting in Federal Clean Water Act violation",
+    "line_start": 985
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-1",
+    "title": "Definitions",
+    "line_start": 10
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-2",
+    "title": "Applicability",
+    "line_start": 14
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-3",
+    "title": "Public employees to obey traffic regulations",
+    "line_start": 18
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-4",
+    "title": "Authority of police and fire officials",
+    "line_start": 22
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-5",
+    "title": "Obedience to officials",
+    "line_start": 28
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-6",
+    "title": "Official traffic map",
+    "line_start": 32
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-7",
+    "title": "Coasters and roller skates restricted from roadway",
+    "line_start": 56
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-8",
+    "title": "Authorized emergency vehicles",
+    "line_start": 60
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-9",
+    "title": "Trains blocking crossings",
+    "line_start": 76
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-10",
+    "title": "Clerk constituted traffic bureau",
+    "line_start": 80
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-11",
+    "title": "Penalties",
+    "line_start": 104
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-13",
+    "title": "Emerging from alley or driveway",
+    "line_start": 112
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-14",
+    "title": "Stop when traffic obstructed",
+    "line_start": 116
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-15",
+    "title": "Speed limits",
+    "line_start": 120
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-16",
+    "title": "Required turning positions",
+    "line_start": 124
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-17",
+    "title": "Turning markers",
+    "line_start": 128
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-18",
+    "title": "Authority to place restricted turn signs",
+    "line_start": 132
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-19",
+    "title": "Obedience to no-turn signs",
+    "line_start": 136
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-20",
+    "title": "No U-turns in business district",
+    "line_start": 140
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-21",
+    "title": "Authority to designate one-way streets",
+    "line_start": 144
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-22",
+    "title": "One-way streets",
+    "line_start": 148
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-23",
+    "title": "Boarding and alighting from public conveyances",
+    "line_start": 152
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-24",
+    "title": "Unlawful riding",
+    "line_start": 156
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-25",
+    "title": "Jumping on vehicles without permission",
+    "line_start": 160
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-26",
+    "title": "No body protruding from vehicle",
+    "line_start": 164
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-27",
+    "title": "Maximum three persons in front seat",
+    "line_start": 168
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-28",
+    "title": "No vehicles on sidewalks",
+    "line_start": 172
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-29",
+    "title": "No loitering on private property",
+    "line_start": 176
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-47",
+    "title": "Obedience to traffic control signs",
+    "line_start": 184
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-48",
+    "title": "Signs as prerequisite to enforcement",
+    "line_start": 188
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-49",
+    "title": "Conform to state specifications",
+    "line_start": 192
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-50",
+    "title": "Unauthorized signs",
+    "line_start": 196
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-51",
+    "title": "No interference with official devices",
+    "line_start": 200
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-52",
+    "title": "Authority to establish play streets",
+    "line_start": 204
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-53",
+    "title": "Traffic lanes",
+    "line_start": 208
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-54",
+    "title": "Zone of quiet",
+    "line_start": 212
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-55",
+    "title": "School zones",
+    "line_start": 216
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-56",
+    "title": "Yield signs",
+    "line_start": 220
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-57",
+    "title": "Authority to erect stop signs",
+    "line_start": 224
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-58",
+    "title": "Intersections where stop required",
+    "line_start": 228
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-59",
+    "title": "Stop signs",
+    "line_start": 232
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-60",
+    "title": "Vehicles to stop at stop signs",
+    "line_start": 236
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-61",
+    "title": "Avoidance of traffic control devices prohibited",
+    "line_start": 240
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-79",
+    "title": "Application of division",
+    "line_start": 254
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-80",
+    "title": "Regulations not exclusive",
+    "line_start": 258
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-81",
+    "title": "Parking signs required",
+    "line_start": 262
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-82",
+    "title": "No stopping in streets",
+    "line_start": 266
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-83",
+    "title": "Prohibited stopping, standing, or parking locations",
+    "line_start": 270
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-84",
+    "title": "No obstruction of roadway less than ten feet wide",
+    "line_start": 302
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-85",
+    "title": "Alley parking",
+    "line_start": 306
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-86",
+    "title": "Prohibited parking",
+    "line_start": 312
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-87",
+    "title": "All-night parking prohibited",
+    "line_start": 326
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-88",
+    "title": "No parking adjacent to schools",
+    "line_start": 330
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-89",
+    "title": "Standing on one-way roadways",
+    "line_start": 334
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-90",
+    "title": "Near hazardous or congested places",
+    "line_start": 338
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-91",
+    "title": "No parking for advertising",
+    "line_start": 342
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-92",
+    "title": "Loading and unloading zones",
+    "line_start": 346
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-93",
+    "title": "Within 18 inches of curb",
+    "line_start": 350
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-94",
+    "title": "Angle parking signs",
+    "line_start": 354
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-95",
+    "title": "Angle parking markings",
+    "line_start": 358
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-96",
+    "title": "Lights on parked vehicles outside business or residence district at night",
+    "line_start": 362
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-97",
+    "title": "Vehicles backed to curb",
+    "line_start": 366
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-98",
+    "title": "No running engine while parked",
+    "line_start": 370
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-99",
+    "title": "Moving cars from parked positions",
+    "line_start": 374
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-100",
+    "title": "Passenger loading zones",
+    "line_start": 378
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-101",
+    "title": "Commercial loading zones",
+    "line_start": 382
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-102",
+    "title": "Public carrier stops",
+    "line_start": 386
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-103",
+    "title": "Public carrier stands",
+    "line_start": 390
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-104",
+    "title": "Restricted use of bus and taxicab stands",
+    "line_start": 394
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-105",
+    "title": "Parking prohibited at all times on certain streets",
+    "line_start": 398
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-106",
+    "title": "Parking time limited on certain streets",
+    "line_start": 402
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-107",
+    "title": "No parking with left side to curb",
+    "line_start": 406
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-108",
+    "title": "Towing of standing or parked vehicles",
+    "line_start": 410
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-116",
+    "title": "No oversized commercial vehicles on streets or in residential areas",
+    "line_start": 436
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-117",
+    "title": "Oversized commercial vehicle defined",
+    "line_start": 456
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-118",
+    "title": "Enforcement",
+    "line_start": 460
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-119",
+    "title": "Penalty",
+    "line_start": 464
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-128",
+    "title": "Pedestrians subject to traffic control signals",
+    "line_start": 472
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-129",
+    "title": "Pedestrians' right-of-way in crosswalks",
+    "line_start": 476
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-130",
+    "title": "Pedestrians to use right half of crosswalk",
+    "line_start": 482
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-131",
+    "title": "Crossing at right angles",
+    "line_start": 486
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-132",
+    "title": "When pedestrian shall yield",
+    "line_start": 490
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-133",
+    "title": "Walking along roadways",
+    "line_start": 494
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-134",
+    "title": "No soliciting rides or business",
+    "line_start": 500
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-135",
+    "title": "Drivers to exercise due care",
+    "line_start": 504
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-151",
+    "title": "Effect of regulations",
+    "line_start": 512
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-152",
+    "title": "Traffic laws apply",
+    "line_start": 516
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-153",
+    "title": "Obedience to traffic control devices",
+    "line_start": 520
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-154",
+    "title": "Riding on permanent seat and capacity",
+    "line_start": 524
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-155",
+    "title": "Riding on roadways",
+    "line_start": 528
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-156",
+    "title": "Speed",
+    "line_start": 536
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-157",
+    "title": "Emerging from alley or driveway",
+    "line_start": 540
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-158",
+    "title": "One hand on handlebars when carrying articles",
+    "line_start": 544
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-159",
+    "title": "Parking",
+    "line_start": 548
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-160",
+    "title": "Skateboards and bicycles in business district",
+    "line_start": 552
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-161",
+    "title": "Lights and brakes",
+    "line_start": 562
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-170",
+    "title": "Definitions",
+    "line_start": 574
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-171",
+    "title": "Rules of operation",
+    "line_start": 582
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-172",
+    "title": "Permit application",
+    "line_start": 612
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-173",
+    "title": "Reciprocity",
+    "line_start": 624
+  },
+  {
+    "chapter": "58",
+    "chapter_name": "Vehicles and Traffic",
+    "filename": "Chapter-58-Vehicles-and-Traffic.md",
+    "section": "58-174",
+    "title": "Penalty",
+    "line_start": 628
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-19",
+    "title": "Definitions",
+    "line_start": 16
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-20",
+    "title": "Identification of vehicles",
+    "line_start": 23
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-21",
+    "title": "Posting of rates",
+    "line_start": 28
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-22",
+    "title": "Storage space for taxicabs; parking vehicles on street",
+    "line_start": 33
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-48",
+    "title": "Required",
+    "line_start": 42
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-49",
+    "title": "Application",
+    "line_start": 47
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-50",
+    "title": "Issuance generally",
+    "line_start": 52
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-51",
+    "title": "Hearing required; notice of hearing",
+    "line_start": 57
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-52",
+    "title": "Determination of convenience and necessity",
+    "line_start": 62
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-53",
+    "title": "Burden of proof",
+    "line_start": 83
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-54",
+    "title": "Time limit for beginning operations",
+    "line_start": 88
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-55",
+    "title": "Duration; renewal",
+    "line_start": 93
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-56",
+    "title": "Transfer",
+    "line_start": 98
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-57",
+    "title": "Revocation",
+    "line_start": 103
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-58",
+    "title": "Substitution of vehicles",
+    "line_start": 124
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-90",
+    "title": "Required",
+    "line_start": 133
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-91",
+    "title": "Application",
+    "line_start": 138
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-92",
+    "title": "Investigation",
+    "line_start": 145
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-93",
+    "title": "Issuance; fee",
+    "line_start": 150
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-94",
+    "title": "Display",
+    "line_start": 155
+  },
+  {
+    "chapter": "62",
+    "chapter_name": "Vehicles for Hire",
+    "filename": "Chapter-62-Vehicles-for-Hire.md",
+    "section": "62-95",
+    "title": "Revocation",
+    "line_start": 160
+  }
+]
