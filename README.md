@@ -17,8 +17,13 @@ An [MCP](https://modelcontextprotocol.io/) server that provides AI-powered zonin
 | `can_i_build` | Complete answer to "Can I build X in district Y?" with permissions, special requirements, and dimensional standards |
 | `search_ordinance` | Full-text search across the entire UDO (with paragraph context) |
 | `list_districts` | Quick reference of all 13 zoning district codes |
+| `get_ordinance_section` | Get a section of the Town Code of Ordinances (non-zoning chapters) by number or keyword |
+| `search_town_code` | Full-text search across the Town Code of Ordinances |
+| `search_all` | Search the UDO and Code of Ordinances together, results tagged by source |
 | `get_160d_section` | Get the full text of a specific NCGS 160D section (state zoning law) |
 | `search_160d` | Search NCGS Chapter 160D by keyword or phrase |
+| `get_personnel_policy` | Get a provision of the Town Personnel Policies (HR manual) by id, section, or keyword |
+| `search_personnel_policy` | Full-text search across the Town Personnel Policies |
 
 ## Setup
 
@@ -42,6 +47,7 @@ Or use directly with an MCP client by pointing it at the server entry point.
 - **Structured data**: JSON files for permitted uses, dimensional standards, districts, special requirements, and subdivision procedures (`../data/`)
 - **GIS**: Rowan County ArcGIS REST services for parcel geometry, zoning districts, ETJ boundaries, and corporate limits (public, no auth required)
 - **NCGS 160D**: Full text of NC General Statute Chapter 160D — the state enabling statute for local zoning authority (`statutes/`). When the local UDO conflicts with state law, 160D controls.
+- **Personnel Policies**: The Town's internal HR/employment manual (Sections I–X), converted from the official PDF into per-section markdown (`personnel/`) with an index (`data/personnel_index.json`). Regenerate with `python build_personnel.py` (requires the `pdftotext` binary). This is employee-relations law, not land use.
 
 ## Zoning Districts
 

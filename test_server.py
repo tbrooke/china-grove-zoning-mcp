@@ -2,7 +2,12 @@
 
 from unittest.mock import patch
 
-from server import _normalize_district_code, get_parcel_info
+from server import (
+    _normalize_district_code,
+    get_parcel_info,
+    get_personnel_policy,
+    search_personnel_policy,
+)
 
 
 class TestNormalizeDistrictCode:
@@ -151,3 +156,50 @@ class TestConditionalUseFieldIgnored:
         result = get_parcel_info(pin="5626-01-38-0952")
         assert "Conditional Use" not in result
         assert "ZONING:** C-B" in result
+
+
+class TestPersonnelPolicy:
+    """Offline checks for the personnel policy lookup/search tools."""
+
+    def test_section_listing(self):
+        result = get_personnel_policy("section:I")
+        assert "Section I: Introduction" in result
+        assert "I-4.0" in result and "DEFINITIONS" in result
+
+    def test_roman_numeral_alone_lists_section(self):
+        result = get_personnel_policy("IV")
+        assert "Section IV: Employee Benefits and Services" in result
+
+    def test_exact_id_returns_full_text(self):
+        result = get_personnel_policy("II-2.08")
+        assert "II-2.08" in result
+        assert "DISQUALIFICATION OF APPLICANTS" in result
+        # Body of the provision, not just the heading
+        assert "disqualify" in result.lower()
+
+    def test_numbering_restarts_per_section(self):
+        """A bare number resolves to a provision in each section that has it."""
+        result = get_personnel_policy("1.0")
+        assert "I-1.0" in result  # FOREWARD (Section I)
+        assert "II-1.0" in result  # GENERAL (Section II)
+
+    def test_appendix_item(self):
+        result = get_personnel_policy("X-Item-A")
+        assert "REQUEST FOR MILITARY LEAVE" in result
+
+    def test_keyword_title_lookup(self):
+        result = get_personnel_policy("probationary")
+        assert "Probation" in result or "PROBATION" in result
+
+    def test_unknown_provision_is_graceful(self):
+        result = get_personnel_policy("ZZ-99")
+        assert "No personnel provision found" in result
+
+    def test_search_finds_titles_and_text(self):
+        result = search_personnel_policy("sick leave")
+        assert "SICK LEAVE" in result
+        assert "matches" in result
+
+    def test_search_no_results_suggests_other_corpora(self):
+        result = search_personnel_policy("qwxyzzy nonexistentterm")
+        assert "No results found in the Personnel Policies" in result

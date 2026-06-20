@@ -20,6 +20,8 @@ PROJECT_ROOT = Path(__file__).parent
 DATA_DIR = PROJECT_ROOT / "data"
 MARKDOWN_DIR = PROJECT_ROOT / "markdown"
 STATUTES_DIR = PROJECT_ROOT / "statutes"
+ORDINANCES_DIR = PROJECT_ROOT / "ordinances"
+PERSONNEL_DIR = PROJECT_ROOT / "personnel"
 
 DISTRICT_ORDER = [
     "R-P", "R-S", "R-T", "R-M", "R-MH",
@@ -64,6 +66,14 @@ def _load_general_provisions_index():
     return load_json("general_provisions_index.json")
 
 
+def _load_ordinances_index():
+    return load_json("ordinances_index.json")
+
+
+def _load_personnel_index():
+    return load_json("personnel_index.json")
+
+
 # --- MCP Server ---
 
 mcp = FastMCP(
@@ -94,8 +104,14 @@ mcp = FastMCP(
         "- Subdivisions: get_subdivision_requirements()\n"
         "- Parcel lookup by PIN/address/owner: get_parcel_info()\n"
         "- Infill neighbor parcels within 300 ft: get_infill_context()\n"
-        "- Full-text ordinance search: search_ordinance()\n"
-        "- NC state zoning law (NCGS 160D): get_160d_section() or search_160d()\n\n"
+        "- Full-text UDO search: search_ordinance()\n"
+        "- Town Code of Ordinances (non-zoning chapters): get_ordinance_section() or search_town_code()\n"
+        "- Search both corpora at once (when unsure which body of law applies): search_all()\n"
+        "- NC state zoning law (NCGS 160D): get_160d_section() or search_160d()\n"
+        "- Town Personnel Policies (internal HR/employment manual — hiring, leave, "
+        "benefits, discipline, grievances, pay grades): get_personnel_policy() or "
+        "search_personnel_policy(). This is employee-relations law, NOT land use; the "
+        "general-provisions mandate above does not apply to personnel questions.\n\n"
 
         "Always cite specific ordinance sections when answering. "
         "When local UDO conflicts with NCGS 160D, state law controls."
@@ -733,7 +749,12 @@ def search_ordinance(query: str) -> str:
         sections.append("\n".join(lines))
 
     if not sections:
-        return f"No results found for '{query}'."
+        return (
+            f"No results found in the UDO for '{query}'. "
+            "If this topic is covered by general municipal law (animals, buildings, "
+            "environment, nuisance, solid waste, traffic, utilities, etc.), "
+            f"try `search_town_code(\"{query}\")` instead."
+        )
 
     return "\n\n---\n\n".join(sections)
 
@@ -1578,3 +1599,405 @@ def search_160d(query: str) -> str:
     lines.append("\n*Use get_160d_section() to read the full text of a specific section.*")
 
     return "\n".join(lines)
+
+
+@mcp.tool()
+def get_ordinance_section(section: str) -> str:
+    """Get a specific section from the China Grove Code of Ordinances (non-zoning chapters).
+
+    Covers: General Provisions, Administration, Amusements, Animals, Buildings,
+    Businesses, Civil Emergencies, Environment, Fire Prevention, Law Enforcement,
+    Offenses, Parks, Alcoholic Beverages, Solid Waste, Streets/Sidewalks,
+    Utilities (water, sewer, stormwater), Vehicles/Traffic, Vehicles for Hire.
+
+    Args:
+        section: Section number (e.g., "46-7", "38-33", "58-15") or keyword to
+                 search by title (e.g., "curfew", "false alarm", "taxicab",
+                 "stormwater", "leaf collection"). Use "chapter:N" (e.g.,
+                 "chapter:46") to list all sections in a chapter.
+    """
+    index = _load_ordinances_index()
+    query = section.strip()
+
+    # chapter:N shorthand — list all sections in a chapter
+    if query.lower().startswith("chapter:"):
+        chap = query.split(":", 1)[1].strip().lstrip("0")
+        matches = [e for e in index if e["chapter"].lstrip("0") == chap]
+        if not matches:
+            return f"No sections found for chapter {chap}."
+        lines = [f"# Chapter {matches[0]['chapter']} — {matches[0]['chapter_name']}\n"]
+        for e in matches:
+            lines.append(f"- **§ {e['section']}:** {e['title']}")
+        return "\n".join(lines)
+
+    # Try exact section number match
+    matches = [e for e in index if e["section"] == query]
+
+    if not matches:
+        # Partial section match: "46" matches 46-1, 46-2, etc.
+        matches = [e for e in index if e["section"].startswith(query + "-")]
+
+    if not matches:
+        # Keyword search in title
+        q = query.lower()
+        matches = [e for e in index if q in e["title"].lower()]
+
+    if not matches:
+        return (
+            f"No ordinance section found for '{section}'.\n"
+            "Try a section number (e.g., '46-7'), keyword (e.g., 'curfew'), "
+            "or 'chapter:N' to browse a chapter."
+        )
+
+    results = []
+    for match in matches:
+        lines = [
+            f"## § {match['section']} — {match['title']}",
+            f"*Chapter {match['chapter']}: {match['chapter_name']}*\n",
+        ]
+
+        md_path = ORDINANCES_DIR / match["filename"]
+        if md_path.exists():
+            with open(md_path) as f:
+                all_lines = f.readlines()
+            start = match["line_start"] - 1
+            # Find end: next section header at same or higher level
+            end = len(all_lines)
+            header_re = re.compile(r"^#{2,4}\s+Sec\.")
+            for i in range(start + 1, len(all_lines)):
+                if header_re.match(all_lines[i]):
+                    end = i
+                    break
+            full_text = "".join(all_lines[start:end]).strip()
+            lines.append(full_text)
+
+        results.append("\n".join(lines))
+
+    return "\n\n---\n\n".join(results)
+
+
+@mcp.tool()
+def search_town_code(query: str) -> str:
+    """Search the China Grove Code of Ordinances (non-zoning chapters) for keywords.
+
+    Searches all 18 chapters covering: general provisions, administration,
+    amusements, animals, buildings, businesses, civil emergencies, environment,
+    fire prevention, law enforcement, offenses, parks, alcoholic beverages,
+    solid waste, streets/sidewalks, utilities (water/sewer/stormwater),
+    vehicles/traffic, and vehicles for hire.
+
+    Args:
+        query: Search term or phrase (e.g., "towing", "curfew", "false alarm",
+               "taxicab permit", "stream buffer", "leaf collection").
+               All words must appear within a 5-line window to match.
+    """
+    words = query.lower().split()
+    index = _load_ordinances_index()
+
+    def _matches_text(text: str) -> bool:
+        t = text.lower()
+        return all(w in t for w in words)
+
+    def _any_word(text: str) -> bool:
+        t = text.lower()
+        return any(w in t for w in words)
+
+    sections = []
+
+    # Search section titles in index
+    title_matches = [e for e in index if _any_word(f"{e['title']} {e['chapter_name']}")]
+    if title_matches:
+        lines = [f"## Section Titles ({len(title_matches)} matches)\n"]
+        for e in title_matches[:20]:
+            lines.append(f"- **§ {e['section']}** (Ch. {e['chapter']} {e['chapter_name']}): {e['title']}")
+        if len(title_matches) > 20:
+            lines.append(f"- ... and {len(title_matches) - 20} more")
+        lines.append("\n*Use get_ordinance_section() for full text.*")
+        sections.append("\n".join(lines))
+
+    # Full-text search with 5-line sliding window
+    md_matches = []
+    if ORDINANCES_DIR.is_dir():
+        for md_file in sorted(ORDINANCES_DIR.glob("Chapter-*.md")):
+            with open(md_file) as f:
+                file_lines = f.readlines()
+            for i in range(len(file_lines)):
+                window_start = max(0, i - 2)
+                window_end = min(len(file_lines), i + 3)
+                window = " ".join(file_lines[window_start:window_end])
+                if _matches_text(window):
+                    snippet = " ".join(
+                        line.strip() for line in file_lines[window_start:window_end]
+                        if line.strip()
+                    )
+                    md_matches.append((md_file.name, i + 1, snippet[:300]))
+
+    if md_matches:
+        # Deduplicate by proximity
+        unique_matches = []
+        seen_ranges: dict[str, list[int]] = {}
+        for fname, lineno, text in md_matches:
+            if fname in seen_ranges:
+                if any(abs(lineno - prev) < 5 for prev in seen_ranges[fname]):
+                    continue
+                seen_ranges[fname].append(lineno)
+            else:
+                seen_ranges[fname] = [lineno]
+            unique_matches.append((fname, lineno, text))
+
+        lines = [f"## Ordinance Text ({len(unique_matches)} matches)\n"]
+        for fname, lineno, text in unique_matches[:20]:
+            lines.append(f"- **{fname}:{lineno}:**\n  {text}")
+        if len(unique_matches) > 20:
+            lines.append(f"- ... and {len(unique_matches) - 20} more matches")
+        sections.append("\n".join(lines))
+
+    if not sections:
+        return (
+            f"No results found in the Code of Ordinances for '{query}'. "
+            "If this is a zoning or land-use topic (districts, setbacks, permitted uses, "
+            "subdivisions, special requirements), "
+            f"try `search_ordinance(\"{query}\")` instead."
+        )
+
+    return "\n\n---\n\n".join(sections)
+
+
+@mcp.tool()
+def search_all(query: str) -> str:
+    """Search across both the UDO and the Code of Ordinances simultaneously.
+
+    Use this when you don't know whether a topic is governed by zoning law (UDO)
+    or general municipal law (Code of Ordinances), or when you want comprehensive
+    coverage from both sources with results tagged by origin.
+
+    Results are labeled [UDO] or [Code of Ordinances] so you always know which
+    body of law each match comes from. For state zoning law, use search_160d().
+
+    Args:
+        query: Search term or phrase (e.g., "noise", "animals", "signage",
+               "setback", "permit", "vegetation nuisance", "stormwater").
+               All words must appear within a match window.
+    """
+    udo_result = search_ordinance(query)
+    code_result = search_town_code(query)
+
+    udo_empty = udo_result.startswith("No results found in the UDO")
+    code_empty = code_result.startswith("No results found in the Code of Ordinances")
+
+    if udo_empty and code_empty:
+        return (
+            f"No results found in either the UDO or the Code of Ordinances for '{query}'. "
+            "Try broader search terms, or use search_160d() for state zoning law (NCGS 160D)."
+        )
+
+    sections = []
+    if not udo_empty:
+        sections.append(f"# [UDO — Unified Development Ordinance]\n\n{udo_result}")
+    if not code_empty:
+        sections.append(f"# [Code of Ordinances]\n\n{code_result}")
+
+    return "\n\n---\n\n".join(sections)
+
+
+# --- Personnel Policies and Procedures ---
+#
+# Internal HR governance for Town employees (NOT land use). The document is
+# organized into Sections I–X; provision numbering RESTARTS within each section,
+# so a provision's unique id is the section roman numeral plus its local number
+# (e.g. "III-2.0", "II-2.08", "X-Item-A").
+
+_ROMAN_RE = re.compile(r"^(?:section[:\s-]+)?([ivxlc]+)$", re.IGNORECASE)
+
+# Roman numeral -> file-number prefix, for sections (IX pay tables, X appendix)
+# whose content is tabular/forms rather than numbered provisions.
+_PERSONNEL_SECTION_NUMS = {
+    "I": "01", "II": "02", "III": "03", "IV": "04", "V": "05",
+    "VI": "06", "VII": "07", "VIII": "08", "IX": "09", "X": "10",
+}
+
+
+def _slice_personnel_provision(entry: dict) -> str:
+    """Return the markdown for one provision, sliced from its heading to the next
+    heading of the same or higher rank (so a parent provision keeps its children)."""
+    md_path = PERSONNEL_DIR / entry["filename"]
+    if not md_path.exists():
+        return ""
+    md = md_path.read_text().split("\n")
+    start = entry["line_start"] - 1
+    if start >= len(md):
+        return ""
+    head = md[start]
+    cur_level = len(head) - len(head.lstrip("#")) or 6
+    end = len(md)
+    for i in range(start + 1, len(md)):
+        m = re.match(r"^(#{2,6}) ", md[i])
+        if m and len(m.group(1)) <= cur_level:
+            end = i
+            break
+    return "\n".join(md[start:end]).strip()
+
+
+@mcp.tool()
+def get_personnel_policy(query: str) -> str:
+    """Get a provision from the Town of China Grove Personnel Policies and Procedures.
+
+    This is the Town's internal HR/employment manual (hiring, leave, benefits,
+    discipline, grievances, pay grades, safety) — separate from the zoning UDO and
+    the Code of Ordinances. The manual is organized into Sections I–X and provision
+    numbering RESTARTS in each section, so provisions are identified by section +
+    number (e.g. "III-2.0", "II-2.08", "X-Item-A").
+
+    Args:
+        query: One of —
+            • a provision id, e.g. "III-2.0", "II-2.08", "X-Item-A" (full text);
+            • a bare number, e.g. "2.0" (lists every section that has one);
+            • a section, e.g. "section:IV" or "IV" (lists that section's provisions);
+            • a keyword in a provision title, e.g. "vacation", "grievance",
+              "probationary", "military leave".
+    """
+    index = _load_personnel_index()
+    q = query.strip()
+
+    # Section listing: "section:IV", "IV", "section IV"
+    roman_match = _ROMAN_RE.match(q)
+    if roman_match:
+        roman = roman_match.group(1).upper()
+        matches = [e for e in index if e["section"] == roman]
+        if not matches:
+            # Valid section with no numbered provisions (IX pay tables) — return
+            # the whole file; otherwise the roman numeral is unknown.
+            num = _PERSONNEL_SECTION_NUMS.get(roman)
+            if num:
+                files = list(PERSONNEL_DIR.glob(f"Section-{num}-*.md"))
+                if files:
+                    return files[0].read_text().strip()
+            return f"No personnel policy Section '{roman}'. Valid sections: I–X."
+        name = matches[0]["section_name"]
+        lines = [
+            f"# Personnel Policy — Section {roman}: {name}\n",
+            f"{len(matches)} provisions (request an id below for full text):\n",
+        ]
+        for e in matches:
+            lines.append(f"- **{e['id']}** — {e['title']}")
+        return "\n".join(lines)
+
+    # Exact id, then bare number, then title keyword
+    matches = [e for e in index if e["id"].lower() == q.lower()]
+    if not matches:
+        matches = [e for e in index if e["number"].lower() == q.lower()]
+    if not matches:
+        ql = q.lower()
+        matches = [e for e in index if ql in e["title"].lower()]
+
+    if not matches:
+        return (
+            f"No personnel provision found for '{query}'. Try a provision id "
+            "(e.g. 'III-2.0'), a section ('section:IV'), or a title keyword "
+            "('vacation', 'grievance'). For full-text search use "
+            f"search_personnel_policy(\"{query}\")."
+        )
+
+    # Too many to expand — list them for the caller to narrow down.
+    if len(matches) > 8:
+        lines = [f"{len(matches)} provisions match '{query}':\n"]
+        for e in matches[:50]:
+            lines.append(f"- **{e['id']}** ({e['section_name']}) — {e['title']}")
+        if len(matches) > 50:
+            lines.append(f"- ... and {len(matches) - 50} more")
+        lines.append("\nRe-query with a specific id for full text.")
+        return "\n".join(lines)
+
+    results = []
+    for m in matches:
+        body = _slice_personnel_provision(m)
+        context = f"*Personnel Policy · Section {m['section']} ({m['section_name']}) · {m['id']}*"
+        results.append(f"{context}\n\n{body}".strip())
+    return "\n\n---\n\n".join(results)
+
+
+@mcp.tool()
+def search_personnel_policy(query: str) -> str:
+    """Search the Town of China Grove Personnel Policies and Procedures (HR manual).
+
+    Covers employment practices (hiring, classification, probation), general
+    personnel policies (conduct, leave, discipline, grievances, appeals), employee
+    benefits, equal employment opportunity, wage and salary administration, safety,
+    pay grade classifications, and appendix forms.
+
+    This is internal employment law — distinct from the zoning UDO
+    (search_ordinance) and the municipal Code of Ordinances (search_town_code).
+
+    Args:
+        query: Search term or phrase (e.g., "sick leave accrual", "FMLA",
+               "disciplinary suspension", "longevity pay", "drug testing").
+               All words must appear within a 5-line window to match.
+    """
+    words = query.lower().split()
+    index = _load_personnel_index()
+
+    def _matches_text(text: str) -> bool:
+        t = text.lower()
+        return all(w in t for w in words)
+
+    def _any_word(text: str) -> bool:
+        t = text.lower()
+        return any(w in t for w in words)
+
+    sections = []
+
+    # Provision titles
+    title_matches = [e for e in index if _any_word(f"{e['title']} {e['section_name']}")]
+    if title_matches:
+        lines = [f"## Provision Titles ({len(title_matches)} matches)\n"]
+        for e in title_matches[:20]:
+            lines.append(f"- **{e['id']}** ({e['section_name']}): {e['title']}")
+        if len(title_matches) > 20:
+            lines.append(f"- ... and {len(title_matches) - 20} more")
+        lines.append("\n*Use get_personnel_policy() for full text.*")
+        sections.append("\n".join(lines))
+
+    # Full-text search with 5-line sliding window
+    md_matches = []
+    if PERSONNEL_DIR.is_dir():
+        for md_file in sorted(PERSONNEL_DIR.glob("Section-*.md")):
+            with open(md_file) as f:
+                file_lines = f.readlines()
+            for i in range(len(file_lines)):
+                window_start = max(0, i - 2)
+                window_end = min(len(file_lines), i + 3)
+                window = " ".join(file_lines[window_start:window_end])
+                if _matches_text(window):
+                    snippet = " ".join(
+                        line.strip() for line in file_lines[window_start:window_end]
+                        if line.strip()
+                    )
+                    md_matches.append((md_file.name, i + 1, snippet[:300]))
+
+    if md_matches:
+        unique_matches = []
+        seen_ranges: dict[str, list[int]] = {}
+        for fname, lineno, text in md_matches:
+            if fname in seen_ranges:
+                if any(abs(lineno - prev) < 5 for prev in seen_ranges[fname]):
+                    continue
+                seen_ranges[fname].append(lineno)
+            else:
+                seen_ranges[fname] = [lineno]
+            unique_matches.append((fname, lineno, text))
+
+        lines = [f"## Policy Text ({len(unique_matches)} matches)\n"]
+        for fname, lineno, text in unique_matches[:20]:
+            lines.append(f"- **{fname}:{lineno}:**\n  {text}")
+        if len(unique_matches) > 20:
+            lines.append(f"- ... and {len(unique_matches) - 20} more matches")
+        sections.append("\n".join(lines))
+
+    if not sections:
+        return (
+            f"No results found in the Personnel Policies for '{query}'. "
+            "If this is a zoning/land-use topic try search_ordinance(), or for "
+            "general municipal law try search_town_code()."
+        )
+
+    return "\n\n---\n\n".join(sections)
