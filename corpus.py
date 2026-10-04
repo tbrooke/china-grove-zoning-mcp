@@ -263,34 +263,120 @@ def chunks(section: Section, size: int = 800) -> list[str]:
 
 
 @lru_cache(maxsize=1)
+def chunk_table() -> tuple[tuple[int, str, str], ...]:
+    """Every searchable chunk as (section index, corpus, text), in one fixed
+    order shared by the keyword index (rowid = position) and the embeddings
+    (row = position). Empty sections stay readable by number, not searchable."""
+    return tuple((i, sec.corpus, piece)
+                 for i, sec in enumerate(all_sections()) for piece in chunks(sec)
+                 # a heading whose text is all in its subsections, or a
+                 # "Reserved" placeholder, has nothing to find
+                 if piece.strip() and not re.fullmatch(r"\W*reserved\W*", piece.strip(), re.I))
+
+
+@lru_cache(maxsize=1)
 def _db() -> sqlite3.Connection:
     db = sqlite3.connect(":memory:", check_same_thread=False)
     db.execute("CREATE VIRTUAL TABLE s USING fts5(title, body, corpus UNINDEXED, "
                "section UNINDEXED, tokenize='porter unicode61')")
-    rows = []
-    for i, sec in enumerate(all_sections()):
-        for piece in chunks(sec):
-            rows.append((f"{sec.sid or ''} {sec.title}", piece, sec.corpus, i))
-    db.executemany("INSERT INTO s(title, body, corpus, section) VALUES (?, ?, ?, ?)", rows)
+    secs = all_sections()
+    db.executemany(
+        "INSERT INTO s(rowid, title, body, corpus, section) VALUES (?, ?, ?, ?, ?)",
+        [(n, f"{secs[i].sid or ''} {secs[i].title}", text, corpus, i)
+         for n, (i, corpus, text) in enumerate(chunk_table())])
     return db
 
 
-def search(query: str, corpora: list[str], limit: int = 6) -> list[tuple[Section, float]]:
-    """Sections ranked by their best-matching chunk (BM25; lower is better)."""
+def keyword_chunks(query: str, corpora: list[str], k: int) -> list[int]:
+    """Chunk positions ranked by BM25 (title words weigh 4x body words)."""
     terms, _ = query_terms(query)
     if not terms:
         return []
     marks = ",".join("?" * len(corpora))
-    sql = (f"SELECT section, bm25(s, 4.0, 1.0) AS score FROM s "
-           f"WHERE s MATCH ? AND corpus IN ({marks}) ORDER BY score LIMIT ?")
+    sql = (f"SELECT rowid FROM s WHERE s MATCH ? AND corpus IN ({marks}) "
+           f"ORDER BY bm25(s, 4.0, 1.0) LIMIT ?")
     with _lock:
-        rows = _db().execute(sql, (" OR ".join(terms), *corpora, limit * 8)).fetchall()
-    best: dict[int, float] = {}
-    for section, score in rows:
-        best.setdefault(section, score)
+        return [r[0] for r in _db().execute(sql, (" OR ".join(terms), *corpora, k))]
+
+
+def _sections_in_order(chunk_positions: list[int]) -> list[int]:
+    out: list[int] = []
+    table = chunk_table()
+    for n in chunk_positions:
+        if table[n][0] not in out:
+            out.append(table[n][0])
+    return out
+
+
+def _substantive(query: str, chunk_positions: list[int]) -> list[int]:
+    """Keyword matches that are about the question, not one stray common word:
+    for a question with three or more content words, a chunk must contain two
+    of them, or one of the question's synonym phrases. "can I build a second
+    small house in my backyard" should not rank "Small Wireless Facilities"."""
+    _, words = query_terms(query)
+    content = {stem(w) for w in _words(query) if w not in STOPWORDS and len(w) > 1}
+    if len(content) < 3:
+        return chunk_positions
+    phrases = [" ".join(stem(w) for w in _words(p)) for key, ps in synonyms().items()
+               if re.search(rf"(?<![a-z0-9]){re.escape(key)}(?![a-z0-9])", query.lower()) for p in ps]
+    table, secs = chunk_table(), all_sections()
+    keep = []
+    for n in chunk_positions:
+        i, _, text = table[n]
+        stems = [stem(w) for w in _words(f"{secs[i].title} {text}")]
+        joined = " ".join(stems)
+        if len(content & set(stems)) >= 2 or any(p and p in joined for p in phrases):
+            keep.append(n)
+    return keep
+
+
+def search(query: str, corpora: list[str], limit: int = 6) -> list[tuple[Section, float, list[int]]]:
+    """(section, score, matching chunk positions), best first.
+
+    Keyword (BM25) and semantic (embedding) search each rank sections; the
+    sections both put in their top `limit` come first, then the rest alternate,
+    semantic first. So each method's best results always get a place: a
+    paraphrased question ("time off when a relative dies") is not outvoted by
+    noisy keyword matches, nor an exact term ("R-MH", "160D-108") by vaguer
+    semantic ones -- which rank fusion, tried first, did allow, since a section
+    both lists merely mention could push either list's top hit out. Chosen by
+    measurement on evals/questions.json against keyword-only, semantic-only,
+    reciprocal-rank fusion and a cross-encoder reranker.
+
+    Without the embedding model it is keyword ranking alone. A section's
+    matching chunks are ordered by their best rank in either list, so its
+    excerpt shows the passage that matched."""
+    import semantic  # local import: the model loads only when search is used
+
+    depth = limit * 8
+    raw = keyword_chunks(query, corpora, depth)
+    # If not one word of the question occurs in the text, there is nothing to
+    # find: "qwxyzzy" must get no results, not its nearest neighbour. (Every real
+    # question in the eval shares some word with its corpus; similarity alone
+    # could not tell nonsense, 0.60, from real paraphrases.)
+    if not raw:
+        return []
+    kw_chunks = _substantive(query, raw)
+    sem_chunks = [n for n, _ in semantic.nearest(query, corpora, depth)]
+    kw, sem = _sections_in_order(kw_chunks), _sections_in_order(sem_chunks)
+
+    both = sorted(set(kw[:limit]) & set(sem[:limit]), key=lambda x: kw.index(x) + sem.index(x))
+    order = list(both)
+    for pair in zip(sem, kw):
+        order.extend(x for x in pair if x not in order)
+    order.extend(x for x in sem + kw if x not in order)
+
+    chunk_rank: dict[int, int] = {}
+    for ranked in (kw_chunks, sem_chunks):
+        for r, n in enumerate(ranked):
+            chunk_rank[n] = min(chunk_rank.get(n, r), r)
+    table = chunk_table()
+    hits: dict[int, list[int]] = {}
+    for n in sorted(chunk_rank, key=chunk_rank.get):
+        hits.setdefault(table[n][0], []).append(n)
+
     secs = all_sections()
-    ranked = sorted(best.items(), key=lambda kv: kv[1])[:limit]
-    return [(secs[i], score) for i, score in ranked]
+    return [(secs[i], 1.0 / (k + 1), hits.get(i, [])) for k, i in enumerate(order[:limit])]
 
 
 # --- Excerpts ----------------------------------------------------------------
@@ -316,11 +402,22 @@ def _hits(text: str, stems: set[str]) -> int:
     return len(stems & {stem(w) for w in _words(text)})
 
 
-def excerpt(section: Section, words: list[str], budget: int = 1500) -> str:
-    """The section's text if short; otherwise the blocks (and table rows) that match."""
+def excerpt(section: Section, words: list[str], budget: int = 1500,
+            matched: list[str] | None = None) -> str:
+    """The section's text if short; otherwise the chunks search matched, in
+    document order (a paraphrase's answer may share no words with it), or
+    failing that the blocks and table rows that share words with the query."""
     body = section.body
     if len(body) <= budget:
         return body
+    if matched:
+        chosen, used = [], 0
+        for text in matched:
+            if used + len(text) > budget and chosen:
+                break
+            chosen.append(text)
+            used += len(text)
+        return "\n\n…\n\n".join(t for t in chunks(section) if t in chosen)
     stems = {stem(w) for w in words}
     blocks = _blocks(body)
     ranked = sorted(range(len(blocks)), key=lambda i: (-_hits(blocks[i], stems), i))
@@ -358,12 +455,15 @@ def format_results(query: str, corpora: list[str], limit: int = 6,
         return None
     _, words = query_terms(query)
     out = []
-    for sec, _score in results:
+    table = chunk_table()
+    for rank, (sec, _score, matched) in enumerate(results):
+        room = int(budget * 1.5) if rank < 2 else int(budget * 0.75)  # the best get more text
         trail = " › ".join(sec.parents)
         lines = [f"### {sec.ref}" + (f" — {sec.title}" if sec.sid and sec.title else ""),
                  f"*{CORPORA[sec.corpus]['label']} · {sec.file}:{sec.line}"
                  + (f" · {trail}" if trail else "") + "*",
-                 "", excerpt(sec, words, budget) or "_(heading only — see subsections)_"]
+                 "", excerpt(sec, words, room, [table[n][2] for n in matched])
+                 or "_(heading only — see subsections)_"]
         if reader and sec.sid and reader.get(sec.corpus):
             lines.append(f"\n*Full text: {reader[sec.corpus]}(\"{sec.sid}\")*")
         out.append("\n".join(lines))

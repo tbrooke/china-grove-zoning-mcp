@@ -134,5 +134,43 @@
   ],
   "how tall": [
     "height"
+  ],
+  "grandfathered": [
+    "nonconforming"
+  ],
+  "grandfather clause": [
+    "nonconforming"
+  ],
+  "built before": [
+    "nonconforming"
+  ],
+  "existing building": [
+    "nonconforming"
+  ],
+  "home business": [
+    "home occupation"
+  ],
+  "business out of my house": [
+    "home occupation"
+  ],
+  "business from home": [
+    "home occupation"
+  ],
+  "work from home": [
+    "home occupation"
+  ],
+  "home office": [
+    "home occupation"
+  ],
+  "backyard": [
+    "accessory structure",
+    "accessory dwelling"
+  ],
+  "back yard": [
+    "accessory structure",
+    "accessory dwelling"
+  ],
+  "guest house": [
+    "accessory dwelling"
   ]
 }
