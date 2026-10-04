@@ -1,65 +1,369 @@
 [
-  {"id": "fence-nl", "tool": "search_ordinance", "args": ["how tall can a fence be"],
-   "expect": "no taller than six \\(6\\) feet and six \\(6\\) inches|greater than three \\(3\\) feet in height",
-   "note": "\u00a78.3E rear-yard fences 6'6\"; Appendix A sight triangle 3 ft"},
-  {"id": "fence-kw", "tool": "search_ordinance", "args": ["fence height"],
-   "expect": "no taller than six \\(6\\) feet and six \\(6\\) inches|greater than three \\(3\\) feet in height"},
-  {"id": "parking-school", "tool": "search_ordinance", "args": ["parking spaces per classroom"],
-   "expect": "10 spaces per classroom", "note": "Ch 10 parking table"},
-  {"id": "parking-restaurant", "tool": "search_ordinance", "args": ["how many parking spaces does a restaurant need"],
-   "expect": "restaurants\\W+1 per 4 seats"},
-  {"id": "parking-max", "tool": "search_ordinance", "args": ["parking maximum in N-C and H-B districts"],
-   "expect": "175% of the minimum ratio"},
-  {"id": "adu-full", "tool": "search_ordinance", "args": ["accessory dwelling unit size limit"],
-   "expect": "shall not exceed one-half"},
-  {"id": "adu-abbrev", "tool": "search_ordinance", "args": ["ADU"],
-   "expect": "accessory dwelling", "note": "abbreviation needs a synonym"},
-  {"id": "airbnb", "tool": "search_ordinance", "args": ["airbnb short term rental"],
-   "expect": "bed (&|and) breakfast", "note": "UDO's nearest use is the B&B home"},
-  {"id": "home-occupation", "tool": "search_ordinance", "args": ["home occupation rules"],
-   "expect": "25 percent of the total floor area|visual, audible",
-   "note": "\u00a78.22 rules; Ch 3 definition also acceptable"},
-  {"id": "rooftop-solar", "tool": "search_ordinance", "args": ["solar panels on my roof"],
-   "expect": "rooftop solar facilities"},
-  {"id": "cell-tower", "tool": "search_ordinance", "args": ["cell tower"],
-   "expect": "wireless telecommunications tower"},
-  {"id": "flag-lot", "tool": "search_ordinance", "args": ["are flag lots allowed"],
-   "expect": "flag lots, which are only"},
-  {"id": "row-centerline", "tool": "search_ordinance", "args": ["right-of-way thirty feet from centerline"],
-   "expect": "thirty \\(30\\) feet from roadway centerline"},
-  {"id": "sidewalk-width", "tool": "search_ordinance", "args": ["minimum sidewalk width"],
-   "expect": "sidewalk width \\(min\\.?\\)\\W+5 feet"},
-  {"id": "retaining-wall", "tool": "search_ordinance", "args": ["retaining wall building permit"],
-   "expect": "exceeds five \\(5\\) feet in height requires a building permit"},
-  {"id": "open-space-density", "tool": "search_ordinance", "args": ["open space subdivision density"],
-   "expect": "4 units per acre"},
-  {"id": "variance-board", "tool": "search_ordinance", "args": ["who decides variances"],
-   "expect": "decide petitions for variances"},
-  {"id": "brewery-lookup", "tool": "lookup_permitted_use", "args": ["brewery"],
-   "expect": "micro-breweries"},
-  {"id": "microbrewery-build", "tool": "can_i_build", "args": ["microbrewery", "H-B"],
-   "expect": "micro-breweries"},
-  {"id": "noise", "tool": "search_town_code", "args": ["barking dog noise"],
-   "expect": "keeping of any animal or bird which makes frequent|unreasonably loud",
-   "note": "\u00a726-82(2) animal noise; \u00a726-81 general prohibition"},
-  {"id": "false-alarm", "tool": "search_town_code", "args": ["false alarm fee"],
-   "expect": "false alarm fee schedule"},
-  {"id": "golf-cart", "tool": "search_town_code", "args": ["golf cart on town streets"],
-   "expect": "low speed vehicles"},
-  {"id": "160d-vesting", "tool": "search_160d", "args": ["permit choice vested rights"],
-   "expect": "permit choice and vested rights"},
-  {"id": "160d-conflict", "tool": "search_160d", "args": ["board member conflict of interest"],
-   "expect": "conflicts of interest"},
-  {"id": "vacation-10y", "tool": "search_personnel_policy", "args": ["how much vacation after 10 years"],
-   "expect": "10 but less than 14 years\\W+15"},
-  {"id": "longevity", "tool": "search_personnel_policy", "args": ["longevity pay"],
-   "expect": "longevity pay"},
-  {"id": "pay-grade-12", "tool": "search_personnel_policy", "args": ["starting salary pay grade 12"],
-   "expect": "45,233"},
-  {"id": "gis-planner-grade", "tool": "search_personnel_policy", "args": ["GIS Planner pay grade"],
-   "expect": "gis planner\\W+1\\W+17"},
-  {"id": "section-parking", "tool": "get_udo_section", "args": ["10.2.1"],
-   "expect": "10 spaces per classroom", "note": "new tool: full section text by number"},
-  {"id": "define-home-occupation", "tool": "define_term", "args": ["home occupation"],
-   "expect": "visual, audible", "note": "new tool: Chapter 3 definitions"}
+ {
+  "id": "fence-nl",
+  "tool": "search_ordinance",
+  "args": [
+   "how tall can a fence be"
+  ],
+  "expect": "no taller than six \\(6\\) feet and six \\(6\\) inches|greater than three \\(3\\) feet in height",
+  "note": "\u00a78.3E rear-yard fences 6'6\"; Appendix A sight triangle 3 ft"
+ },
+ {
+  "id": "fence-kw",
+  "tool": "search_ordinance",
+  "args": [
+   "fence height"
+  ],
+  "expect": "no taller than six \\(6\\) feet and six \\(6\\) inches|greater than three \\(3\\) feet in height"
+ },
+ {
+  "id": "parking-school",
+  "tool": "search_ordinance",
+  "args": [
+   "parking spaces per classroom"
+  ],
+  "expect": "10 spaces per classroom",
+  "note": "Ch 10 parking table"
+ },
+ {
+  "id": "parking-restaurant",
+  "tool": "search_ordinance",
+  "args": [
+   "how many parking spaces does a restaurant need"
+  ],
+  "expect": "restaurants\\W+1 per 4 seats"
+ },
+ {
+  "id": "parking-max",
+  "tool": "search_ordinance",
+  "args": [
+   "parking maximum in N-C and H-B districts"
+  ],
+  "expect": "175% of the minimum ratio"
+ },
+ {
+  "id": "adu-full",
+  "tool": "search_ordinance",
+  "args": [
+   "accessory dwelling unit size limit"
+  ],
+  "expect": "shall not exceed one-half"
+ },
+ {
+  "id": "adu-abbrev",
+  "tool": "search_ordinance",
+  "args": [
+   "ADU"
+  ],
+  "expect": "accessory dwelling",
+  "note": "abbreviation needs a synonym"
+ },
+ {
+  "id": "airbnb",
+  "tool": "search_ordinance",
+  "args": [
+   "airbnb short term rental"
+  ],
+  "expect": "bed (&|and) breakfast",
+  "note": "UDO's nearest use is the B&B home"
+ },
+ {
+  "id": "home-occupation",
+  "tool": "search_ordinance",
+  "args": [
+   "home occupation rules"
+  ],
+  "expect": "25 percent of the total floor area|visual, audible",
+  "note": "\u00a78.22 rules; Ch 3 definition also acceptable"
+ },
+ {
+  "id": "rooftop-solar",
+  "tool": "search_ordinance",
+  "args": [
+   "solar panels on my roof"
+  ],
+  "expect": "rooftop solar facilities"
+ },
+ {
+  "id": "cell-tower",
+  "tool": "search_ordinance",
+  "args": [
+   "cell tower"
+  ],
+  "expect": "wireless telecommunications tower"
+ },
+ {
+  "id": "flag-lot",
+  "tool": "search_ordinance",
+  "args": [
+   "are flag lots allowed"
+  ],
+  "expect": "flag lots, which are only"
+ },
+ {
+  "id": "row-centerline",
+  "tool": "search_ordinance",
+  "args": [
+   "right-of-way thirty feet from centerline"
+  ],
+  "expect": "thirty \\(30\\) feet from roadway centerline"
+ },
+ {
+  "id": "sidewalk-width",
+  "tool": "search_ordinance",
+  "args": [
+   "minimum sidewalk width"
+  ],
+  "expect": "sidewalk width \\(min\\.?\\)\\W+5 feet"
+ },
+ {
+  "id": "retaining-wall",
+  "tool": "search_ordinance",
+  "args": [
+   "retaining wall building permit"
+  ],
+  "expect": "exceeds five \\(5\\) feet in height requires a building permit"
+ },
+ {
+  "id": "open-space-density",
+  "tool": "search_ordinance",
+  "args": [
+   "open space subdivision density"
+  ],
+  "expect": "4 units per acre"
+ },
+ {
+  "id": "variance-board",
+  "tool": "search_ordinance",
+  "args": [
+   "who decides variances"
+  ],
+  "expect": "decide petitions for variances"
+ },
+ {
+  "id": "brewery-lookup",
+  "tool": "lookup_permitted_use",
+  "args": [
+   "brewery"
+  ],
+  "expect": "micro-breweries"
+ },
+ {
+  "id": "microbrewery-build",
+  "tool": "can_i_build",
+  "args": [
+   "microbrewery",
+   "H-B"
+  ],
+  "expect": "micro-breweries"
+ },
+ {
+  "id": "noise",
+  "tool": "search_town_code",
+  "args": [
+   "barking dog noise"
+  ],
+  "expect": "keeping of any animal or bird which makes frequent|unreasonably loud",
+  "note": "\u00a726-82(2) animal noise; \u00a726-81 general prohibition"
+ },
+ {
+  "id": "false-alarm",
+  "tool": "search_town_code",
+  "args": [
+   "false alarm fee"
+  ],
+  "expect": "false alarm fee schedule"
+ },
+ {
+  "id": "golf-cart",
+  "tool": "search_town_code",
+  "args": [
+   "golf cart on town streets"
+  ],
+  "expect": "low speed vehicles"
+ },
+ {
+  "id": "160d-vesting",
+  "tool": "search_160d",
+  "args": [
+   "permit choice vested rights"
+  ],
+  "expect": "permit choice and vested rights"
+ },
+ {
+  "id": "160d-conflict",
+  "tool": "search_160d",
+  "args": [
+   "board member conflict of interest"
+  ],
+  "expect": "conflicts of interest"
+ },
+ {
+  "id": "vacation-10y",
+  "tool": "search_personnel_policy",
+  "args": [
+   "how much vacation after 10 years"
+  ],
+  "expect": "10 but less than 14 years\\W+15"
+ },
+ {
+  "id": "longevity",
+  "tool": "search_personnel_policy",
+  "args": [
+   "longevity pay"
+  ],
+  "expect": "longevity pay"
+ },
+ {
+  "id": "pay-grade-12",
+  "tool": "search_personnel_policy",
+  "args": [
+   "starting salary pay grade 12"
+  ],
+  "expect": "45,233"
+ },
+ {
+  "id": "gis-planner-grade",
+  "tool": "search_personnel_policy",
+  "args": [
+   "GIS Planner pay grade"
+  ],
+  "expect": "gis planner\\W+1\\W+17"
+ },
+ {
+  "id": "section-parking",
+  "tool": "get_udo_section",
+  "args": [
+   "10.2.1"
+  ],
+  "expect": "10 spaces per classroom",
+  "note": "new tool: full section text by number"
+ },
+ {
+  "id": "define-home-occupation",
+  "tool": "define_term",
+  "args": [
+   "home occupation"
+  ],
+  "expect": "visual, audible",
+  "note": "new tool: Chapter 3 definitions"
+ },
+ {
+  "id": "para-home-business",
+  "tool": "search_ordinance",
+  "args": [
+   "can I run a business out of my house"
+  ],
+  "expect": "customary home occupations may be established",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-fence-permission",
+  "tool": "search_ordinance",
+  "args": [
+   "do I need permission to put up a fence"
+  ],
+  "expect": "fences do not require a zoning permit",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-permit-lifetime",
+  "tool": "search_ordinance",
+  "args": [
+   "how long is my zoning permit good for"
+  ],
+  "expect": "within one \\(1\\) year of the date of issue",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-turned-down",
+  "tool": "search_ordinance",
+  "args": [
+   "the zoning administrator turned me down, what can I do"
+  ],
+  "expect": "appeal the action of the zoning administrator",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-entrance-sign",
+  "tool": "search_ordinance",
+  "args": [
+   "how big can the sign at my neighborhood entrance be"
+  ],
+  "expect": "maximum area is \\(32\\) square feet",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-parking-shade",
+  "tool": "search_ordinance",
+  "args": [
+   "how many shade trees do I need in a parking lot"
+  ],
+  "expect": "one canopy tree shall be planted within the parking area for each ten",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-old-building",
+  "tool": "search_ordinance",
+  "args": [
+   "my building was built before the current rules, does it still have to comply"
+  ],
+  "expect": "established prior to the effective date of this ordinance|nonconforming sites and buildings developed prior to",
+  "kind": "paraphrase",
+  "note": "\u00a75.1 general rule; or \u00a77.x.3 re-use of buildings built before Aug 1 2006, which points to \u00a75.9"
+ },
+ {
+  "id": "para-second-house",
+  "tool": "search_ordinance",
+  "args": [
+   "can I build a second small house in my backyard for my mother"
+  ],
+  "expect": "accessory dwellings may be located in a building separate",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-garage-sale",
+  "tool": "search_town_code",
+  "args": [
+   "garage sale"
+  ],
+  "expect": "yard sale",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-loud-party",
+  "tool": "search_town_code",
+  "args": [
+   "how loud can my neighbor's party be at night"
+  ],
+  "expect": "unreasonably loud",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-relative-dies",
+  "tool": "search_personnel_policy",
+  "args": [
+   "time off when a relative dies"
+  ],
+  "expect": "death in the immediate family, maximum of three \\(3\\) days",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-hurt-at-work",
+  "tool": "search_personnel_policy",
+  "args": [
+   "what happens if I get hurt on the job"
+  ],
+  "expect": "workers' compensation",
+  "kind": "paraphrase"
+ },
+ {
+  "id": "para-drug-test-accident",
+  "tool": "search_personnel_policy",
+  "args": [
+   "will I be tested for drugs after a wreck in a town vehicle"
+  ],
+  "expect": "post-accident drug testing",
+  "kind": "paraphrase"
+ }
 ]

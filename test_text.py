@@ -84,3 +84,14 @@ def test_json_indexes_point_at_their_sections():
     for e in json.loads((ROOT / "data" / "personnel_index.json").read_text()):
         s = corpus.find("personnel", e["id"])
         assert s and s.line == e["line_start"] and s.file == e["filename"], e["id"]
+
+
+def test_embeddings_match_the_text():
+    """data/embeddings.npz must be rebuilt (scripts/build_embeddings.py) whenever
+    the text changes; otherwise the server re-embeds everything on its first
+    search, which takes minutes."""
+    import numpy as np
+    import semantic
+    saved = np.load(semantic.VECTORS)
+    assert str(saved["fingerprint"]) == semantic.fingerprint(semantic.passages()), \
+        "stale embeddings: run uv run python scripts/build_embeddings.py"

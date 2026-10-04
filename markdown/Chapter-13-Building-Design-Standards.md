@@ -19,7 +19,7 @@ E. Fences shall be constructed with the finished side facing the adjacent proper
 
 ## Section 13.3 Residential Buildings
 
-13.3.1 Single-Family Detached Two-Family (Duplex) Residential Buildings, or Townhouses Built to Single Family Building Code*
+### 13.3.1 Single-Family Detached Two-Family (Duplex) Residential Buildings, or Townhouses Built to Single Family Building Code*
 
 A. Exterior materials should be durable and residential in character. Exterior wall materials should be wood clapboard siding, wood shingles, brick, stone, stucco, vinyl, or similar materials. Roof materials should be asphalt shingles, standing seam metal, slate, or similar materials.
 B. Pitched roofs should have a pitch between 4:12 and 12:12. Eaves shall be a minimum of nine (9) inches in depth.
@@ -31,7 +31,7 @@ E. Wherever possible, two-family (duplex) residences should be designed in such 
 
 *Per NCGS 160D-702(b), the standards of Section 13.3.1 are recommendations for voluntary conditions attached to Conditional Zoning district requests.
 
-13.3.2 Multi-family Residential Buildings and Townhouses not built to single family building code
+### 13.3.2 Multi-family Residential Buildings and Townhouses not built to single family building code
 
 A. Exterior materials shall be durable and residential in character. Suggested materials include wood clapboard siding, wood shingles, brick, stone, stucco, vinyl, or similar materials. Suggested pitched roof materials include asphalt shingles, standing seam metal, slate, or similar materials.
 B. Garage doors are not permitted on the front façade of any multi-family dwelling unit or townhouse not built to single family building code.

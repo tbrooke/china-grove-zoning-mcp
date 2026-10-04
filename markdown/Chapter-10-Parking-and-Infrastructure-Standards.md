@@ -92,12 +92,9 @@ C. A minimum of one (1) parking space for the disabled shall be van accessible. 
 
 D. Off-street parking spaces for the disabled shall be designed as follows:
 
-- All spaces for the disabled shall have access to a curb-ramp or curb-cut when necessary to allow
-access to the building served, and shall be located so that users will not be compelled to wheel behind parked vehicles, and shall be located the shortest possible distance between the parking area and the entrance to the principal building it serves.
-- Parallel parking spaces for the disabled shall be located either at the beginning or end of a block or
-adjacent to alley entrances. Curbs adjacent to such spaces shall be of a height which will not interfere with the opening and closing of motor vehicle doors.
-- Each parking space for the disabled shall be paved and prominently outlined with paint, with a
-permanent sign of a color and design approved by the North Carolina Department of Transportation, bearing the internationally accepted wheelchair symbol, posted at the head of the parking space.
+- All spaces for the disabled shall have access to a curb-ramp or curb-cut when necessary to allow access to the building served, and shall be located so that users will not be compelled to wheel behind parked vehicles, and shall be located the shortest possible distance between the parking area and the entrance to the principal building it serves.
+- Parallel parking spaces for the disabled shall be located either at the beginning or end of a block or adjacent to alley entrances. Curbs adjacent to such spaces shall be of a height which will not interfere with the opening and closing of motor vehicle doors.
+- Each parking space for the disabled shall be paved and prominently outlined with paint, with a permanent sign of a color and design approved by the North Carolina Department of Transportation, bearing the internationally accepted wheelchair symbol, posted at the head of the parking space.
 - The size of the parking space shall be per building code specifications.
 
 ## Section 10.3 Shared Parking and Parking Connectivity
@@ -280,10 +277,8 @@ The Town of China Grove provides street lighting along public streets within the
 
 A. The Town of China Grove, as a minimum standard, shall install and maintain street lights in residential sections only at street intersections or terminations, unless the distance between street intersections exceeds 350 feet. China Grove provides street lighting on existing publicly-dedicated streets in accordance with the following schedule:
 
-- Single Family Residential Areas: 100 Watt High Pressure Sodium (HPS) bulb mounted on 30 foot
-wood poles, 500 feet on-center
-- Multi-Family, Mixed Use and Commercial Areas: 250 Watt High Pressure Sodium (HPS) bulb
-mounted on 30 foot wood poles, 300 feet on-center
+- Single Family Residential Areas: 100 Watt High Pressure Sodium (HPS) bulb mounted on 30 foot wood poles, 500 feet on-center
+- Multi-Family, Mixed Use and Commercial Areas: 250 Watt High Pressure Sodium (HPS) bulb mounted on 30 foot wood poles, 300 feet on-center
 
 B. Consideration should be made to place all lighting at all intersections and other high pedestrian and other high pedestrian use areas.
 
@@ -308,10 +303,8 @@ C. Where underground wiring currently exists along thoroughfares and collector s
 A. The Town of China Grove may choose to take over responsibility for payment of monthly billing of a street light, provided that the street light:
 
 - Is within Town-owned right-of-way, and
-- Is within a street right-of-way accepted for maintenance purposes by the Town of China Grove or
-the North Carolina Department of Transportation; and
-- Meets Town standards, or the petitioner has paid any cost to have the light brought up to Town
-standards
+- Is within a street right-of-way accepted for maintenance purposes by the Town of China Grove or the North Carolina Department of Transportation; and
+- Meets Town standards, or the petitioner has paid any cost to have the light brought up to Town standards
 
 B. Takeover billing shall become effective for the billing cycle following the approval of the request. The Town will not reimburse any billing for which the requesting party is responsible for or if the Town has not authorized Duke Power Company to bill it. This includes any billing between the date of the citizen’s request and the date of the changeover of billing. Take-over billing is only applicable for maintenance and electricity billing only. The Town will not accept any take-over billing of decorative lighting fixtures until all premium costs are paid in full.
 
@@ -360,8 +353,7 @@ Board. Measurement shall be from the point where the centerline of the street in
 
 E. For consideration of a major subdivision, the plan must meet the following street connectivity requirements:
 
-- Must provide at least two (2) road accesses to a Collector Road (see Category 2 Collector Road
-specifications A.2.2 Street Design Criteria by Type) for all major subdivisions of 30 or more dwelling units.
+- Must provide at least two (2) road accesses to a Collector Road (see Category 2 Collector Road specifications A.2.2 Street Design Criteria by Type) for all major subdivisions of 30 or more dwelling units.
 - Must provide vehicle access, where public access is possible to all adjacent existing subdivisions.
 - Must provide stub streets to the property lines of all adjacent vacant or under-developed property.
 
@@ -397,17 +389,13 @@ B. All proposed streets shall be constructed in accordance with the minimum Publ
 
 C. In addition, street improvements, shall be installed in the following situations:
 
-- Any existing street segment that has not been accepted for maintenance by either the Town or the
-NCDOT, and that is to serve as the required frontage for one or more Lots created pursuant to this ordinance, shall be improved and Dedicated to the public, as provided for above, in such a way that the Street segment meets the standards of this ordinance for the particular classification of Street, including right-of-way width. Such street segment shall be directly connected to the existing public street system by way of at least one public street accepted for maintenance by either the Town or the NCDOT. No subdivision shall be permitted on any street that is an "island" not connected directly to the public street system.
+- Any existing street segment that has not been accepted for maintenance by either the Town or the NCDOT, and that is to serve as the required frontage for one or more Lots created pursuant to this ordinance, shall be improved and Dedicated to the public, as provided for above, in such a way that the Street segment meets the standards of this ordinance for the particular classification of Street, including right-of-way width. Such street segment shall be directly connected to the existing public street system by way of at least one public street accepted for maintenance by either the Town or the NCDOT. No subdivision shall be permitted on any street that is an "island" not connected directly to the public street system.
 
-- Subdivisions that adjoin existing streets maintained by either the Town or NCDOT shall dedicate
-additional street right-of-way necessary to meet the minimum width requirements for the type of classification of the adjoining street. When any part of the subdivision is on both sides of an existing Street, the entire minimum right-of-way shall be provided. When the subdivision is located on only one side of an existing street, one-half of the minimum right-of-way, measured from the centerline of the existing street, shall be provided. The improvement requirements of this Article shall not apply to the subdivision of lots fronting on established streets that have already been accepted for maintenance by the Town or NCDOT.
+- Subdivisions that adjoin existing streets maintained by either the Town or NCDOT shall dedicate additional street right-of-way necessary to meet the minimum width requirements for the type of classification of the adjoining street. When any part of the subdivision is on both sides of an existing Street, the entire minimum right-of-way shall be provided. When the subdivision is located on only one side of an existing street, one-half of the minimum right-of-way, measured from the centerline of the existing street, shall be provided. The improvement requirements of this Article shall not apply to the subdivision of lots fronting on established streets that have already been accepted for maintenance by the Town or NCDOT.
 
-- The Planning Board may require pavement and widening or pavement, widening and curb and
-gutter for turning lanes along any existing or proposed street that forms a significant entrance to a proposed subdivision where in the opinion of the Board such improvements are necessary in order to provide for safe vehicular movement into and out of the proposed Subdivision.
+- The Planning Board may require pavement and widening or pavement, widening and curb and gutter for turning lanes along any existing or proposed street that forms a significant entrance to a proposed subdivision where in the opinion of the Board such improvements are necessary in order to provide for safe vehicular movement into and out of the proposed Subdivision.
 
-- In cases where a street is stubbed into adjoining property for future extension and such street serves
-as the frontage for one or more lots which are not corner lots, the Planning Board may require the pavement of a temporary turn-around in a form similar to a cul-de-sac on such street where in their opinion such turn-around is necessary for the public convenience, safety and service. Temporary easements for such purposes may be required.
+- In cases where a street is stubbed into adjoining property for future extension and such street serves as the frontage for one or more lots which are not corner lots, the Planning Board may require the pavement of a temporary turn-around in a form similar to a cul-de-sac on such street where in their opinion such turn-around is necessary for the public convenience, safety and service. Temporary easements for such purposes may be required.
 
 ### 10.8.12 Street Right-of-Way Standards
 New streets shall meet the minimum right-of-way standards described in Appendix A: Infrastructure Design Details. For existing streets where no recorded right-of-way exists, a 60’ ROW (extending 30’ in both directions from the centerline of the street) shall be assumed.

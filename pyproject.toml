@@ -5,6 +5,7 @@ description = "MCP server for China Grove zoning and land use research"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "fastembed>=0.8.1",
     "mcp[cli]>=1.26.0",
 ]
 

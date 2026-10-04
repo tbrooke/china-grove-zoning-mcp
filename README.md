@@ -84,6 +84,23 @@ mapped to the ordinance's vocabulary through `data/search_synonyms.json`
 (edit it freely). Results are whole sections, or the paragraphs and table rows
 that match, each with its citation.
 
+Search is **hybrid**: keyword search finds the ordinance's own words, and
+semantic search (`semantic.py`) finds meaning, so "can I run a business out of
+my house" reaches §8.22 Home Occupations and "time off when a relative dies"
+reaches the bereavement provision. Semantic search uses local embeddings
+(`BAAI/bge-base-en-v1.5` via fastembed / ONNX Runtime, on the CPU — no API key,
+nothing leaves the machine; the ~210 MB model downloads once to
+`~/.cache/fastembed`). Every chunk's vector is precomputed into
+`data/embeddings.npz`. The two rankings are combined so each one's best results
+always get a place in the six shown; with no keyword match at all, a semantic
+match must be confident, so nonsense still finds nothing. If the model can't
+load, search is keyword-only.
+
+On the 43 eval questions (13 of them phrased the way residents ask, not the
+way the ordinance is written): keyword-only 37/43, hybrid 43/43. Models and
+methods compared along the way — bge-small, mxbai-embed-large, reciprocal rank
+fusion, a cross-encoder reranker — are in the PR that introduced this.
+
 `evals/questions.json` holds real questions with the text that answers them;
 `uv run python evals/run.py` measures retrieval, and `test_retrieval.py` runs
 the same questions as tests.
@@ -98,6 +115,7 @@ conversion — a new ordinance chapter, or `build_personnel.py` — run:
 uv run --group build python scripts/rebuild_tables.py   # ruled tables, re-read from the PDFs
 uv run python scripts/clean_text.py                     # structure, borderless tables, reflow
 uv run python scripts/reindex_lines.py                  # line numbers stored in data/*.json
+uv run python scripts/build_embeddings.py               # semantic search vectors (~3-5 min)
 uv run --with pytest pytest                             # incl. the table-vs-JSON cross-check
 ```
 

@@ -128,11 +128,7 @@ A. If the Town Council has denied an application for the rezoning of a piece of 
 
 B. The Zoning Administrator may allow re-submission of such petitions within said one (1) year period if he determines that, since the date of action on the prior petition:
 
-• There has been a significant change in the zoning district classification of an adjacent piece of
-property; or
-• The Town Council has adopted a plan that changes public policy regarding how the property
-affected by the amendment should be developed;
-• Construction or expansion of a road, water line, sewer line, or other such facilities has occurred to
-serve the property and can comfortably accommodate the intensity of development allowed under the proposed classification; or
-• There has been some other extraordinary change in conditions or circumstances, outside the control
-of the petitioner, which justifies waiver of the one-year restriction on a new petition; this, however, shall not include a change in the ownership of the subject property.
+• There has been a significant change in the zoning district classification of an adjacent piece of property; or
+• The Town Council has adopted a plan that changes public policy regarding how the property affected by the amendment should be developed;
+• Construction or expansion of a road, water line, sewer line, or other such facilities has occurred to serve the property and can comfortably accommodate the intensity of development allowed under the proposed classification; or
+• There has been some other extraordinary change in conditions or circumstances, outside the control of the petitioner, which justifies waiver of the one-year restriction on a new petition; this, however, shall not include a change in the ownership of the subject property.

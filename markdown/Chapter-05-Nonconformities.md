@@ -23,10 +23,8 @@ C. The volume, intensity, or frequency of use of property where a nonconforming 
 D. Physical alteration of nonconforming structures or structures containing a nonconforming use is unlawful if it results in:
 
 • An increase in the total amount of space devoted to a nonconforming use.
-• Greater nonconformity with respect to dimension restrictions such as yard requirements, height
-limitations, or density requirements.
-• The enclosure of previously unenclosed areas, even though those areas are or were used in
-connection with the nonconforming activity.
+• Greater nonconformity with respect to dimension restrictions such as yard requirements, height limitations, or density requirements.
+• The enclosure of previously unenclosed areas, even though those areas are or were used in connection with the nonconforming activity.
 
 E. Minor repairs to and routine maintenance of property where nonconforming situations exist are permitted and encouraged. Major renovation - i.e., work estimated to cost more than 10 percent but less than 60 percent of the taxed value of the structure to be renovated may be done provided that the work will not result in a violation of any other paragraphs of this subsection. In no case, however, shall work costing more than 60 percent of the taxed value of the structure be done, singularly or cumulatively, within any five (5) year period.
 
@@ -87,11 +85,9 @@ G. If a nonconforming sign which advertises a business, service, commodity, acco
 
 H. If a nonconforming sign remains blank for a continuous period of 180 days, that sign shall be deemed abandoned and shall, within 30 days after such abandonment, be altered to comply with this Ordinance or be removed by the sign owner, owner of the property where the sign is located, or other person having control over such sign. For purposes of this Ordinance, a sign shall be deemed "blank" if:
 
-• It advertises a business, service, commodity, accommodations, attraction, or other enterprise or
-activity that is no longer operating or being offered or conducted; or
+• It advertises a business, service, commodity, accommodations, attraction, or other enterprise or activity that is no longer operating or being offered or conducted; or
 • The advertising message it displays becomes illegible in whole or substantial part; or
-• It does not contain an advertising message. (For such purposes, the terms "Sign For Rent", "Sign
-For Lease", "Sign For Sale", etc. shall not be deemed to be an advertising message except for billboards).
+• It does not contain an advertising message. (For such purposes, the terms "Sign For Rent", "Sign For Lease", "Sign For Sale", etc. shall not be deemed to be an advertising message except for billboards).
 
 ## Section 5.7 Nonconforming Landscaping and Buffering
 

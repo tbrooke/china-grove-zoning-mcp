@@ -29,3 +29,11 @@ def test_every_udo_section_number_resolves():
     assert len(udo) > 500
     for s in udo:
         assert corpus.find("udo", s.sid) is not None, s.sid
+
+
+@pytest.mark.parametrize("tool", ["search_ordinance", "search_town_code", "search_160d",
+                                  "search_personnel_policy", "search_all"])
+def test_nonsense_finds_nothing(tool):
+    """Semantic search always has a nearest neighbour; a question none of whose
+    words occur in the text must still get "no results", not that neighbour."""
+    assert getattr(server, tool)("qwxyzzy nonexistentterm").startswith("No results")

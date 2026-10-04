@@ -20,15 +20,12 @@ C. The issuance of a valid Zoning Permit shall confer with it the right to under
 ### 4.2.2 Application Procedures
 A. Applications for zoning permits may be made by the landowner, a lessee or person holding an option or contract to purchase or lease the land, or an authorized agent of the landowner.
 B. Each application for a Zoning Permit shall be accompanied by a plan drawn to scale including the following information:
-• The shape and dimensions of the lot on which the proposed building or use is to be erected or
-conducted;
+• The shape and dimensions of the lot on which the proposed building or use is to be erected or conducted;
 • The location of the said lot with respect to adjacent rights of way;
 • The shape, dimensions, and location of all buildings, existing and proposed, on the said lot;
-• The nature of the proposed use of the building or land, including the extent and location of the use,
-on the said lot;
+• The nature of the proposed use of the building or land, including the extent and location of the use, on the said lot;
 • The location and dimensions of parking and driveways; and
-• Any other information which the Zoning Administrator may deem necessary for consideration in
-enforcing the provisions of this Ordinance.
+• Any other information which the Zoning Administrator may deem necessary for consideration in enforcing the provisions of this Ordinance.
 
 C. Those developments that require Planning Board or Town Council approval shall be subject to the approval process and submittal requirements of Chapters 9, 15, 17 and 18, as applicable, prior the issuance of a Zoning Permit.
 
@@ -50,12 +47,10 @@ The Zoning Administrator shall maintain a record of all zoning permits on file a
 ### 4.2.8 Zoning Permit Not Required
 Notwithstanding any other provisions of this Ordinance, no zoning permit is necessary for the following uses:
 
-• Electric power, telephone, telegraph, cable television, gas, water, and sewer lines, wires or pipes,
-together with supporting poles or structures, located within a public right-of-way
+• Electric power, telephone, telegraph, cable television, gas, water, and sewer lines, wires or pipes, together with supporting poles or structures, located within a public right-of-way
 • Specific signs exempted in Chapter 14 of this Ordinance
 • Mailboxes, newspaper boxes, walls, fences, birdhouses, flag poles, pump covers, and doghouses
-• Interior alterations and renovations which do not alter the use, footprint, elevation, or height of an
-otherwise conforming use and/or structure
+• Interior alterations and renovations which do not alter the use, footprint, elevation, or height of an otherwise conforming use and/or structure
 
 ## Section 4.3 Certificate of Occupancy
 
