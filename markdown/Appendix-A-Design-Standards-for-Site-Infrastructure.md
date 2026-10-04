@@ -152,27 +152,18 @@ No planting, structure, sign, fence, wall, or obstruction greater than three (3)
 
 A. Driveways: The number of street and driveway connections permitted serving a single property frontage or commercial development shall be the minimum deemed necessary by the Town Engineer or NCDOT for reasonable service to the property without undue impairment of safety, convenience, and utility of the roadway. Normally, not more than two driveways shall be permitted for any single property frontage. The arrangement of driveways should be related to adjacent driveways and nearby street intersections and meet the following criteria:
 
-• Driveways accessing local or collector type streets shall be at least 100 feet from the point of tangency
-of the radius curvature of the next intersecting street.
-• Driveways serving traffic volumes in excess of 300 ADT or accessing thoroughfares shall be located a
-minimum of 250 feet from the point of tangency of the radius of curvature of the intersecting street.
-• Where two driveways are proposed along a single property frontage to facilitate operations, the
-minimum distance between the centerlines of the drives shall be 200 feet.
-• The minimum distance between the centerlines of driveways into shopping centers or facilities
-generating in excess of 300 ADT shall be a minimum of 400 feet.
-• Full access driveways open to signalization should be 1000 feet apart. Driveways which access
-thoroughfares and serve more than 1500 ADT shall provide deceleration lanes in approach to the driveway.
-• Residential drives shall be located a minimum of 10 feet from the point of tangency of curb radii of
-street intersections.
+• Driveways accessing local or collector type streets shall be at least 100 feet from the point of tangency of the radius curvature of the next intersecting street.
+• Driveways serving traffic volumes in excess of 300 ADT or accessing thoroughfares shall be located a minimum of 250 feet from the point of tangency of the radius of curvature of the intersecting street.
+• Where two driveways are proposed along a single property frontage to facilitate operations, the minimum distance between the centerlines of the drives shall be 200 feet.
+• The minimum distance between the centerlines of driveways into shopping centers or facilities generating in excess of 300 ADT shall be a minimum of 400 feet.
+• Full access driveways open to signalization should be 1000 feet apart. Driveways which access thoroughfares and serve more than 1500 ADT shall provide deceleration lanes in approach to the driveway.
+• Residential drives shall be located a minimum of 10 feet from the point of tangency of curb radii of street intersections.
 
 B. Street Alignment and Separation:
 
-• There shall be a minimum of 200 feet between centerlines of street jogs on collectors and arterials.
-Local streets shall not be offset less than 125 feet from their centerline.
-• Median breaks shall be provided to allow safe and efficient movement of traffic. The desirable spacing
-of median breaks shall be at 1000 foot intervals, with the minimum allowable spacing to be at 500’ intervals.
-• Intersections of roadways controlled by a traffic signal should be spaced along roadways at the
-following intervals:
+• There shall be a minimum of 200 feet between centerlines of street jogs on collectors and arterials. Local streets shall not be offset less than 125 feet from their centerline.
+• Median breaks shall be provided to allow safe and efficient movement of traffic. The desirable spacing of median breaks shall be at 1000 foot intervals, with the minimum allowable spacing to be at 500’ intervals.
+• Intersections of roadways controlled by a traffic signal should be spaced along roadways at the following intervals:
 | Street Category | Interval Spacing |
 |---|---|
 | Category 3 | 2,620-5,280 feet |
@@ -186,8 +177,7 @@ following intervals:
 | Category 1 | 200 feet |
 
 
-• Four legged intersections not controlled by a traffic signal should be spaced along roadways at the
-following intervals:
+• Four legged intersections not controlled by a traffic signal should be spaced along roadways at the following intervals:
 
 | Street Category | Interval Spacing |
 |---|---|
@@ -195,8 +185,7 @@ following intervals:
 | Category 2 | 750 feet |
 | Category 1 | 300 feet |
 
-• Three legged intersections not controlled by a traffic signal should be spaced along roadways at the
-following intervals:
+• Three legged intersections not controlled by a traffic signal should be spaced along roadways at the following intervals:
 
 | Street Category | Interval Spacing |
 |---|---|

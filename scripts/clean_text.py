@@ -62,6 +62,30 @@ def fix_structure(name: str, body: str) -> str:
             out.append(l[len(m.group(1)) + 1:] if m and int(m.group(2)) != int(chapter.group(1)) else l)
         lines = out
 
+    # A section title the converter left as a plain line ("7.17.19 Provisions
+    # for All Special Flood Hazard Areas ...", "13.3.1 Single-Family ...") would
+    # otherwise file its whole section under the heading before it. Its own
+    # chapter's number, a capitalised title, no sentence: a heading. A short
+    # capitalised line right after it is the title's wrapped remainder.
+    if chapter:
+        out, i = [], 0
+        while i < len(lines):
+            l = lines[i]
+            m = re.match(r"^(\d+)\.\d+\.\d+(?:\.\d+)* [A-Z][^.]*$", l.rstrip())
+            if (m and int(m.group(1)) == int(chapter.group(1))
+                    and (i == 0 or not lines[i - 1].strip())):
+                title = l.strip()
+                nxt = lines[i + 1].strip() if i + 1 < len(lines) else ""
+                if nxt and len(nxt) < 60 and nxt[0].isupper() and not re.search(r"[.:;]$", nxt):
+                    title = f"{title} {nxt}"
+                    i += 1
+                out.append(f"### {title}")
+                i += 1
+                continue
+            out.append(l)
+            i += 1
+        lines = out
+
     if name.startswith("Appendix-A"):
         title = "APPENDIX A: DESIGN STANDARDS FOR SITE INFRASTRUCTURE"
         out, titled = [], False

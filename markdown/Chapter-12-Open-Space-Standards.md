@@ -96,14 +96,10 @@ Significant forest stands, natural vegetation, specimen trees, severe natural to
 
 Determination of the need to preserve significant vegetation on the site is also a function of a site’s buildable area or potential for development defined as follows:
 
-- Prime Buildable. Land with little or no building restrictions that occur as a result of slope conditions
-or site topography. These areas are defined as slopes less than 10 percent and generally offer the least opportunity for the preservation of existing tree canopy, forest stands, or significant vegetation outside of satisfying open space dedication requirements.
-- Secondary Buildable. Areas with slopes of 10 to 15 percent, site preparation techniques should
-minimize grading. Such areas require selective clearing and grading. These areas offer limited opportunity for the preservation of existing tree canopy, forest stands, or significant vegetation outside of satisfying open space dedication requirements.
-- Conserved. Areas with slopes of 15 to 25 percent with severe slope restrictions. These areas offer
-optimal opportunity for the preservation of existing tree canopy, forest stands, or significant vegetation outside of satisfying open space dedication requirements.
-- Preserved. Natural floodplain and floodways, wetland areas, existing tree canopy, forest stands, or
-significant vegetation on slopes exceeding 25 percent, and which present severe or prohibitive slope conditions for development shall be preserved.
+- Prime Buildable. Land with little or no building restrictions that occur as a result of slope conditions or site topography. These areas are defined as slopes less than 10 percent and generally offer the least opportunity for the preservation of existing tree canopy, forest stands, or significant vegetation outside of satisfying open space dedication requirements.
+- Secondary Buildable. Areas with slopes of 10 to 15 percent, site preparation techniques should minimize grading. Such areas require selective clearing and grading. These areas offer limited opportunity for the preservation of existing tree canopy, forest stands, or significant vegetation outside of satisfying open space dedication requirements.
+- Conserved. Areas with slopes of 15 to 25 percent with severe slope restrictions. These areas offer optimal opportunity for the preservation of existing tree canopy, forest stands, or significant vegetation outside of satisfying open space dedication requirements.
+- Preserved. Natural floodplain and floodways, wetland areas, existing tree canopy, forest stands, or significant vegetation on slopes exceeding 25 percent, and which present severe or prohibitive slope conditions for development shall be preserved.
 
 Development proposals incorporating tree preservation shall include such measures as part of the required landscaping plan as described in Section 11.2.
 

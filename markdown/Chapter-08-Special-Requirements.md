@@ -59,8 +59,7 @@ I. On any lot one (1) acre or less in area containing a principal residential us
 
 J. Satellite dishes do not require a zoning permit and shall be regulated as follows:
 
-• Satellite dishes shall be no larger than two (2) feet in diameter unless the applicant can demonstrate
-the need for a larger size.
+• Satellite dishes shall be no larger than two (2) feet in diameter unless the applicant can demonstrate the need for a larger size.
 • Satellite dishes whose reflective surface is solid shall be painted a subdued or natural color.
 
 K. Under no circumstances may a vehicle, trailer, or manufactured home be used as an accessory structure.
@@ -95,10 +94,8 @@ D. Beekeeping:
 
 • A single parcel may have up to five (5) hives.
 • The hive must be placed at ground level or securely attached to an anchor or stand.
-• The hive must be placed behind the residence and shall be not less than fifty (50) feet from any
-property line.
-• The hive must be removed if the owner no longer maintains the hive or if removal is necessary to
-protect the health, safety, and welfare of the public.
+• The hive must be placed behind the residence and shall be not less than fifty (50) feet from any property line.
+• The hive must be removed if the owner no longer maintains the hive or if removal is necessary to protect the health, safety, and welfare of the public.
 
 ## Section 8.6 Animal Slaughtering and Processing
 
@@ -255,10 +252,8 @@ D. All electronic gaming computers, stations, machines and/or terminals shall be
 
 E. Electronic Gaming Operations approved under this Special Use Permit shall be supervised and operated by a person over 21-years of age who:
 
-• has not been convicted or plead guilty or no contest to any criminal offense involving moral
-turpitude, gambling or the unlawful possession, sale, distribution, or use of any alcoholic beverage or controlled substance within the five (5) years next preceding the date of the application for a Special Use Permit; and
-• is a resident of North Carolina or does have a registered agent in North Carolina who is authorized
-to accept service of process.
+• has not been convicted or plead guilty or no contest to any criminal offense involving moral turpitude, gambling or the unlawful possession, sale, distribution, or use of any alcoholic beverage or controlled substance within the five (5) years next preceding the date of the application for a Special Use Permit; and
+• is a resident of North Carolina or does have a registered agent in North Carolina who is authorized to accept service of process.
 
 F. Neon or flashing lights or fluttering devices designed and used to attract attention are not permitted.
 
@@ -499,10 +494,8 @@ E. The facility shall be enclosed with a perimeter fence or wall of at least eig
 F. Landscaping:
 
 • Type A buffer around perimeter of development,
-• All areas not paved, or buildings shall have turf/grass or Technical Review Committee approved
-ground cover, gravel parking areas, gravel internal drives and aisles are not permitted,
-• All off-street parking including exits, entrances, and maneuvering and parking areas shall be paved
-with asphalt or concrete.
+• All areas not paved, or buildings shall have turf/grass or Technical Review Committee approved ground cover, gravel parking areas, gravel internal drives and aisles are not permitted,
+• All off-street parking including exits, entrances, and maneuvering and parking areas shall be paved with asphalt or concrete.
 
 G. Minimum aisle width between buildings shall be 25 feet, if bollards are used width shall be measured between bollards.
 
@@ -624,12 +617,9 @@ J. There may be one (1) freestanding monument sign erected per public street fro
 
 K. Solid waste storage areas, as an accessory use, shall be required and confined in an enclosed area that is screened on all sides.
 
-• The enclosure shall be large enough to confine waste items and containers from view of the
-public, roadways, and adjacent properties. Enclosures must be located within the boundaries of the property they serve. Under no circumstances are they to be placed on Town or State rights-of-way.
-• Enclosures are to be constructed of materials that are neutral in color and compatible with other
-building materials in the development. Screening of Solid Waste Storage Containers shall begin at ground level with no open space between the ground and bottom of the screening material and shall be a minimum of six (6) feet tall with a door or gate. Single and two (2)-family dwellings are excluded from this requirement.
-• Solid waste storage containers shall be maintained in an orderly and neat fashion
-meaning that no condition shall exist which may cause a fire or safety hazard or is a public nuisance.
+• The enclosure shall be large enough to confine waste items and containers from view of the public, roadways, and adjacent properties. Enclosures must be located within the boundaries of the property they serve. Under no circumstances are they to be placed on Town or State rights-of-way.
+• Enclosures are to be constructed of materials that are neutral in color and compatible with other building materials in the development. Screening of Solid Waste Storage Containers shall begin at ground level with no open space between the ground and bottom of the screening material and shall be a minimum of six (6) feet tall with a door or gate. Single and two (2)-family dwellings are excluded from this requirement.
+• Solid waste storage containers shall be maintained in an orderly and neat fashion meaning that no condition shall exist which may cause a fire or safety hazard or is a public nuisance.
 
 ## Section 8.29 Nursing and Residential Care Facilities
 
@@ -1073,8 +1063,7 @@ This section authorizes the establishment of certain temporary uses of limited d
 
 • The proposed use will not materially endanger the public, health, welfare, and safety.
 • The proposed use will not have a substantial negative effect on adjoining properties.
-• The proposed use meets all applicable provisions of this ordinance and all other ordinances in the
-Town of China Grove
+• The proposed use meets all applicable provisions of this ordinance and all other ordinances in the Town of China Grove
 
 A. General Requirements.
 1. All applications for temporary use permits shall include a minor site plan and a written description of the proposed use or event, the duration of the use or event, and if applicable, the hours of operations, anticipated attendance, and any buildings, structures, signs, or attention-attracting devices used in conjunction with the use or event. The Zoning Administrator shall require written permission of the property owner that the temporary use may occur on the property. The Zoning Administrator may require reasonable proof of ownership or authorization from any person applying for a temporary use permit.
@@ -1095,31 +1084,23 @@ C. Specific Regulations for Temporary Uses and Structures.
 
 1. Temporary Construction Office Trailers. Construction trailers used in conjunction with construction projects provided that the following conditions are met:
 
-• Such construction trailers may be located at a building site where there is a valid building
-permit for the construction project, or, in the case of a residential subdivision, a valid building permit for at least one of the residential units being constructed.
-• All construction trailers shall be located at least 10 feet off any street right-of-way and not be
-placed in any required rear or side yard setback.
-• In addition to construction trailers, at any construction site for a construction project valued at
-one million dollars or more, one or more security guard houses may be installed. Use of such structures may include overnight stay provided adequate sanitary facilities are provided and the same conditions for construction trailers are met.
-• The temporary construction trailer shall be removed within ten (10) days after final inspection
-of the permanent structure or expiration of the corresponding building permit, whichever event occurs first.
+• Such construction trailers may be located at a building site where there is a valid building permit for the construction project, or, in the case of a residential subdivision, a valid building permit for at least one of the residential units being constructed.
+• All construction trailers shall be located at least 10 feet off any street right-of-way and not be placed in any required rear or side yard setback.
+• In addition to construction trailers, at any construction site for a construction project valued at one million dollars or more, one or more security guard houses may be installed. Use of such structures may include overnight stay provided adequate sanitary facilities are provided and the same conditions for construction trailers are met.
+• The temporary construction trailer shall be removed within ten (10) days after final inspection of the permanent structure or expiration of the corresponding building permit, whichever event occurs first.
 
 2. Temporary Sales Office. Structures, whether temporary or permanent, located in a subdivision containing 25 or more lots, and used as sales offices for the subdivision development are permitted. Any temporary structure used as a sales office shall be located on a lot which is in compliance with the regulations of this Ordinance and shall meet all yard requirements for the applicable zoning district. At least five (5) off-street parking spaces shall be provided on the lot to accommodate persons using the sales office. If a permanent residential structure is used as the sales office, future use of said structure shall be for residential purposes. A trailer may be used as a temporary sales office, provided that the following conditions are met:
 
-• The trailer shall be provided with underpinning, from the bottom of the walls to the ground,
-made of masonry, vinyl, pre-painted aluminum material, or other similar material.
+• The trailer shall be provided with underpinning, from the bottom of the walls to the ground, made of masonry, vinyl, pre-painted aluminum material, or other similar material.
 • Landscaping shall be provided to create an aesthetically pleasing appearance.
-• At the completion of the sales in a tract, or two (2) years from the date the temporary sales
-office began operation, whichever is sooner, said sales office shall cease operation unless the Zoning Administrator determines that substantial progress is being made in the selling and/or marketing of the lots and/or homes in the subdivision. In such case, one or more extensions (each not to exceed one year in duration) may be so authorized by the Zoning Administrator. If a temporary structure is used as the sales office, it shall be removed after its use as a sales office is terminated. Immediately after the structure is removed, the lot shall be returned to a natural state. Any paved or graveled driveway and/or parking area associated with the sales office shall also be removed. All bare soil areas on the lot shall be returned to a natural vegetative state (reseeded or sodded) immediately after removal of the sales office and driveway/parking area.
+• At the completion of the sales in a tract, or two (2) years from the date the temporary sales office began operation, whichever is sooner, said sales office shall cease operation unless the Zoning Administrator determines that substantial progress is being made in the selling and/or marketing of the lots and/or homes in the subdivision. In such case, one or more extensions (each not to exceed one year in duration) may be so authorized by the Zoning Administrator. If a temporary structure is used as the sales office, it shall be removed after its use as a sales office is terminated. Immediately after the structure is removed, the lot shall be returned to a natural state. Any paved or graveled driveway and/or parking area associated with the sales office shall also be removed. All bare soil areas on the lot shall be returned to a natural vegetative state (reseeded or sodded) immediately after removal of the sales office and driveway/parking area.
 
 3. Temporary Manufactured Home. Manufactured homes may be allowed on a temporary basis in a zoning district in which such use is not listed as a permitted use, if a disaster occurs which results in an occupied, single-family dwelling being destroyed (i.e., it receives damage greater than 60 percent of its tax value as indicated on the most current tax listings). In this instance a manufactured home may be placed on the lot containing the dwelling unit which was destroyed. The purpose of allowing such manufactured home on said lot is to give the occupants of the destroyed dwelling unit a place to live while a new dwelling unit is being constructed or damage to the original dwelling unit is being repaired. If a manufactured home is used for such an occurrence, it is subject to the following conditions:
 
-• Such manufactured home shall not be placed in the front yard and shall be located no closer
-than 15 feet to another principal residential structure on another lot and no closer than 10 feet to any lot line.
+• Such manufactured home shall not be placed in the front yard and shall be located no closer than 15 feet to another principal residential structure on another lot and no closer than 10 feet to any lot line.
 • A recreational vehicle is not allowed as a manufactured home.
 
-• The Zoning Administrator shall be given the authority to issue a zoning permit for such
-temporary use on a one-time basis only for a period of up to nine (9) months. Such permit may be renewed on a one-time only basis [for a period of no greater than nine (9) months] by the Board of Adjustment if it is determined that:
+• The Zoning Administrator shall be given the authority to issue a zoning permit for such temporary use on a one-time basis only for a period of up to nine (9) months. Such permit may be renewed on a one-time only basis [for a period of no greater than nine (9) months] by the Board of Adjustment if it is determined that:
 
 o   Construction of a new dwelling unit is proceeding in a diligent manner; and,
 o   The granting of such permit will not materially endanger the public, health, welfare, or
@@ -1155,15 +1136,12 @@ abutting properties.
 7. Civic Organization Events.
 • Shall only be permitted in NC, OI, CB, and HB Districts.
 
-• The applicant shall provide site plan with the proposed location, intended activities, operation
-schedule, and any other information deemed necessary to evaluate impact on the adjoining properties and the community in general.
+• The applicant shall provide site plan with the proposed location, intended activities, operation schedule, and any other information deemed necessary to evaluate impact on the adjoining properties and the community in general.
 • Any food service or sales shall be approved by the County Health Department.
 • Adequate bathroom facilities shall be provided.
-• All trash shall be removed in a manner approved by the Town of China Grove Public Works
-Department.
+• All trash shall be removed in a manner approved by the Town of China Grove Public Works Department.
 • Adequate off-street parking shall be provided.
-• Temporary event shall be for a period not to exceed thirty (30) days. No more than four (4)
-such events are allowed per calendar year.
+• Temporary event shall be for a period not to exceed thirty (30) days. No more than four (4) such events are allowed per calendar year.
 
 D. Temporary Uses Not Listed.
 Other temporary uses not listed may be granted by the Zoning Administrator. In considering approval of a temporary use, the Zoning Administrator may attach reasonable and appropriate conditions to ensure the public health, safety and welfare are protected. The approval of a temporary use shall be in accordance with the following:

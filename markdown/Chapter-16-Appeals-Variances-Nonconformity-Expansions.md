@@ -90,11 +90,9 @@ B. Any person aggrieved by the decision of the Board may appeal such decision to
 
 C. Floodplain variances may be issued for:
 
-• The repair or rehabilitation of historic structures upon the determination that the proposed repair or
-rehabilitation will not preclude the structure's continued designation as a historic structure and that the variance is the minimum necessary to preserve the historic character and design of the structure; or
+• The repair or rehabilitation of historic structures upon the determination that the proposed repair or rehabilitation will not preclude the structure's continued designation as a historic structure and that the variance is the minimum necessary to preserve the historic character and design of the structure; or
 
-• Functionally dependent facilities if determined to meet the definition as stated in Appendix A of
-this ordinance, provided provisions of 16.7.4.I have been satisfied, and such facilities are protected by methods that minimize flood damages during the base flood and create no additional threats to public safety; or
+• Functionally dependent facilities if determined to meet the definition as stated in Appendix A of this ordinance, provided provisions of 16.7.4.I have been satisfied, and such facilities are protected by methods that minimize flood damages during the base flood and create no additional threats to public safety; or
 
 • Any other type of development, provided it meets the requirements of this subsection.
 
@@ -104,30 +102,24 @@ D. In passing upon floodplain variances, the Board shall consider all technical 
 
 • The danger to life and property due to flooding or erosion damage;
 
-• The susceptibility of the proposed facility and its contents to flood damage and the effect of such
-damage on the individual owner;
+• The susceptibility of the proposed facility and its contents to flood damage and the effect of such damage on the individual owner;
 
 • The importance of the services provided by the proposed facility to the community;
 
-• The necessity to the facility of a waterfront location as defined in Appendix A of this ordinance
-as a functionally dependent facility, where applicable;
+• The necessity to the facility of a waterfront location as defined in Appendix A of this ordinance as a functionally dependent facility, where applicable;
 
-• The availability of alternative locations, not subject to flooding or erosion damage, for the
-proposed use;
+• The availability of alternative locations, not subject to flooding or erosion damage, for the proposed use;
 
 VARIANCES, AND NONCONFORMITY EXPANSIONS
 • The compatibility of the proposed use with existing and anticipated development;
 
-• The relationship of the proposed use to the comprehensive plan and floodplain management
-program for that area;
+• The relationship of the proposed use to the comprehensive plan and floodplain management program for that area;
 
 • The safety of access to the property in times of flood for ordinary and emergency vehicles;
 
-• The expected heights, velocity, duration, rate of rise, and sediment transport of the floodwaters
-and the effects of wave action, if applicable, expected at the site; and
+• The expected heights, velocity, duration, rate of rise, and sediment transport of the floodwaters and the effects of wave action, if applicable, expected at the site; and
 
-• The costs of providing governmental services during and after flood conditions including
-maintenance and repair of public utilities and facilities such as sewer, gas, electrical and water systems, and streets and bridges.
+• The costs of providing governmental services during and after flood conditions including maintenance and repair of public utilities and facilities such as sewer, gas, electrical and water systems, and streets and bridges.
 
 E. A written report addressing each of the above factors shall be submitted with the application for a floodplain variance.
 
@@ -147,11 +139,9 @@ Supplemental Conditions for Floodplain Variances:
 • Variances shall not be issued when the floodplain variance will make the structure in violation of other Federal, State, or local laws, regulations, or ordinances.
 
 VARIANCES, AND NONCONFORMITY EXPANSIONS
-• Variances shall not be issued within any designated floodway or non-encroachment area if the
-floodplain variance would result in any increase in flood levels during base flood discharge.
+• Variances shall not be issued within any designated floodway or non-encroachment area if the floodplain variance would result in any increase in flood levels during base flood discharge.
 • Variances shall only be issued prior to development permit approval.
-• Variances shall only be issued upon a determination that the granting of a floodplain variance
-will not result in the increased flood heights, additional threats to public safety, or extraordinary public expense, create nuisance, cause fraud on or victimization of the public, or conflict with existing local laws or ordinances.
+• Variances shall only be issued upon a determination that the granting of a floodplain variance will not result in the increased flood heights, additional threats to public safety, or extraordinary public expense, create nuisance, cause fraud on or victimization of the public, or conflict with existing local laws or ordinances.
 
 J. A variance may be issued for solid waste disposal facilities or sites, hazardous waste management facilities, salvage yards, and chemical storage facilities that are located in Special Flood Hazard Areas provided that all of the following conditions are met.
 
@@ -159,12 +149,10 @@ J. A variance may be issued for solid waste disposal facilities or sites, hazard
 
 No feasible location exists for the use outside the Special Flood Hazard Area.
 
-• The reference level of any structure is elevated or floodproofed to at least the regulatory flood
-protection elevation.
+• The reference level of any structure is elevated or floodproofed to at least the regulatory flood protection elevation.
 • The use complies with all other applicable Federal, State and local laws.
 
-• The Town of China Grove has notified the Secretary of the North Carolina Department of Crime
-Control and Public Safety of its intention to grant a floodplain variance at least thirty (30) calendar days prior to granting the floodplain variance.
+• The Town of China Grove has notified the Secretary of the North Carolina Department of Crime Control and Public Safety of its intention to grant a floodplain variance at least thirty (30) calendar days prior to granting the floodplain variance.
 
 ## Section 16.5 Nonconformities
 
@@ -172,12 +160,9 @@ A. A nonconforming use shall not be changed to another nonconforming use nor sha
 
 B. The Board may only grant a change in a nonconforming use or replacement of a nonconforming structure which has been destroyed after having first held a public hearing and having determined that:
 
-- Said change or replacement will be more suitable and appropriate for the lot(s) on which it is located
-than the existing situation, and
-- That the proposed change will have a less harmful effect than the existing situation on the properties
-surrounding the lot(s) in question, and
-- That the decision to grant the change will be in harmony with the general purpose and intent of this
-ordinance and will not be injurious to the neighborhood or otherwise be detrimental to the public welfare.
+- Said change or replacement will be more suitable and appropriate for the lot(s) on which it is located than the existing situation, and
+- That the proposed change will have a less harmful effect than the existing situation on the properties surrounding the lot(s) in question, and
+- That the decision to grant the change will be in harmony with the general purpose and intent of this ordinance and will not be injurious to the neighborhood or otherwise be detrimental to the public welfare.
 
 C. The Board, in granting said changes, may prescribe appropriate conditions and safeguards in conformity with this ordinance in order to conform with (B) above. Violation of such conditions and safeguards when made a part of the terms upon which the change was granted, shall be deemed a violation of this ordinance and shall be punishable as prescribed in Chapter 4 of this ordinance.
 

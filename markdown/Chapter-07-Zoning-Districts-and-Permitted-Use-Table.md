@@ -656,7 +656,8 @@ O. When a structure is located in multiple flood hazard zones or in a flood haza
 
 ### 7.17.18 Reserved
 
-7.17.19 Provisions for All Special Flood Hazard Areas where Base Flood Elevation Data is Provided In all Special Flood Hazard Areas where BFE data has been provided, as set forth in 7.17.6, or 7.17.20, the following provisions, in addition to the provisions of 7.17.21, are required:
+### 7.17.19 Provisions for All Special Flood Hazard Areas where Base Flood Elevation Data is Provided
+In all Special Flood Hazard Areas where BFE data has been provided, as set forth in 7.17.6, or 7.17.20, the following provisions, in addition to the provisions of 7.17.21, are required:
 
 A. Residential Construction. New construction and substantial improvement of any residential structure (including manufactured homes) shall have the reference level, including basement, elevated no lower than the regulatory flood protection elevation, as defined in Chapter 3 of this ordinance.
 
@@ -782,7 +783,8 @@ B. The BFE used in determining the regulatory flood protection elevation shall b
 
 4. When Base Flood Elevation (BFE) data is not available from a Federal, State, or other source as outlined above, the reference level shall be elevated or floodproofed (nonresidential) to or above the regulatory flood protection elevation, as defined in Chapter 3. All other applicable provisions of 7.17.19 shall also apply.
 
-7.17.22 Standards for Riverine Floodplains with Base Flood Elevations but without Floodways or Non-Encroachment Areas Along rivers and streams where BFE data is provided by FEMA or is available from another source but neither floodway nor non-encroachment areas are identified for a Special Flood Hazard Area on the FIRM or in the FIS report, the following requirements shall apply to all development within such areas:
+### 7.17.22 Standards for Riverine Floodplains with Base Flood Elevations but without Floodways or Non-Encroachment Areas
+Along rivers and streams where BFE data is provided by FEMA or is available from another source but neither floodway nor non-encroachment areas are identified for a Special Flood Hazard Area on the FIRM or in the FIS report, the following requirements shall apply to all development within such areas:
 
 A. Standards of 7.17.17 and 19; and
 
@@ -805,7 +807,8 @@ C. Manufactured homes may be permitted, provided the following provisions are me
 
 2. The no encroachment standard of 7.17.23.A.
 
-7.17.24 Effect on Rights and Liabilities under the Existing Flood Damage Prevention Ordinance This section in part comes forward by re-enactment of some of the provisions of the Flood Damage Prevention Ordinance enacted on April 7, 1978 as amended, and it is not the intention to repeal but rather to re-enact and continue to enforce without interruption of such existing provisions, so that all rights and liabilities that have accrued thereunder are reserved and may be enforced. The enactment of this section shall not affect any action, suit, or proceeding instituted or pending. All provisions of the Flood Damage Prevention Ordinance of The Town of China Grove enacted on March 1, 1978, as amended, which are not reenacted herein are repealed.
+### 7.17.24 Effect on Rights and Liabilities under the Existing Flood Damage Prevention Ordinance
+This section in part comes forward by re-enactment of some of the provisions of the Flood Damage Prevention Ordinance enacted on April 7, 1978 as amended, and it is not the intention to repeal but rather to re-enact and continue to enforce without interruption of such existing provisions, so that all rights and liabilities that have accrued thereunder are reserved and may be enforced. The enactment of this section shall not affect any action, suit, or proceeding instituted or pending. All provisions of the Flood Damage Prevention Ordinance of The Town of China Grove enacted on March 1, 1978, as amended, which are not reenacted herein are repealed.
 
 ### 7.17.25 Effect upon Outstanding Floodplain Development Permits
 Nothing herein contained shall require any change in the plans, construction, size, or designated use of any development or any part thereof for which a floodplain development permit has been granted by the Floodplain Administrator or his or her authorized agents before the time of passage of this ordinance; provided, however, that when construction is not begun under such outstanding permit within a period of six (6) months subsequent to the date of issuance of the outstanding permit, construction or use shall be in conformity with the provisions of this ordinance.

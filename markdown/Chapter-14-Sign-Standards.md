@@ -102,33 +102,26 @@ d) No sign allowed under this subsection shall be lighted.
 
 . J. Temporary special event banner provided that:
 
-• Signs shall be erected no sooner than (10) days prior and removed no later than two (2) days
-after the event.
+• Signs shall be erected no sooner than (10) days prior and removed no later than two (2) days after the event.
 • No such sign shall exceed (32) square feet.
 • No such sign shall be illuminated.
-• All such signs shall be located off the street right-of-way, unless otherwise granted permission
-for such a location by the Town of China Grove or NCDOT. In no case may any such sign extend onto or over a street pavement or impede the view of any motorists or pedestrians. Location of such signs within a road right-of-way shall be limited to the day of the event.
+• All such signs shall be located off the street right-of-way, unless otherwise granted permission for such a location by the Town of China Grove or NCDOT. In no case may any such sign extend onto or over a street pavement or impede the view of any motorists or pedestrians. Location of such signs within a road right-of-way shall be limited to the day of the event.
 
 K. Directional Signs provided that:
 
-• No more than three (3) directional signs per principal use may be erected. No two directional signs
-shall be located within 1,000 feet of each other as measured using the straightest short line distance.
-• Directional signs greater than three (3) feet in height as measured from the grade of the road upon
-which it fronts shall be located outside the required sight triangle.
+• No more than three (3) directional signs per principal use may be erected. No two directional signs shall be located within 1,000 feet of each other as measured using the straightest short line distance.
+• Directional signs greater than three (3) feet in height as measured from the grade of the road upon which it fronts shall be located outside the required sight triangle.
 • Directional signs shall not be illuminated.
 • All directional signs shall be free-standing signs. Portable signs shall be prohibited.
-• There shall be no greater than four (4) directional signs on separate supports at the intersection of
-any two (2) roads.
+• There shall be no greater than four (4) directional signs on separate supports at the intersection of any two (2) roads.
 • More than one (1) sign may be placed on the same supports.
-• No two (2) directional signs hung from separate supports shall be located within five (5) feet of
-each other.
+• No two (2) directional signs hung from separate supports shall be located within five (5) feet of each other.
 • The maximum area of any directional sign shall be six (6) square feet.
 
 L. Directory Signs provided that:
 
 • No sign is located in a road right-of-way.
-• The maximum sign area shall be (40) square feet or one-half the area of the largest free-standing
-sign permitted for said use, whichever is less.
+• The maximum sign area shall be (40) square feet or one-half the area of the largest free-standing sign permitted for said use, whichever is less.
 • Letters do not exceed six (6) inches in height.
 • Height of the sign does not exceed six (6) feet.
 

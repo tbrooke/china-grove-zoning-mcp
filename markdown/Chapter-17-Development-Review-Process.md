@@ -389,8 +389,7 @@ Amendments to Special Use permits shall follow the process established in Sectio
 If a request for Special Use Permit is denied by the Town Council, a similar application for the same property or any portion thereof shall not be filed until the expiration of a 12-month period from the date of the most recent denial by the Town Council. This waiting period shall not be applicable where the application for a Special Use Permit is substantially different from the original application. The term "substantially different" as herein applied shall mean:
 
 • The proposed principal use is different than the use contained in the original application; or
-• The gross floor area of the proposed development is 50 percent or more smaller than contained in the
-original application.
+• The gross floor area of the proposed development is 50 percent or more smaller than contained in the original application.
 
 ## Section 17.10 Quasi-judicial Procedure
 
