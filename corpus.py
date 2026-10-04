@@ -88,9 +88,11 @@ def _split_heading(corpus: str, heading: str, file: str) -> tuple[str | None, st
         if m := re.match(r"^(160D-[\d.]+)[:.]?\s*(.*)$", h):
             return m.group(1), m.group(2)
     elif corpus == "personnel":
-        if m := re.match(r"^(\d+\.\d+)\s+(.*)$", h):
-            if n := re.match(r"Section-(\d+)", file):
-                return f"{ROMAN[int(n.group(1)) - 1]}-{m.group(1)}", m.group(2)
+        roman = ROMAN[int(n.group(1)) - 1] if (n := re.match(r"Section-(\d+)", file)) else None
+        if roman and (m := re.match(r"^(\d+(?:\.\d+)+)\s+(.*)$", h)):
+            return f"{roman}-{m.group(1)}", m.group(2)
+        if roman and (m := re.match(r"^ITEM ([A-Z])\)\s*(.*)$", h, re.I)):
+            return f"{roman}-Item-{m.group(1).upper()}", m.group(2)
     return None, h
 
 

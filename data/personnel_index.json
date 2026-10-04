@@ -15,7 +15,7 @@
     "id": "I-2.0",
     "title": "POLICY STATEMENT",
     "filename": "Section-01-Introduction.md",
-    "line_start": 44
+    "line_start": 34
   },
   {
     "section": "I",
@@ -24,7 +24,7 @@
     "id": "I-3.0",
     "title": "CHANGES IN PERSONNEL POLICIES",
     "filename": "Section-01-Introduction.md",
-    "line_start": 67
+    "line_start": 43
   },
   {
     "section": "I",
@@ -33,7 +33,7 @@
     "id": "I-4.0",
     "title": "DEFINITIONS",
     "filename": "Section-01-Introduction.md",
-    "line_start": 77
+    "line_start": 48
   },
   {
     "section": "II",
@@ -51,7 +51,7 @@
     "id": "II-1.03",
     "title": "SECONDARY EMPLOYMENT",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 38
+    "line_start": 20
   },
   {
     "section": "II",
@@ -60,7 +60,7 @@
     "id": "II-1.04",
     "title": "EMPLOYEE CLASSIFICATION",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 47
+    "line_start": 25
   },
   {
     "section": "II",
@@ -69,7 +69,7 @@
     "id": "II-1.04.01",
     "title": "REGULAR FULL-TIME",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 53
+    "line_start": 30
   },
   {
     "section": "II",
@@ -78,7 +78,7 @@
     "id": "II-1.04.02",
     "title": "PART-TIME",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 62
+    "line_start": 36
   },
   {
     "section": "II",
@@ -87,7 +87,7 @@
     "id": "II-1.04.03",
     "title": "PAID-PER-CALL",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 79
+    "line_start": 43
   },
   {
     "section": "II",
@@ -96,7 +96,7 @@
     "id": "II-2.0",
     "title": "HIRING PROCEDURES",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 89
+    "line_start": 48
   },
   {
     "section": "II",
@@ -105,7 +105,7 @@
     "id": "II-2.01",
     "title": "PROCESSING THE NEW EMPLOYEE",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 109
+    "line_start": 57
   },
   {
     "section": "II",
@@ -114,7 +114,7 @@
     "id": "II-2.02",
     "title": "RECRUITING",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 136
+    "line_start": 68
   },
   {
     "section": "II",
@@ -123,7 +123,7 @@
     "id": "II-2.03",
     "title": "PRIVATE EMPLOYMENT AGENCIES",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 148
+    "line_start": 75
   },
   {
     "section": "II",
@@ -132,7 +132,7 @@
     "id": "II-2.04",
     "title": "CORRESPONDENCE WITH APPLICANTS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 156
+    "line_start": 80
   },
   {
     "section": "II",
@@ -141,7 +141,7 @@
     "id": "II-2.05",
     "title": "JOB VACANCY POSTING",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 164
+    "line_start": 85
   },
   {
     "section": "II",
@@ -150,7 +150,7 @@
     "id": "II-2.06",
     "title": "APPLICATION FOR EMPLOYMENT",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 173
+    "line_start": 90
   },
   {
     "section": "II",
@@ -159,7 +159,7 @@
     "id": "II-2.07",
     "title": "MINIMUM QUALIFICATIONS FOR JOBS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 188
+    "line_start": 97
   },
   {
     "section": "II",
@@ -168,7 +168,7 @@
     "id": "II-2.08",
     "title": "DISQUALIFICATION OF APPLICANTS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 195
+    "line_start": 102
   },
   {
     "section": "II",
@@ -177,7 +177,7 @@
     "id": "II-2.09",
     "title": "PRELIMINARY INTERVIEWS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 219
+    "line_start": 120
   },
   {
     "section": "II",
@@ -186,7 +186,7 @@
     "id": "II-2.10",
     "title": "VETERAN'S PREFERENCE",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 228
+    "line_start": 126
   },
   {
     "section": "II",
@@ -195,7 +195,7 @@
     "id": "II-2.11",
     "title": "LIST OF ELIGIBLE APPLICANTS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 233
+    "line_start": 131
   },
   {
     "section": "II",
@@ -204,7 +204,7 @@
     "id": "II-2.12",
     "title": "DEPARTMENTAL SELECTION PROCESS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 253
+    "line_start": 142
   },
   {
     "section": "II",
@@ -213,7 +213,7 @@
     "id": "II-2.13",
     "title": "REFERENCE CHECKS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 287
+    "line_start": 155
   },
   {
     "section": "II",
@@ -222,7 +222,7 @@
     "id": "II-2.14",
     "title": "CONSUMER CREDIT REPORTS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 301
+    "line_start": 160
   },
   {
     "section": "II",
@@ -231,7 +231,7 @@
     "id": "II-2.15",
     "title": "COMMITMENT TO EMPLOYMENT",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 318
+    "line_start": 167
   },
   {
     "section": "II",
@@ -240,7 +240,7 @@
     "id": "II-2.16",
     "title": "LICENSING AND REGISTRATION",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 330
+    "line_start": 174
   },
   {
     "section": "II",
@@ -249,7 +249,7 @@
     "id": "II-2.17",
     "title": "WORK AGAINST APPOINTMENT",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 338
+    "line_start": 179
   },
   {
     "section": "II",
@@ -258,7 +258,7 @@
     "id": "II-2.18",
     "title": "EMPLOYMENT OF MINORS AND WORK PERMITS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 353
+    "line_start": 184
   },
   {
     "section": "II",
@@ -267,7 +267,7 @@
     "id": "II-2.19",
     "title": "EMPLOYMENT OF ALIENS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 373
+    "line_start": 194
   },
   {
     "section": "II",
@@ -276,7 +276,7 @@
     "id": "II-2.20",
     "title": "EMPLOYMENT OF RELATIVES",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 392
+    "line_start": 206
   },
   {
     "section": "II",
@@ -285,7 +285,7 @@
     "id": "II-2.21",
     "title": "REINSTATEMENT RIGHTS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 401
+    "line_start": 211
   },
   {
     "section": "II",
@@ -294,7 +294,7 @@
     "id": "II-2.22",
     "title": "PROBATIONARY PERIODS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 424
+    "line_start": 224
   },
   {
     "section": "II",
@@ -303,7 +303,7 @@
     "id": "II-2.22.01",
     "title": "TIME LIMIT OF PROBATIONARY PERIOD",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 434
+    "line_start": 229
   },
   {
     "section": "II",
@@ -312,7 +312,7 @@
     "id": "II-2.22.02",
     "title": "DISMISSAL DURING PROBATION",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 466
+    "line_start": 244
   },
   {
     "section": "II",
@@ -321,7 +321,7 @@
     "id": "II-2.22.03",
     "title": "PERSONNEL CHANGES NOT SUBJECT TO PROBATIONARY PERIOD",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 478
+    "line_start": 250
   },
   {
     "section": "II",
@@ -330,7 +330,7 @@
     "id": "II-3.0",
     "title": "ORIENTATION",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 487
+    "line_start": 259
   },
   {
     "section": "II",
@@ -339,7 +339,7 @@
     "id": "II-3.01",
     "title": "GENERAL ORIENTATION",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 490
+    "line_start": 262
   },
   {
     "section": "II",
@@ -348,7 +348,7 @@
     "id": "II-3.02",
     "title": "DEPARTMENTAL ORIENTATIONS",
     "filename": "Section-02-Employment-Practices.md",
-    "line_start": 512
+    "line_start": 279
   },
   {
     "section": "III",
@@ -375,7 +375,7 @@
     "id": "III-1.01.01",
     "title": "GIFTS AND FAVORS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 21
+    "line_start": 17
   },
   {
     "section": "III",
@@ -384,7 +384,7 @@
     "id": "III-1.01.02",
     "title": "POLITICAL ACTIVITIES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 43
+    "line_start": 33
   },
   {
     "section": "III",
@@ -393,7 +393,7 @@
     "id": "III-1.01.03",
     "title": "SOLICITATION AND FUND-RAISING ACTIVITIES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 90
+    "line_start": 57
   },
   {
     "section": "III",
@@ -402,7 +402,7 @@
     "id": "III-1.01.04",
     "title": "SECONDARY EMPLOYMENT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 104
+    "line_start": 64
   },
   {
     "section": "III",
@@ -411,7 +411,7 @@
     "id": "III-1.01.05",
     "title": "CONFLICT OF INTEREST",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 141
+    "line_start": 81
   },
   {
     "section": "III",
@@ -420,7 +420,7 @@
     "id": "III-1.02",
     "title": "CARE OF SUPPLIES, EQUIPMENT AND PROPERTY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 151
+    "line_start": 86
   },
   {
     "section": "III",
@@ -429,7 +429,7 @@
     "id": "III-1.03",
     "title": "ISSUED EQUIPMENT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 184
+    "line_start": 105
   },
   {
     "section": "III",
@@ -438,7 +438,7 @@
     "id": "III-1.04",
     "title": "ADVERSE WEATHER CONDITIONS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 210
+    "line_start": 114
   },
   {
     "section": "III",
@@ -447,7 +447,7 @@
     "id": "III-1.05",
     "title": "PARKING REGULATIONS AND POLICIES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 235
+    "line_start": 129
   },
   {
     "section": "III",
@@ -456,7 +456,7 @@
     "id": "III-1.06",
     "title": "WORK BREAKS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 248
+    "line_start": 136
   },
   {
     "section": "III",
@@ -465,7 +465,7 @@
     "id": "III-1.07",
     "title": "EMPLOYEE PERFORMANCE STANDARDS AND STANDARDS OF",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 259
+    "line_start": 143
   },
   {
     "section": "III",
@@ -474,7 +474,7 @@
     "id": "III-1.08",
     "title": "CIVIL LEAVE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 360
+    "line_start": 181
   },
   {
     "section": "III",
@@ -483,7 +483,7 @@
     "id": "III-1.09",
     "title": "EMPLOYEES SERVING ON BOARDS, COMMITTEES, ETC",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 394
+    "line_start": 194
   },
   {
     "section": "III",
@@ -492,7 +492,7 @@
     "id": "III-1.10",
     "title": "RELEASE OF INFORMATION IN EMPLOYEE PERSONNEL FILES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 411
+    "line_start": 203
   },
   {
     "section": "III",
@@ -501,7 +501,7 @@
     "id": "III-1.10.01",
     "title": "ACCESS TO PERSONNEL FILES AND RECORDS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 421
+    "line_start": 208
   },
   {
     "section": "III",
@@ -510,7 +510,7 @@
     "id": "III-1.10.02",
     "title": "EMPLOYEE DOCUMENTS IN PERSONNEL FILE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 501
+    "line_start": 242
   },
   {
     "section": "III",
@@ -519,7 +519,7 @@
     "id": "III-1.11",
     "title": "PERSONAL DATA CHANGES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 523
+    "line_start": 253
   },
   {
     "section": "III",
@@ -528,7 +528,7 @@
     "id": "III-2.0",
     "title": "LEAVE OF ABSENCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 536
+    "line_start": 262
   },
   {
     "section": "III",
@@ -537,7 +537,7 @@
     "id": "III-2.01",
     "title": "LEAVE WITHOUT PAY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 544
+    "line_start": 267
   },
   {
     "section": "III",
@@ -546,7 +546,7 @@
     "id": "III-2.02",
     "title": "FAMILY MEDICAL LEAVE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 574
+    "line_start": 284
   },
   {
     "section": "III",
@@ -555,7 +555,7 @@
     "id": "III-2.03",
     "title": "MILITARY LEAVE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 582
+    "line_start": 289
   },
   {
     "section": "III",
@@ -564,7 +564,7 @@
     "id": "III-2.04",
     "title": "SHORT TERM DISABILITY LEAVE AND MATERNITY LEAVE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 649
+    "line_start": 329
   },
   {
     "section": "III",
@@ -573,7 +573,7 @@
     "id": "III-3.0",
     "title": "CONTINUING EDUCATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 742
+    "line_start": 367
   },
   {
     "section": "III",
@@ -582,7 +582,7 @@
     "id": "III-4.0",
     "title": "PROMOTIONS AND TRANSFERS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 760
+    "line_start": 376
   },
   {
     "section": "III",
@@ -591,7 +591,7 @@
     "id": "III-4.01",
     "title": "PROCEDURE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 794
+    "line_start": 385
   },
   {
     "section": "III",
@@ -600,7 +600,7 @@
     "id": "III-5.0",
     "title": "DEPARTMENTAL HOURS, SCHEDULE AND HOURS WORKED",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 802
+    "line_start": 390
   },
   {
     "section": "III",
@@ -609,7 +609,7 @@
     "id": "III-5.01",
     "title": "HOURS WORKED AND WORK SCHEDULES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 817
+    "line_start": 395
   },
   {
     "section": "III",
@@ -618,7 +618,7 @@
     "id": "III-5.02",
     "title": "TOWN COUNCIL MEETINGS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 840
+    "line_start": 404
   },
   {
     "section": "III",
@@ -627,7 +627,7 @@
     "id": "III-5.03",
     "title": "FLEX TIME",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 848
+    "line_start": 409
   },
   {
     "section": "III",
@@ -636,7 +636,7 @@
     "id": "III-6.0",
     "title": "EMPLOYEE ASSISTANCE PROGRAM",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 869
+    "line_start": 416
   },
   {
     "section": "III",
@@ -645,7 +645,7 @@
     "id": "III-7.0",
     "title": "DISCIPLINE AND DISMISSAL",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 940
+    "line_start": 453
   },
   {
     "section": "III",
@@ -654,7 +654,7 @@
     "id": "III-7.01",
     "title": "DISMISSAL DURING PROBATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 948
+    "line_start": 458
   },
   {
     "section": "III",
@@ -663,7 +663,7 @@
     "id": "III-7.02",
     "title": "DISMISSAL AFTER COMPLETION OF PROBATIONARY PERIOD",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 960
+    "line_start": 463
   },
   {
     "section": "III",
@@ -672,7 +672,7 @@
     "id": "III-7.02.01",
     "title": "JOB PERFORMANCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 999
+    "line_start": 482
   },
   {
     "section": "III",
@@ -681,7 +681,7 @@
     "id": "III-7.02.02",
     "title": "PERSONAL CONDUCT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1035
+    "line_start": 503
   },
   {
     "section": "III",
@@ -690,7 +690,7 @@
     "id": "III-7.03",
     "title": "PERFORMANCE DISCIPLINARY PROCESS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1078
+    "line_start": 533
   },
   {
     "section": "III",
@@ -699,7 +699,7 @@
     "id": "III-7.03.01",
     "title": "WRITTEN WARNING",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1144
+    "line_start": 556
   },
   {
     "section": "III",
@@ -708,7 +708,7 @@
     "id": "III-7.04",
     "title": "DISMISSAL",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1204
+    "line_start": 588
   },
   {
     "section": "III",
@@ -717,7 +717,7 @@
     "id": "III-7.04.01",
     "title": "DISMISSAL FOR GROSSLY INEFFICIENT JOB PERFORMANCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1246
+    "line_start": 611
   },
   {
     "section": "III",
@@ -726,7 +726,7 @@
     "id": "III-7.04.02",
     "title": "PERSONAL CONDUCT DISCIPLINARY PROCESS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1281
+    "line_start": 630
   },
   {
     "section": "III",
@@ -735,7 +735,7 @@
     "id": "III-7.05",
     "title": "OPTIONAL DISCIPLINARY PROCESSES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1301
+    "line_start": 639
   },
   {
     "section": "III",
@@ -744,7 +744,7 @@
     "id": "III-7.06",
     "title": "OTHER CONSIDERATIONS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1355
+    "line_start": 660
   },
   {
     "section": "III",
@@ -753,7 +753,7 @@
     "id": "III-7.07",
     "title": "INVESTIGATORY SUSPENSION WITH PAY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1369
+    "line_start": 667
   },
   {
     "section": "III",
@@ -762,7 +762,7 @@
     "id": "III-7.08",
     "title": "DEMOTION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1394
+    "line_start": 682
   },
   {
     "section": "III",
@@ -771,7 +771,7 @@
     "id": "III-7.09",
     "title": "CREDENTIALS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1423
+    "line_start": 693
   },
   {
     "section": "III",
@@ -780,7 +780,7 @@
     "id": "III-7.10",
     "title": "RIGHT TO APPEAL",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1460
+    "line_start": 708
   },
   {
     "section": "III",
@@ -789,7 +789,7 @@
     "id": "III-8.0",
     "title": "EMPLOYEE APPEALS & GRIEVANCES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1468
+    "line_start": 713
   },
   {
     "section": "III",
@@ -798,7 +798,7 @@
     "id": "III-8.01",
     "title": "GRIEVANCE POLICY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1475
+    "line_start": 718
   },
   {
     "section": "III",
@@ -807,7 +807,7 @@
     "id": "III-8.02",
     "title": "GRIEVANCE PROCEDURE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1534
+    "line_start": 760
   },
   {
     "section": "III",
@@ -816,7 +816,7 @@
     "id": "III-8.02.01",
     "title": "GRIEVANCES OF DISCRIMINATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1573
+    "line_start": 777
   },
   {
     "section": "III",
@@ -825,7 +825,7 @@
     "id": "III-8.02.02",
     "title": "GRIEVANCES OF UNLAWFUL WORKPLACE HARASSMENT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1581
+    "line_start": 782
   },
   {
     "section": "III",
@@ -834,7 +834,7 @@
     "id": "III-9.0",
     "title": "APPEALS POLICY AND PROCEDURES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1597
+    "line_start": 788
   },
   {
     "section": "III",
@@ -843,7 +843,7 @@
     "id": "III-9.01",
     "title": "APPEAL DIRECTLY TO THE TOWN\u2019S PERSONNEL COMMISSION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1640
+    "line_start": 801
   },
   {
     "section": "III",
@@ -852,7 +852,7 @@
     "id": "III-9.01.01",
     "title": "APPEAL PROCEDURE INVOLVING DISCRIMINATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1648
+    "line_start": 806
   },
   {
     "section": "III",
@@ -861,7 +861,7 @@
     "id": "III-9.01.02",
     "title": "APPEAL FOR REDUCTION IN FORCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1668
+    "line_start": 813
   },
   {
     "section": "III",
@@ -870,7 +870,7 @@
     "id": "III-9.02",
     "title": "REQUEST A HEARING BY OR APPEAL TO THE PERSONNEL",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1676
+    "line_start": 818
   },
   {
     "section": "III",
@@ -879,7 +879,7 @@
     "id": "III-9.03",
     "title": "CONDUCT OF THE HEARING",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1703
+    "line_start": 838
   },
   {
     "section": "III",
@@ -888,7 +888,7 @@
     "id": "III-9.04",
     "title": "BURDEN OF PROOF",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1723
+    "line_start": 845
   },
   {
     "section": "III",
@@ -897,7 +897,7 @@
     "id": "III-9.05",
     "title": "THE CLOSING STATEMENTS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1734
+    "line_start": 850
   },
   {
     "section": "III",
@@ -906,7 +906,7 @@
     "id": "III-9.06",
     "title": "ESTABLISHMENT OF PERSONNEL COMMISSION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1742
+    "line_start": 855
   },
   {
     "section": "III",
@@ -915,7 +915,7 @@
     "id": "III-9.06.01",
     "title": "ORGANIZATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1752
+    "line_start": 862
   },
   {
     "section": "III",
@@ -924,7 +924,7 @@
     "id": "III-9.06.02",
     "title": "POWERS AND DUTIES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1760
+    "line_start": 867
   },
   {
     "section": "III",
@@ -933,7 +933,7 @@
     "id": "III-10.0",
     "title": "WORK RULES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1786
+    "line_start": 882
   },
   {
     "section": "III",
@@ -942,7 +942,7 @@
     "id": "III-10.01",
     "title": "ABSENTEEISM",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1804
+    "line_start": 891
   },
   {
     "section": "III",
@@ -951,7 +951,7 @@
     "id": "III-10.02",
     "title": "TARDINESS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1829
+    "line_start": 902
   },
   {
     "section": "III",
@@ -960,7 +960,7 @@
     "id": "III-10.03",
     "title": "UNAUTHORIZED EXTRA WORK",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1837
+    "line_start": 907
   },
   {
     "section": "III",
@@ -969,7 +969,7 @@
     "id": "III-10.04",
     "title": "UNSATISFACTORY WORK",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1845
+    "line_start": 912
   },
   {
     "section": "III",
@@ -978,7 +978,7 @@
     "id": "III-10.05",
     "title": "INSUBORDINATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1853
+    "line_start": 917
   },
   {
     "section": "III",
@@ -987,7 +987,7 @@
     "id": "III-11.0",
     "title": "VOLUNTARY TERMINATION OF EMPLOYMENT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1866
+    "line_start": 924
   },
   {
     "section": "III",
@@ -996,7 +996,7 @@
     "id": "III-11.01",
     "title": "THREE (3) DAYS ABSENCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1872
+    "line_start": 929
   },
   {
     "section": "III",
@@ -1005,7 +1005,7 @@
     "id": "III-11.02",
     "title": "RESIGNATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1881
+    "line_start": 935
   },
   {
     "section": "III",
@@ -1014,7 +1014,7 @@
     "id": "III-12.0",
     "title": "REDUCTION IN WORK FORCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1898
+    "line_start": 940
   },
   {
     "section": "III",
@@ -1023,7 +1023,7 @@
     "id": "III-12.01",
     "title": "APPEALS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1911
+    "line_start": 945
   },
   {
     "section": "III",
@@ -1032,7 +1032,7 @@
     "id": "III-12.02",
     "title": "GUIDELINES FOR REDUCTION IN FORCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1919
+    "line_start": 950
   },
   {
     "section": "III",
@@ -1041,7 +1041,7 @@
     "id": "III-13.0",
     "title": "PROHIBITED EMPLOYMENT PRACTICES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1973
+    "line_start": 982
   },
   {
     "section": "III",
@@ -1050,7 +1050,7 @@
     "id": "III-13.01",
     "title": "SEXUAL HARASSMENT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 1982
+    "line_start": 987
   },
   {
     "section": "III",
@@ -1059,7 +1059,7 @@
     "id": "III-13.02",
     "title": "WORKPLACE HARASSMENT",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2020
+    "line_start": 1006
   },
   {
     "section": "III",
@@ -1068,7 +1068,7 @@
     "id": "III-13.03",
     "title": "DISCRIMINATION AGAINST THE DISABLED",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2035
+    "line_start": 1011
   },
   {
     "section": "III",
@@ -1077,7 +1077,7 @@
     "id": "III-13.04",
     "title": "PREGNANCY DISCRIMINATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2051
+    "line_start": 1023
   },
   {
     "section": "III",
@@ -1086,7 +1086,7 @@
     "id": "III-13.05",
     "title": "DISCRIMINATION AGAINST PERSONS BECAUSE OF THEIR",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2060
+    "line_start": 1028
   },
   {
     "section": "III",
@@ -1095,7 +1095,7 @@
     "id": "III-13.06",
     "title": "DISCRIMINATION AGAINST VETERANS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2070
+    "line_start": 1034
   },
   {
     "section": "III",
@@ -1104,7 +1104,7 @@
     "id": "III-13.07",
     "title": "WHISTLEBLOWER PROTECTIONS AND WRONGFUL",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2077
+    "line_start": 1039
   },
   {
     "section": "III",
@@ -1113,7 +1113,7 @@
     "id": "III-13.07.01",
     "title": "ACTIONS CONSTITUTING FRAUD",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2097
+    "line_start": 1054
   },
   {
     "section": "III",
@@ -1122,7 +1122,7 @@
     "id": "III-13.07.02",
     "title": "WRONGFUL TERMINATION IN VIOLATION OF PUBLIC POLICY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2122
+    "line_start": 1076
   },
   {
     "section": "III",
@@ -1131,7 +1131,7 @@
     "id": "III-13.07.03",
     "title": "PROTECTION FROM RETALIATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2130
+    "line_start": 1081
   },
   {
     "section": "III",
@@ -1140,7 +1140,7 @@
     "id": "III-13.08",
     "title": "REPRISAL",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2159
+    "line_start": 1092
   },
   {
     "section": "III",
@@ -1149,7 +1149,7 @@
     "id": "III-14.0",
     "title": "TOBACCO GUIDELINES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2178
+    "line_start": 1099
   },
   {
     "section": "III",
@@ -1158,7 +1158,7 @@
     "id": "III-15.0",
     "title": "DRUGS AND ALCOHOL POLICY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2187
+    "line_start": 1106
   },
   {
     "section": "III",
@@ -1167,7 +1167,7 @@
     "id": "III-15.01",
     "title": "FIT FOR DUTY POLICY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2218
+    "line_start": 1115
   },
   {
     "section": "III",
@@ -1176,7 +1176,7 @@
     "id": "III-15.02",
     "title": "PRESCRIPTION OR NON-PRESCRIPTION DRUGS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2233
+    "line_start": 1122
   },
   {
     "section": "III",
@@ -1185,7 +1185,7 @@
     "id": "III-15.03",
     "title": "EMPLOYEES SUSPECTED OF BEING IMPAIRED",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2249
+    "line_start": 1127
   },
   {
     "section": "III",
@@ -1194,7 +1194,7 @@
     "id": "III-15.04",
     "title": "DRUG AND/OR ALCOHOL TESTS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2258
+    "line_start": 1132
   },
   {
     "section": "III",
@@ -1203,7 +1203,7 @@
     "id": "III-15.05",
     "title": "POSITIVE SCREENING TEST FINDINGS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2281
+    "line_start": 1150
   },
   {
     "section": "III",
@@ -1212,7 +1212,7 @@
     "id": "III-15.06",
     "title": "SEARCHES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2313
+    "line_start": 1167
   },
   {
     "section": "III",
@@ -1221,7 +1221,7 @@
     "id": "III-15.07",
     "title": "CONFIDENTIALITY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2326
+    "line_start": 1174
   },
   {
     "section": "III",
@@ -1230,7 +1230,7 @@
     "id": "III-15.08",
     "title": "TYPES OF TESTING REQUIRED",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2343
+    "line_start": 1183
   },
   {
     "section": "III",
@@ -1239,7 +1239,7 @@
     "id": "III-15.09",
     "title": "DRUG TESTING POLICY DEFINITIONS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2440
+    "line_start": 1216
   },
   {
     "section": "III",
@@ -1248,7 +1248,7 @@
     "id": "III-15.10",
     "title": "DRUGS INCLUDED IN TESTING",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2493
+    "line_start": 1244
   },
   {
     "section": "III",
@@ -1257,7 +1257,7 @@
     "id": "III-15.11",
     "title": "THRESHOLD LEVELS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2518
+    "line_start": 1265
   },
   {
     "section": "III",
@@ -1266,7 +1266,7 @@
     "id": "III-16.0",
     "title": "OPERATION OF TOWN VEHICLES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2527
+    "line_start": 1270
   },
   {
     "section": "III",
@@ -1275,7 +1275,7 @@
     "id": "III-16.01",
     "title": "ASSIGNMENT OF AUTOMOBILES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2545
+    "line_start": 1279
   },
   {
     "section": "III",
@@ -1284,7 +1284,7 @@
     "id": "III-16.01.01",
     "title": "TAKE-HOME CAR POLICY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2555
+    "line_start": 1284
   },
   {
     "section": "III",
@@ -1293,7 +1293,7 @@
     "id": "III-17.0",
     "title": "TECHNOLOGY USE POLICY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2562
+    "line_start": 1289
   },
   {
     "section": "III",
@@ -1302,7 +1302,7 @@
     "id": "III-17.01",
     "title": "SCOPE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2574
+    "line_start": 1294
   },
   {
     "section": "III",
@@ -1311,7 +1311,7 @@
     "id": "III-17.02",
     "title": "DISCIPLINARY ACTION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2579
+    "line_start": 1299
   },
   {
     "section": "III",
@@ -1320,7 +1320,7 @@
     "id": "III-17.03",
     "title": "DEFINITIONS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2587
+    "line_start": 1304
   },
   {
     "section": "III",
@@ -1329,7 +1329,7 @@
     "id": "III-17.04",
     "title": "ROLES AND RESPONSIBILITIES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2601
+    "line_start": 1313
   },
   {
     "section": "III",
@@ -1338,7 +1338,7 @@
     "id": "III-17.05",
     "title": "INFORMATION TECHNOLOGY AND SECURITY GOVERNANCE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2647
+    "line_start": 1342
   },
   {
     "section": "III",
@@ -1347,7 +1347,7 @@
     "id": "III-17.06",
     "title": "GENERAL USE AND OWNERSHIP",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2664
+    "line_start": 1355
   },
   {
     "section": "III",
@@ -1356,7 +1356,7 @@
     "id": "III-17.07",
     "title": "TECHNOLOGY RESOURCE AND USER MONITORING",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2680
+    "line_start": 1364
   },
   {
     "section": "III",
@@ -1365,7 +1365,7 @@
     "id": "III-17.08",
     "title": "NO EXPECTATION OF PRIVACY",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2696
+    "line_start": 1370
   },
   {
     "section": "III",
@@ -1374,7 +1374,7 @@
     "id": "III-17.09",
     "title": "PUBLIC RECORDS COMPLIANCE AND RECORDS RETENTION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2702
+    "line_start": 1375
   },
   {
     "section": "III",
@@ -1383,7 +1383,7 @@
     "id": "III-17.10",
     "title": "PERSONAL USE OF TOWN TECHNOLOGY RESOURCES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2721
+    "line_start": 1385
   },
   {
     "section": "III",
@@ -1392,7 +1392,7 @@
     "id": "III-17.11",
     "title": "USER ACCOUNTS AND PASSWORDS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2743
+    "line_start": 1402
   },
   {
     "section": "III",
@@ -1401,7 +1401,7 @@
     "id": "III-17.12",
     "title": "USE OF SENSITIVE INFORMATION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2762
+    "line_start": 1412
   },
   {
     "section": "III",
@@ -1410,7 +1410,7 @@
     "id": "III-17.13",
     "title": "USE OF AUTHORIZED SOFTWARE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2778
+    "line_start": 1421
   },
   {
     "section": "III",
@@ -1419,7 +1419,7 @@
     "id": "III-17.14",
     "title": "APPROPRIATE USE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2790
+    "line_start": 1428
   },
   {
     "section": "III",
@@ -1428,7 +1428,7 @@
     "id": "III-17.15",
     "title": "PORNOGRAPHY ON GOVERNMENT NETWORKS AND DEVICES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2809
+    "line_start": 1436
   },
   {
     "section": "III",
@@ -1437,7 +1437,7 @@
     "id": "III-17.16",
     "title": "MOBILE COMPUTING",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2880
+    "line_start": 1461
   },
   {
     "section": "III",
@@ -1446,7 +1446,7 @@
     "id": "III-18.0",
     "title": "SOCIAL MEDIA",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2948
+    "line_start": 1486
   },
   {
     "section": "III",
@@ -1455,7 +1455,7 @@
     "id": "III-18.01",
     "title": "ROLES AND RESPONSIBILITIES",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2951
+    "line_start": 1489
   },
   {
     "section": "III",
@@ -1464,7 +1464,7 @@
     "id": "III-18.02",
     "title": "ACCEPTABLE USE",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2961
+    "line_start": 1495
   },
   {
     "section": "III",
@@ -1473,7 +1473,7 @@
     "id": "III-18.03",
     "title": "CHINA GROVE BRANDING",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2971
+    "line_start": 1500
   },
   {
     "section": "III",
@@ -1482,7 +1482,7 @@
     "id": "III-18.04",
     "title": "PUBLIC RULES AND DISCLAIMER",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 2979
+    "line_start": 1505
   },
   {
     "section": "III",
@@ -1491,7 +1491,7 @@
     "id": "III-18.05",
     "title": "PUBLIC RECORDS: PUBLIC COMMENTS AND RECORD RETENTION",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 3007
+    "line_start": 1518
   },
   {
     "section": "III",
@@ -1500,7 +1500,7 @@
     "id": "III-18.06",
     "title": "OFFICIAL CHINA GROVE SOCIAL MEDIA ACCOUNTS",
     "filename": "Section-03-General-Personnel-Policies.md",
-    "line_start": 3037
+    "line_start": 1531
   },
   {
     "section": "IV",
@@ -1518,7 +1518,7 @@
     "id": "IV-2.0",
     "title": "SICK LEAVE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 90
+    "line_start": 60
   },
   {
     "section": "IV",
@@ -1527,7 +1527,7 @@
     "id": "IV-3.0",
     "title": "HOLIDAYS",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 174
+    "line_start": 102
   },
   {
     "section": "IV",
@@ -1536,7 +1536,7 @@
     "id": "IV-4.0",
     "title": "FUNERAL LEAVE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 217
+    "line_start": 134
   },
   {
     "section": "IV",
@@ -1545,7 +1545,7 @@
     "id": "IV-5.0",
     "title": "MILITARY LEAVE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 243
+    "line_start": 151
   },
   {
     "section": "IV",
@@ -1554,7 +1554,7 @@
     "id": "IV-6.0",
     "title": "UNIFORMS/CLOTHING ALLOWANCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 317
+    "line_start": 195
   },
   {
     "section": "IV",
@@ -1563,7 +1563,7 @@
     "id": "IV-7.0",
     "title": "HEALTH INSURANCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 324
+    "line_start": 200
   },
   {
     "section": "IV",
@@ -1572,7 +1572,7 @@
     "id": "IV-8.0",
     "title": "DENTAL INSURANCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 337
+    "line_start": 209
   },
   {
     "section": "IV",
@@ -1581,7 +1581,7 @@
     "id": "IV-9.0",
     "title": "VISION INSURANCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 345
+    "line_start": 214
   },
   {
     "section": "IV",
@@ -1590,7 +1590,7 @@
     "id": "IV-10.0",
     "title": "LIFE INSURANCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 353
+    "line_start": 219
   },
   {
     "section": "IV",
@@ -1599,7 +1599,7 @@
     "id": "IV-10.01",
     "title": "LIFE INSURANCE FOR EMPLOYEES",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 359
+    "line_start": 224
   },
   {
     "section": "IV",
@@ -1608,7 +1608,7 @@
     "id": "IV-10.02",
     "title": "LIFE INSURANCE FOR DEPENDENTS",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 369
+    "line_start": 231
   },
   {
     "section": "IV",
@@ -1617,7 +1617,7 @@
     "id": "IV-10.03",
     "title": "PREMIUM PAYMENTS WHILE ON LEAVE OF ABSENCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 381
+    "line_start": 238
   },
   {
     "section": "IV",
@@ -1626,7 +1626,7 @@
     "id": "IV-10.04",
     "title": "RETIREMENT DEATH BENEFIT",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 390
+    "line_start": 243
   },
   {
     "section": "IV",
@@ -1635,7 +1635,7 @@
     "id": "IV-11.0",
     "title": "RETIREMENT",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 399
+    "line_start": 248
   },
   {
     "section": "IV",
@@ -1644,7 +1644,7 @@
     "id": "IV-12.0",
     "title": "LAW ENFORCEMENT OFFICERS\u2019 SEPARATION ALLOWANCE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 415
+    "line_start": 255
   },
   {
     "section": "IV",
@@ -1653,7 +1653,7 @@
     "id": "IV-14.0",
     "title": "WORKERS\u2019 COMPENSATION",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 454
+    "line_start": 273
   },
   {
     "section": "IV",
@@ -1662,7 +1662,7 @@
     "id": "IV-14.01",
     "title": "LIGHT/MODIFIED DUTY RETURN-TO-WORK",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 483
+    "line_start": 284
   },
   {
     "section": "IV",
@@ -1671,7 +1671,7 @@
     "id": "IV-14.01.01",
     "title": "ELIGIBILITY FOR \u201cLIGHT/MODIFIED DUTY\u201d",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 496
+    "line_start": 291
   },
   {
     "section": "IV",
@@ -1680,7 +1680,7 @@
     "id": "IV-14.01.02",
     "title": "RETURN FROM LIGHT/MODIFIED DUTY STATUS TO REGULAR",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 513
+    "line_start": 298
   },
   {
     "section": "IV",
@@ -1689,7 +1689,7 @@
     "id": "IV-15.0",
     "title": "SOCIAL SECURITY",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 524
+    "line_start": 304
   },
   {
     "section": "IV",
@@ -1698,7 +1698,7 @@
     "id": "IV-16.0",
     "title": "PERSONAL LEAVE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 535
+    "line_start": 311
   },
   {
     "section": "IV",
@@ -1707,7 +1707,7 @@
     "id": "IV-17.0",
     "title": "LONGEVITY PAY",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 549
+    "line_start": 318
   },
   {
     "section": "IV",
@@ -1716,7 +1716,7 @@
     "id": "IV-18.0",
     "title": "SERVICE AWARDS",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 565
+    "line_start": 331
   },
   {
     "section": "IV",
@@ -1725,7 +1725,7 @@
     "id": "IV-19.0",
     "title": "EMPLOYEE ASSISTANCE PROGRAM",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 592
+    "line_start": 353
   },
   {
     "section": "IV",
@@ -1734,7 +1734,7 @@
     "id": "IV-20.0",
     "title": "WELLNESS PROGRAM",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 602
+    "line_start": 358
   },
   {
     "section": "IV",
@@ -1743,7 +1743,7 @@
     "id": "IV-21.0",
     "title": "VOLUNTARY SHARED LEAVE PROGRAM",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 611
+    "line_start": 363
   },
   {
     "section": "IV",
@@ -1752,7 +1752,7 @@
     "id": "IV-21.01",
     "title": "DEFINITIONS",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 621
+    "line_start": 368
   },
   {
     "section": "IV",
@@ -1761,7 +1761,7 @@
     "id": "IV-21.02",
     "title": "QUALIFIED LEAVE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 634
+    "line_start": 379
   },
   {
     "section": "IV",
@@ -1770,7 +1770,7 @@
     "id": "IV-21.03",
     "title": "ELIGIBILITY",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 644
+    "line_start": 384
   },
   {
     "section": "IV",
@@ -1779,7 +1779,7 @@
     "id": "IV-21.04",
     "title": "APPLICATION PROCEDURE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 674
+    "line_start": 412
   },
   {
     "section": "IV",
@@ -1788,7 +1788,7 @@
     "id": "IV-21.05",
     "title": "SHARED LEAVE BANK",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 712
+    "line_start": 430
   },
   {
     "section": "IV",
@@ -1797,7 +1797,7 @@
     "id": "IV-21.06",
     "title": "UNUSED SICK LEAVE",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 718
+    "line_start": 435
   },
   {
     "section": "IV",
@@ -1806,7 +1806,7 @@
     "id": "IV-22.0",
     "title": "COMMUNICATIONS",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 725
+    "line_start": 440
   },
   {
     "section": "IV",
@@ -1815,7 +1815,7 @@
     "id": "IV-23.0",
     "title": "LAW ENFORCEMENT CAREER DEVELOPMENT PROGRAM",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 733
+    "line_start": 445
   },
   {
     "section": "IV",
@@ -1824,7 +1824,7 @@
     "id": "IV-23.01",
     "title": "ELEMENTS OF THE PROGRAM",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 749
+    "line_start": 454
   },
   {
     "section": "IV",
@@ -1833,7 +1833,7 @@
     "id": "IV-24.0",
     "title": "EDUCATION TUITION REIMBURSEMENT PROGRAM",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 791
+    "line_start": 480
   },
   {
     "section": "IV",
@@ -1842,7 +1842,7 @@
     "id": "IV-25.0",
     "title": "POLICY STATEMENT",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 831
+    "line_start": 497
   },
   {
     "section": "IV",
@@ -1851,7 +1851,7 @@
     "id": "IV-26.0",
     "title": "PERSONAL LIABILITY COVERAGE FOR TOWN EMPLOYEES",
     "filename": "Section-04-Employee-Benefits-and-Services.md",
-    "line_start": 839
+    "line_start": 502
   },
   {
     "section": "V",
@@ -1869,7 +1869,7 @@
     "id": "V-1.01",
     "title": "RESPONSIBILITY FOR ADMINISTRATION",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 61
+    "line_start": 42
   },
   {
     "section": "V",
@@ -1878,7 +1878,7 @@
     "id": "V-2.0",
     "title": "EQUAL EMPLOYMENT OPPORTUNITY RECRUITMENT",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 82
+    "line_start": 59
   },
   {
     "section": "V",
@@ -1887,7 +1887,7 @@
     "id": "V-3.0",
     "title": "MONITORING APPLICATION OF EQUAL EMPLOYMENT",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 112
+    "line_start": 74
   },
   {
     "section": "V",
@@ -1896,7 +1896,7 @@
     "id": "V-4.0",
     "title": "CLASSIFICATION REVIEW",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 133
+    "line_start": 82
   },
   {
     "section": "V",
@@ -1905,7 +1905,7 @@
     "id": "V-5.0",
     "title": "CAREER DEVELOPMENT AND TRAINING",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 152
+    "line_start": 93
   },
   {
     "section": "V",
@@ -1914,7 +1914,7 @@
     "id": "V-6.0",
     "title": "EQUAL BENEFITS",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 177
+    "line_start": 106
   },
   {
     "section": "V",
@@ -1923,7 +1923,7 @@
     "id": "V-7.0",
     "title": "LEAVE POLICIES",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 185
+    "line_start": 111
   },
   {
     "section": "V",
@@ -1932,7 +1932,7 @@
     "id": "V-8.0",
     "title": "GENERAL POLICIES",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 198
+    "line_start": 116
   },
   {
     "section": "V",
@@ -1941,7 +1941,7 @@
     "id": "V-9.0",
     "title": "DISSEMINATION OF EQUAL EMPLOYMENT OPPORTUNITY",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 205
+    "line_start": 121
   },
   {
     "section": "V",
@@ -1950,7 +1950,7 @@
     "id": "V-10.0",
     "title": "EEO AND ADA GRIEVANCE PROCEDURE",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 233
+    "line_start": 141
   },
   {
     "section": "V",
@@ -1959,7 +1959,7 @@
     "id": "V-11.0",
     "title": "IMPLEMENTATION",
     "filename": "Section-05-Equal-Employment-Opportunity.md",
-    "line_start": 310
+    "line_start": 183
   },
   {
     "section": "VI",
@@ -1977,7 +1977,7 @@
     "id": "VI-2.0",
     "title": "POSITION DESIGN",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 27
+    "line_start": 18
   },
   {
     "section": "VI",
@@ -1986,7 +1986,7 @@
     "id": "VI-3.0",
     "title": "POSITION ANALYSIS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 51
+    "line_start": 35
   },
   {
     "section": "VI",
@@ -1995,7 +1995,7 @@
     "id": "VI-3.01",
     "title": "CLASSIFICATION PLAN",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 63
+    "line_start": 40
   },
   {
     "section": "VI",
@@ -2004,7 +2004,7 @@
     "id": "VI-3.02",
     "title": "CLASSIFICATION STANDARD",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 78
+    "line_start": 47
   },
   {
     "section": "VI",
@@ -2013,7 +2013,7 @@
     "id": "VI-3.03",
     "title": "CLASS SPECIFICATIONS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 84
+    "line_start": 52
   },
   {
     "section": "VI",
@@ -2022,7 +2022,7 @@
     "id": "VI-3.04",
     "title": "BENCHMARKS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 121
+    "line_start": 68
   },
   {
     "section": "VI",
@@ -2031,7 +2031,7 @@
     "id": "VI-3.05",
     "title": "MINIMUM EDUCATION AND EXPERIENCE",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 139
+    "line_start": 80
   },
   {
     "section": "VI",
@@ -2040,7 +2040,7 @@
     "id": "VI-4.0",
     "title": "MAINTAINING THE CLASSIFICATION PLAN",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 156
+    "line_start": 89
   },
   {
     "section": "VI",
@@ -2049,7 +2049,7 @@
     "id": "VI-5.0",
     "title": "ESTABLISHMENT AND REVISION OF CLASSES",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 178
+    "line_start": 99
   },
   {
     "section": "VI",
@@ -2058,7 +2058,7 @@
     "id": "VI-5.01",
     "title": "ALLOCATION AND REALLOCATION OF POSITIONS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 184
+    "line_start": 104
   },
   {
     "section": "VI",
@@ -2067,7 +2067,7 @@
     "id": "VI-5.02",
     "title": "TENTATIVE AND FLAT RATE PROVISIONS FOR TEMPORARY",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 192
+    "line_start": 109
   },
   {
     "section": "VI",
@@ -2076,7 +2076,7 @@
     "id": "VI-6.0",
     "title": "PAY PRACTICES",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 205
+    "line_start": 115
   },
   {
     "section": "VI",
@@ -2085,7 +2085,7 @@
     "id": "VI-6.01",
     "title": "SALARY RANGES",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 212
+    "line_start": 120
   },
   {
     "section": "VI",
@@ -2094,7 +2094,7 @@
     "id": "VI-6.02",
     "title": "WAGES AND SALARIES FOR NEW EMPLOYEES",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 223
+    "line_start": 129
   },
   {
     "section": "VI",
@@ -2103,7 +2103,7 @@
     "id": "VI-6.03",
     "title": "PROMOTIONS, DEMOTIONS, TRANSFERS, AND DEPARTMENTAL",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 253
+    "line_start": 138
   },
   {
     "section": "VI",
@@ -2112,7 +2112,7 @@
     "id": "VI-6.04",
     "title": "TRAINING",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 288
+    "line_start": 152
   },
   {
     "section": "VI",
@@ -2121,7 +2121,7 @@
     "id": "VI-6.05",
     "title": "INTERIM SUPERVISORS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 298
+    "line_start": 157
   },
   {
     "section": "VI",
@@ -2130,7 +2130,7 @@
     "id": "VI-6.06",
     "title": "COMPENSATION FOR TEMPORARY ASSIGNMENT TO HIGHER PAY",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 310
+    "line_start": 162
   },
   {
     "section": "VI",
@@ -2139,7 +2139,7 @@
     "id": "VI-7.0",
     "title": "GUIDELINES FOR PAY ADJUSTMENTS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 320
+    "line_start": 168
   },
   {
     "section": "VI",
@@ -2148,7 +2148,7 @@
     "id": "VI-7.01",
     "title": "PERFORMANCE APPRAISALS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 345
+    "line_start": 187
   },
   {
     "section": "VI",
@@ -2157,7 +2157,7 @@
     "id": "VI-7.02",
     "title": "PAY FOR PERFORMANCE",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 368
+    "line_start": 200
   },
   {
     "section": "VI",
@@ -2166,7 +2166,7 @@
     "id": "VI-7.03",
     "title": "COST OF LIVING ADJUSTMENT",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 386
+    "line_start": 209
   },
   {
     "section": "VI",
@@ -2175,7 +2175,7 @@
     "id": "VI-7.04",
     "title": "MARKET ADJUSTMENT PLAN",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 395
+    "line_start": 214
   },
   {
     "section": "VI",
@@ -2184,7 +2184,7 @@
     "id": "VI-8.0",
     "title": "FAIR LABOR STANDARDS ACT",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 412
+    "line_start": 223
   },
   {
     "section": "VI",
@@ -2193,7 +2193,7 @@
     "id": "VI-8.01",
     "title": "VOLUNTARY WORK",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 556
+    "line_start": 308
   },
   {
     "section": "VI",
@@ -2202,7 +2202,7 @@
     "id": "VI-8.02",
     "title": "WAITING TIME",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 576
+    "line_start": 317
   },
   {
     "section": "VI",
@@ -2211,7 +2211,7 @@
     "id": "VI-8.03",
     "title": "ON CALL",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 597
+    "line_start": 327
   },
   {
     "section": "VI",
@@ -2220,7 +2220,7 @@
     "id": "VI-8.04",
     "title": "SLEEPING TIME",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 674
+    "line_start": 360
   },
   {
     "section": "VI",
@@ -2229,7 +2229,7 @@
     "id": "VI-8.04.02",
     "title": "FLUCTUATING WORK WEEK",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 687
+    "line_start": 368
   },
   {
     "section": "VI",
@@ -2238,7 +2238,7 @@
     "id": "VI-8.04.03",
     "title": "PERMANENT RESIDENCE ON TOWN PROPERTY",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 708
+    "line_start": 379
   },
   {
     "section": "VI",
@@ -2247,7 +2247,7 @@
     "id": "VI-8.05",
     "title": "CONTINUING EDUCATION (TRAINING)",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 719
+    "line_start": 384
   },
   {
     "section": "VI",
@@ -2256,7 +2256,7 @@
     "id": "VI-8.05.01",
     "title": "INVOLUNTARY TRAINING",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 731
+    "line_start": 391
   },
   {
     "section": "VI",
@@ -2265,7 +2265,7 @@
     "id": "VI-8.05.02",
     "title": "VOLUNTARY TRAINING",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 748
+    "line_start": 402
   },
   {
     "section": "VI",
@@ -2274,7 +2274,7 @@
     "id": "VI-8.06",
     "title": "TRAVEL TIME",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 773
+    "line_start": 416
   },
   {
     "section": "VI",
@@ -2283,7 +2283,7 @@
     "id": "VI-8.06.01",
     "title": "HOME-TO-WORK",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 781
+    "line_start": 421
   },
   {
     "section": "VI",
@@ -2292,7 +2292,7 @@
     "id": "VI-8.06.02",
     "title": "TRAVEL DURING THE WORK DAY",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 792
+    "line_start": 426
   },
   {
     "section": "VI",
@@ -2301,7 +2301,7 @@
     "id": "VI-8.06.03",
     "title": "CALL-BACK",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 799
+    "line_start": 431
   },
   {
     "section": "VI",
@@ -2310,7 +2310,7 @@
     "id": "VI-8.06.04",
     "title": "OUT-OF-TOWN TRAVEL",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 818
+    "line_start": 441
   },
   {
     "section": "VI",
@@ -2319,7 +2319,7 @@
     "id": "VI-8.06.05",
     "title": "TRAVEL AND EXPENSE REIMBURSEMENT",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 836
+    "line_start": 450
   },
   {
     "section": "VI",
@@ -2328,7 +2328,7 @@
     "id": "VI-8.07",
     "title": "COMPENSATORY TIME (COMP TIME)",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 914
+    "line_start": 485
   },
   {
     "section": "VI",
@@ -2337,7 +2337,7 @@
     "id": "VI-8.08",
     "title": "OUTSIDE EMPLOYMENT WITH ANOTHER EMPLOYER",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 921
+    "line_start": 490
   },
   {
     "section": "VI",
@@ -2346,7 +2346,7 @@
     "id": "VI-9.0",
     "title": "RECORD KEEPING",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 932
+    "line_start": 495
   },
   {
     "section": "VI",
@@ -2355,7 +2355,7 @@
     "id": "VI-9.01",
     "title": "TIMESHEETS",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 935
+    "line_start": 498
   },
   {
     "section": "VI",
@@ -2364,7 +2364,7 @@
     "id": "VI-9.02",
     "title": "PAY DAY",
     "filename": "Section-06-Wage-and-Salary-Administration.md",
-    "line_start": 954
+    "line_start": 512
   },
   {
     "section": "VII",
@@ -2382,7 +2382,7 @@
     "id": "VII-1.01",
     "title": "SAFETY SENSITIVE POSITIONS",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 27
+    "line_start": 20
   },
   {
     "section": "VII",
@@ -2391,7 +2391,7 @@
     "id": "VII-2.0",
     "title": "PERSONAL PROTECTIVE EQUIPMENT PROGRAM",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 76
+    "line_start": 63
   },
   {
     "section": "VII",
@@ -2400,7 +2400,7 @@
     "id": "VII-2.01",
     "title": "OSHA STANDARD 1910.133 (a)",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 79
+    "line_start": 66
   },
   {
     "section": "VII",
@@ -2409,7 +2409,7 @@
     "id": "VII-2.02",
     "title": "GENERAL POLICY STATEMENT",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 89
+    "line_start": 71
   },
   {
     "section": "VII",
@@ -2418,7 +2418,7 @@
     "id": "VII-2.03",
     "title": "PERSONAL PROTECTIVE EQUIPMENT (PPE) PROGRAM",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 96
+    "line_start": 76
   },
   {
     "section": "VII",
@@ -2427,7 +2427,7 @@
     "id": "VII-3.0",
     "title": "DRIVER QUALIFICATIONS AND RESPONSIBILITIES",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 167
+    "line_start": 134
   },
   {
     "section": "VII",
@@ -2436,7 +2436,7 @@
     "id": "VII-3.01",
     "title": "AUTHORIZED USE",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 176
+    "line_start": 139
   },
   {
     "section": "VII",
@@ -2445,7 +2445,7 @@
     "id": "VII-3.02",
     "title": "DRIVER QUALIFICATIONS",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 195
+    "line_start": 146
   },
   {
     "section": "VII",
@@ -2454,7 +2454,7 @@
     "id": "VII-3.03",
     "title": "ALCOHOL, DRUGS, TOBACCO AND FIREARMS PROHIBITED",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 295
+    "line_start": 201
   },
   {
     "section": "VII",
@@ -2463,7 +2463,7 @@
     "id": "VII-3.04",
     "title": "CAUTIONARY MEDICATIONS",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 304
+    "line_start": 206
   },
   {
     "section": "VII",
@@ -2472,7 +2472,7 @@
     "id": "VII-3.05",
     "title": "VEHICLE SAFETY",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 320
+    "line_start": 211
   },
   {
     "section": "VII",
@@ -2481,7 +2481,7 @@
     "id": "VII-3.06",
     "title": "MAINTENANCE AND REPAIR",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 343
+    "line_start": 222
   },
   {
     "section": "VII",
@@ -2490,7 +2490,7 @@
     "id": "VII-3.07",
     "title": "VEHICLE INSPECTION BEFORE DRIVING",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 350
+    "line_start": 227
   },
   {
     "section": "VII",
@@ -2499,7 +2499,7 @@
     "id": "VII-3.08",
     "title": "INCIDENTS AND ACCIDENTS",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 359
+    "line_start": 232
   },
   {
     "section": "VII",
@@ -2508,7 +2508,7 @@
     "id": "VII-3.09",
     "title": "POST-ACCIDENT DRUG TESTING",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 385
+    "line_start": 249
   },
   {
     "section": "VII",
@@ -2517,7 +2517,7 @@
     "id": "VII-3.09.01",
     "title": "RETURN-TO-DUTY AND FOLLOW-UP TESTING",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 442
+    "line_start": 287
   },
   {
     "section": "VII",
@@ -2526,7 +2526,7 @@
     "id": "VII-3.10",
     "title": "IMPAIRMENT OR OTHER BEHAVIOR OFF THE JOB",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 454
+    "line_start": 292
   },
   {
     "section": "VII",
@@ -2535,7 +2535,7 @@
     "id": "VII-3.10.01",
     "title": "Referrals for Assistance",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 479
+    "line_start": 301
   },
   {
     "section": "VII",
@@ -2544,7 +2544,7 @@
     "id": "VII-3.11",
     "title": "DEFENSIVE DRIVING TRAINING",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 498
+    "line_start": 310
   },
   {
     "section": "VII",
@@ -2553,7 +2553,7 @@
     "id": "VII-3.12",
     "title": "INCLEMENT WEATHER",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 510
+    "line_start": 317
   },
   {
     "section": "VII",
@@ -2562,7 +2562,7 @@
     "id": "VII-3.13",
     "title": "EMPLOYER RESPONSIBILITIES",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 516
+    "line_start": 322
   },
   {
     "section": "VII",
@@ -2571,7 +2571,7 @@
     "id": "VII-3.14",
     "title": "CONCLUSIONS",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 526
+    "line_start": 327
   },
   {
     "section": "VII",
@@ -2580,7 +2580,7 @@
     "id": "VII-4.0",
     "title": "EMERGENCY ACTION PLAN",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 533
+    "line_start": 332
   },
   {
     "section": "VII",
@@ -2589,7 +2589,7 @@
     "id": "VII-4.01",
     "title": "SUPERVISORY RESPONSIBILITIES",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 551
+    "line_start": 339
   },
   {
     "section": "VII",
@@ -2598,7 +2598,7 @@
     "id": "VII-4.02",
     "title": "EMPLOYEES' RESPONSIBILITIES",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 576
+    "line_start": 356
   },
   {
     "section": "VII",
@@ -2607,7 +2607,7 @@
     "id": "VII-4.03",
     "title": "DEPARTMENT DIRECTOR RESPONSIBILITIES",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 606
+    "line_start": 371
   },
   {
     "section": "VII",
@@ -2616,7 +2616,7 @@
     "id": "VII-4.04",
     "title": "BOMB THREAT",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 612
+    "line_start": 376
   },
   {
     "section": "VII",
@@ -2625,7 +2625,7 @@
     "id": "VII-4.05",
     "title": "THREATS FROM OTHER EMPLOYEES, RELATIVES OR CLIENTS",
     "filename": "Section-07-Safety-Policy-and-Procedures.md",
-    "line_start": 629
+    "line_start": 389
   },
   {
     "section": "VIII",
@@ -2679,7 +2679,7 @@
     "id": "X-Item-B",
     "title": "REQUEST FOR MATERNITY LEAVE/SHORT TERM DISABILITY LEAVE",
     "filename": "Section-10-Appendix.md",
-    "line_start": 43
+    "line_start": 32
   },
   {
     "section": "X",
@@ -2688,7 +2688,7 @@
     "id": "X-Item-C",
     "title": "NOTICE OF RETIREMENT",
     "filename": "Section-10-Appendix.md",
-    "line_start": 72
+    "line_start": 55
   },
   {
     "section": "X",
@@ -2697,7 +2697,7 @@
     "id": "X-Item-D",
     "title": "APPLICATION FOR EDUCATION TUITION REIMBURSEMENT",
     "filename": "Section-10-Appendix.md",
-    "line_start": 98
+    "line_start": 80
   },
   {
     "section": "X",
@@ -2706,7 +2706,7 @@
     "id": "X-Item-E",
     "title": "ACCIDENT SUMMARY FORM",
     "filename": "Section-10-Appendix.md",
-    "line_start": 144
+    "line_start": 116
   },
   {
     "section": "X",
@@ -2715,6 +2715,6 @@
     "id": "X-Item-F",
     "title": "FITNESS FOR DUTY CERTIFICATION AND NOTICE OF INTENT TO RETURN TO WORK",
     "filename": "Section-10-Appendix.md",
-    "line_start": 160
+    "line_start": 132
   }
 ]

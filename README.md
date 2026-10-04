@@ -87,3 +87,23 @@ that match, each with its citation.
 `evals/questions.json` holds real questions with the text that answers them;
 `uv run python evals/run.py` measures retrieval, and `test_retrieval.py` runs
 the same questions as tests.
+
+## Regenerating the text
+
+The markdown is converted from the official PDFs (`sources/udo/` for the UDO
+chapters, the personnel and Town Code PDFs at the repo root). After any
+conversion — a new ordinance chapter, or `build_personnel.py` — run:
+
+```bash
+uv run --group build python scripts/rebuild_tables.py   # ruled tables, re-read from the PDFs
+uv run python scripts/clean_text.py                     # structure, borderless tables, reflow
+uv run python scripts/reindex_lines.py                  # line numbers stored in data/*.json
+uv run --with pytest pytest                             # incl. the table-vs-JSON cross-check
+```
+
+Each step is safe to re-run. `rebuild_tables.py` replaces a flattened table
+only when the PDF table holds every word the text had; rows the PDF prints in
+merged cells are corrected in its `CORRECTIONS` table, each checked against the
+page image. `test_text.py` holds the Permitted Uses Table (from the PDF) and
+`data/permitted_uses.json` (what the tools answer from) to agreement on all
+212 uses.
