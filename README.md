@@ -15,11 +15,13 @@ An [MCP](https://modelcontextprotocol.io/) server that provides AI-powered zonin
 | `get_parcel_info` | Look up a parcel by PIN, address, or owner — returns zoning, jurisdiction, and property details from Rowan County GIS |
 | `get_infill_context` | Find neighboring parcels within 300 ft for infill setback averaging under Section 2.2D |
 | `can_i_build` | Complete answer to "Can I build X in district Y?" with permissions, special requirements, and dimensional standards |
-| `search_ordinance` | Full-text search across the entire UDO (with paragraph context) |
+| `search_ordinance` | Ranked search across the entire UDO — keywords or plain questions; stemming and synonyms ("ADU", "airbnb") |
+| `get_udo_section` | Full text of any UDO section by number (`10.2.1`, `8.3`, `A.4`), or a chapter's table of contents |
+| `define_term` | A defined term from UDO Chapter 3 (e.g. "home occupation", "flag lot") |
 | `list_districts` | Quick reference of all 13 zoning district codes |
 | `get_ordinance_section` | Get a section of the Town Code of Ordinances (non-zoning chapters) by number or keyword |
-| `search_town_code` | Full-text search across the Town Code of Ordinances |
-| `search_all` | Search the UDO and Code of Ordinances together, results tagged by source |
+| `search_town_code` | Ranked search across the Town Code of Ordinances |
+| `search_all` | Search the UDO and Code of Ordinances together as one ranked list, tagged by source |
 | `get_160d_section` | Get the full text of a specific NCGS 160D section (state zoning law) |
 | `search_160d` | Search NCGS Chapter 160D by keyword or phrase |
 | `get_personnel_policy` | Get a provision of the Town Personnel Policies (HR manual) by id, section, or keyword |
@@ -70,3 +72,38 @@ Or use directly with an MCP client by pointing it at the server entry point.
 ## License
 
 For internal use by the Town of China Grove.
+
+## Search
+
+All search tools share one engine (`corpus.py`): every corpus is split into
+sections keyed by their official number (UDO `10.2.1`, Code `26-81`,
+`160D-108`, Personnel `IV-17.0`) and indexed with SQLite FTS5 — porter
+stemming, whole-word matching, BM25 ranking over paragraph-sized chunks.
+Plain-English questions work: stop words are dropped and common terms are
+mapped to the ordinance's vocabulary through `data/search_synonyms.json`
+(edit it freely). Results are whole sections, or the paragraphs and table rows
+that match, each with its citation.
+
+`evals/questions.json` holds real questions with the text that answers them;
+`uv run python evals/run.py` measures retrieval, and `test_retrieval.py` runs
+the same questions as tests.
+
+## Regenerating the text
+
+The markdown is converted from the official PDFs (`sources/udo/` for the UDO
+chapters, the personnel and Town Code PDFs at the repo root). After any
+conversion — a new ordinance chapter, or `build_personnel.py` — run:
+
+```bash
+uv run --group build python scripts/rebuild_tables.py   # ruled tables, re-read from the PDFs
+uv run python scripts/clean_text.py                     # structure, borderless tables, reflow
+uv run python scripts/reindex_lines.py                  # line numbers stored in data/*.json
+uv run --with pytest pytest                             # incl. the table-vs-JSON cross-check
+```
+
+Each step is safe to re-run. `rebuild_tables.py` replaces a flattened table
+only when the PDF table holds every word the text had; rows the PDF prints in
+merged cells are corrected in its `CORRECTIONS` table, each checked against the
+page image. `test_text.py` holds the Permitted Uses Table (from the PDF) and
+`data/permitted_uses.json` (what the tools answer from) to agreement on all
+212 uses.
