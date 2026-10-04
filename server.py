@@ -13,7 +13,10 @@ from pathlib import Path
 
 from mcp.server.fastmcp import FastMCP
 
+import difflib
 import re
+
+import corpus
 
 # Resolve data paths relative to this file's directory
 PROJECT_ROOT = Path(__file__).parent
@@ -74,6 +77,73 @@ def _load_personnel_index():
     return load_json("personnel_index.json")
 
 
+# --- Matching ---
+#
+# Words are compared stemmed and whole ("fences" = "fence"; "ADU" never matches
+# "adult"), and only a query's content words count ("how tall can a fence be"
+# is about "tall" and "fence"). corpus.query_terms also adds synonyms.
+
+def _stems(text: str) -> set[str]:
+    return {corpus.stem(w) for w in re.findall(r"[a-z0-9]+", text.lower())}
+
+
+def _query_stem_sets(query: str) -> list[set[str]]:
+    """Alternative sets of stems, any one of which must be fully present: the
+    query's content words, and each synonym phrase on its own."""
+    _, words = corpus.query_terms(query)
+    content = [w for w in re.findall(r"[a-z0-9]+", query.lower())
+               if w not in corpus.STOPWORDS and (len(w) > 1 or w.isdigit())]
+    sets = [{corpus.stem(w) for w in content}] if content else []
+    for key, phrases in corpus.synonyms().items():
+        if re.search(rf"(?<![a-z0-9]){re.escape(key)}(?![a-z0-9])", query.lower()):
+            sets += [_stems(p) for p in phrases]
+    return [s for s in sets if s]
+
+
+def _strict_matches(items: list, text_of, query: str, cap: int) -> list:
+    """Items whose text contains every content word (or one synonym phrase).
+    With 3+ content words, one may be missing; fuller matches rank first."""
+    alternatives = _query_stem_sets(query)
+    scored = []
+    for i, item in enumerate(items):
+        have = _stems(text_of(item))
+        best = max((len(alt & have) - len(alt) for alt in alternatives), default=-99)
+        if best == 0 or (best == -1 and any(len(a) >= 3 for a in alternatives)):
+            scored.append((-best, i, item))
+    return [item for *_, item in sorted(scored)][:cap]
+
+
+def _canon(text: str) -> str:
+    """Stemmed words run together, so "microbrewery" matches "Micro-Breweries"."""
+    return "".join(corpus.stem(w) for w in re.findall(r"[a-z0-9]+", text.lower()))
+
+
+def _match_uses(query: str) -> tuple[list[dict], list[str]]:
+    """(permitted-use rows matching the query, "did you mean" suggestions)."""
+    uses = _load_permitted_uses()
+    candidates = [query] + [p for key, ps in corpus.synonyms().items()
+                            if re.search(rf"(?<![a-z0-9]){re.escape(key)}(?![a-z0-9])", query.lower())
+                            for p in ps]
+    for q in candidates:
+        canon = _canon(q)
+        if not canon:
+            continue
+        matches = [u for u in uses if canon in _canon(u["use"])]
+        if not matches:
+            stems = _stems(q) - {corpus.stem(w) for w in corpus.STOPWORDS}
+            matches = [u for u in uses if stems and stems <= _stems(u["use"])]
+        if not matches:
+            matches = [u for u in uses if canon in _canon(u.get("category", ""))]
+        if matches:
+            return matches, []
+    names = [u["use"] for u in uses]
+    close = difflib.get_close_matches(query, names, n=5, cutoff=0.5)
+    if not close:
+        q = _stems(query)
+        close = [n for n in names if q & _stems(n)][:5]
+    return [], close
+
+
 # --- MCP Server ---
 
 mcp = FastMCP(
@@ -104,7 +174,10 @@ mcp = FastMCP(
         "- Subdivisions: get_subdivision_requirements()\n"
         "- Parcel lookup by PIN/address/owner: get_parcel_info()\n"
         "- Infill neighbor parcels within 300 ft: get_infill_context()\n"
-        "- Full-text UDO search: search_ordinance()\n"
+        "- UDO search (keywords or plain questions, ranked): search_ordinance()\n"
+        "- Full text of any UDO section by number (e.g. '10.2.1', '8.3', 'A.4') or a "
+        "chapter's table of contents ('Chapter 14'): get_udo_section()\n"
+        "- What a term means under the UDO (Chapter 3 definitions): define_term()\n"
         "- Town Code of Ordinances (non-zoning chapters): get_ordinance_section() or search_town_code()\n"
         "- Search both corpora at once (when unsure which body of law applies): search_all()\n"
         "- NC state zoning law (NCGS 160D): get_160d_section() or search_160d()\n"
@@ -129,21 +202,17 @@ def lookup_permitted_use(use: str, district: str | None = None) -> str:
         district: Optional zoning district code to filter by (e.g., "C-B", "R-S", "H-B").
                   If omitted, returns permissions for all 13 districts.
     """
-    uses = _load_permitted_uses()
-    query = use.lower()
     district_upper = district.upper() if district else None
 
     if district_upper and district_upper not in DISTRICT_ORDER:
         return f"Unknown district '{district}'. Valid districts: {', '.join(DISTRICT_ORDER)}"
 
-    matches = [u for u in uses if query in u["use"].lower()]
+    matches, suggestions = _match_uses(use)
 
     if not matches:
-        # Try category search
-        matches = [u for u in uses if query in u.get("category", "").lower()]
-
-    if not matches:
-        return f"No uses found matching '{use}'. Try a broader search term."
+        hint = f" Did you mean: {'; '.join(suggestions)}?" if suggestions else ""
+        return (f"No uses found matching '{use}'.{hint} "
+                "Or use search_ordinance() for a broader search.")
 
     results = []
     for u in matches:
@@ -604,149 +673,70 @@ def get_subdivision_requirements(query: str) -> str:
 
 @mcp.tool()
 def search_ordinance(query: str) -> str:
-    """Search across the entire China Grove Unified Development Ordinance.
+    """Search the China Grove Unified Development Ordinance (UDO).
 
-    Searches permitted uses, districts, special requirements, subdivision
-    procedures, and all 18 chapter markdown files for matching content.
-    Supports multi-word queries (all words must appear in a match).
+    Ranked full-text search over every UDO section, all 18 chapters and Appendix A,
+    plus the structured indexes (permitted uses, districts, special requirements,
+    subdivision procedures, general provisions). Accepts keywords or plain-English
+    questions; plurals, word forms and common synonyms match ("ADU", "airbnb",
+    "cell tower"). Each result names its section; read the whole section with
+    get_udo_section().
 
     Args:
-        query: Search term or phrase (e.g., "setback", "microbrewery", "flood",
-               "subdivision minimum lot size", "lot split parcel division").
+        query: Keywords or a question (e.g., "fence height", "parking spaces per
+               classroom", "can I put solar panels on my roof", "flag lots").
     """
-    q = query.lower()
-    words = q.split()
     sections = []
 
-    def _matches_text(text: str) -> bool:
-        """Check if all query words appear in the text."""
-        text_lower = text.lower()
-        return all(w in text_lower for w in words)
+    text = corpus.format_results(query, ["udo"], limit=6,
+                                 reader={"udo": "get_udo_section"})
+    if text:
+        sections.append(f"## Ordinance Text — best matches for '{query}'\n\n{text}")
 
-    def _any_word_matches(text: str) -> bool:
-        """Check if any query word appears in the text."""
-        text_lower = text.lower()
-        return any(w in text_lower for w in words)
-
-    # Search permitted uses
-    uses = _load_permitted_uses()
-    use_matches = [u for u in uses if _any_word_matches(
-        f"{u['use']} {u.get('category', '')} {u.get('special_requirements', '')}"
-    )]
-    if use_matches:
-        lines = [f"## Permitted Uses ({len(use_matches)} matches)\n"]
-        for u in use_matches[:15]:
+    uses = _strict_matches(
+        _load_permitted_uses(),
+        lambda u: f"{u['use']} {u.get('category', '')}", query, cap=8)
+    if uses:
+        lines = [f"## Permitted Uses ({len(uses)} matches)\n"]
+        for u in uses:
             districts_str = ", ".join(
                 f"{d}({u['districts'][d]})" for d in DISTRICT_ORDER if u["districts"].get(d)
             )
-            lines.append(f"- **{u['use']}** [{u['category']}]: {districts_str}")
-        if len(use_matches) > 15:
-            lines.append(f"- ... and {len(use_matches) - 15} more")
+            lines.append(f"- **{u['use']}** [{u['category']}]: {districts_str or 'not permitted in any district'}")
+        lines.append("\n*Use lookup_permitted_use() or can_i_build() for details.*")
         sections.append("\n".join(lines))
 
-    # Search districts
     districts = _load_districts()
-    for code, info in districts.items():
-        searchable = f"{info['name']} {info['intent']} {info['character']} {' '.join(info.get('key_rules', []))}"
-        if _any_word_matches(searchable):
-            sections.append(f"## District: {code} — {info['name']}\n{info['intent']}")
+    district_hits = _strict_matches(
+        list(districts.items()),
+        lambda kv: f"{kv[1]['name']} {kv[1]['intent']} {kv[1]['character']} "
+                   f"{' '.join(kv[1].get('key_rules', []))}",
+        query, cap=4)
+    for code, info in district_hits:
+        sections.append(f"## District: {code} — {info['name']}\n{info['intent']}")
 
-    # Search special requirements
-    index = _load_special_requirements_index()
-    sr_matches = [s for s in index if _any_word_matches(f"{s['title']} {s['summary']}")]
-    if sr_matches:
-        lines = [f"## Special Requirements ({len(sr_matches)} matches)\n"]
-        for s in sr_matches:
-            lines.append(f"- **Section {s['section']}:** {s['title']}")
-            lines.append(f"  {s['summary'][:150]}...")
-        sections.append("\n".join(lines))
-
-    # Search subdivision index
+    pointers = []
+    for s_ in _strict_matches(_load_special_requirements_index(),
+                              lambda s_: f"{s_['title']} {s_['summary']}", query, cap=5):
+        pointers.append(f"- **Special requirement §{s_['section']}:** {s_['title']} "
+                        "— get_special_requirements()")
+    for s_ in _strict_matches(_load_general_provisions_index(),
+                              lambda s_: f"{s_['title']} {s_['summary']}", query, cap=5):
+        pointers.append(f"- **General provision §{s_['section']}:** {s_['title']} "
+                        "— get_general_provisions()")
     subdiv = _load_subdivision_index()
-    subdiv_matches = []
-
-    # Search subdivision types
-    for type_key, t in subdiv["types"].items():
-        searchable = f"{t['name']} {t['summary']} {' '.join(t['criteria'])} {t['approval_authority']}"
-        if t.get("process_steps"):
-            searchable += " " + " ".join(t["process_steps"])
-        if _any_word_matches(searchable):
-            subdiv_matches.append(f"- **{t['name']}** (Section {t['section']}): {t['summary']}")
-
-    # Search improvement requirements
-    for imp_key, imp in subdiv["improvement_requirements"].items():
-        searchable = f"{imp_key} {imp['summary']}"
-        if _any_word_matches(searchable):
-            title = imp_key.replace("_", " ").title()
-            subdiv_matches.append(f"- **{title}** (Section {imp['section']}): {imp['summary'][:120]}...")
-
-    # Search plat requirements
-    for plat_key, plat in subdiv["plat_requirements"].items():
-        searchable = f"{plat_key} {plat['summary']} {plat.get('required_for', '')}"
-        if _any_word_matches(searchable):
-            title = plat_key.replace("_", " ").title()
-            subdiv_matches.append(f"- **{title}** (Section {plat['section']}): {plat['summary'][:120]}...")
-
-    if subdiv_matches:
-        lines = [f"## Subdivision Procedures ({len(subdiv_matches)} matches)\n"]
-        lines.extend(subdiv_matches)
-        lines.append("\n*Use get_subdivision_requirements() for full details.*")
-        sections.append("\n".join(lines))
-
-    # Search general provisions index
-    gp_index = _load_general_provisions_index()
-    gp_matches = [s for s in gp_index if _any_word_matches(f"{s['title']} {s['summary']}")]
-    if gp_matches:
-        lines = [f"## General Provisions ({len(gp_matches)} matches)\n"]
-        for s in gp_matches:
-            lines.append(f"- **Section {s['section']}:** {s['title']}")
-            lines.append(f"  {s['summary'][:200]}")
-        lines.append("\n*Use get_general_provisions() for full text.*")
-        sections.append("\n".join(lines))
-
-    # Search markdown files with paragraph context (5-line window)
-    md_matches = []
-    if MARKDOWN_DIR.is_dir():
-        for md_file in sorted(MARKDOWN_DIR.glob("*.md")):
-            with open(md_file) as f:
-                file_lines = f.readlines()
-            # Use 5-line sliding window to match multi-line provisions
-            for i in range(len(file_lines)):
-                window_start = max(0, i - 2)
-                window_end = min(len(file_lines), i + 3)
-                window = " ".join(file_lines[window_start:window_end])
-                if _matches_text(window):
-                    # Build context snippet: the paragraph around the match
-                    snippet_start = max(0, i - 2)
-                    snippet_end = min(len(file_lines), i + 3)
-                    snippet = " ".join(
-                        line.strip() for line in file_lines[snippet_start:snippet_end]
-                        if line.strip()
-                    )
-                    md_matches.append((md_file.name, i + 1, snippet[:300]))
-
-    if md_matches:
-        # Deduplicate by file and proximity (collapse matches within 5 lines)
-        unique_matches = []
-        seen_ranges = {}
-        for fname, lineno, text in md_matches:
-            key = fname
-            if key in seen_ranges:
-                # Skip if within 5 lines of a previous match in same file
-                if any(abs(lineno - prev) < 5 for prev in seen_ranges[key]):
-                    continue
-                seen_ranges[key].append(lineno)
-            else:
-                seen_ranges[key] = [lineno]
-            unique_matches.append((fname, lineno, text))
-        md_matches = unique_matches
-
-        lines = [f"## Ordinance Text ({len(md_matches)} matches)\n"]
-        for fname, lineno, text in md_matches[:20]:
-            lines.append(f"- **{fname}:{lineno}:**\n  {text}")
-        if len(md_matches) > 20:
-            lines.append(f"- ... and {len(md_matches) - 20} more matches")
-        sections.append("\n".join(lines))
+    subdiv_items = (
+        [(t["name"], t["section"], f"{t['name']} {t['summary']} {' '.join(t['criteria'])}")
+         for t in subdiv["types"].values()]
+        + [(k.replace("_", " ").title(), v["section"], f"{k} {v['summary']}")
+           for k, v in subdiv["improvement_requirements"].items()]
+        + [(k.replace("_", " ").title(), v["section"], f"{k} {v['summary']} {v.get('required_for', '')}")
+           for k, v in subdiv["plat_requirements"].items()]
+    )
+    for name, sec, _ in _strict_matches(subdiv_items, lambda t: t[2], query, cap=5):
+        pointers.append(f"- **Subdivision §{sec}:** {name} — get_subdivision_requirements()")
+    if pointers:
+        sections.append("## Also see\n\n" + "\n".join(pointers))
 
     if not sections:
         return (
@@ -757,6 +747,81 @@ def search_ordinance(query: str) -> str:
         )
 
     return "\n\n---\n\n".join(sections)
+
+
+@mcp.tool()
+def get_udo_section(section: str) -> str:
+    """Get the full text of any UDO section by number, including its subsections.
+
+    Covers all 18 chapters and Appendix A. Section numbers are stable citations
+    ("10.2.1", "8.3", "2.2", "A.4"); a chapter ("Chapter 10" or "10") returns
+    that chapter's table of contents.
+
+    Args:
+        section: A section number, e.g. "10.2.1", "Section 8.3", "§2.2", "A.4",
+                 or a chapter, e.g. "Chapter 14", "14", "Appendix A".
+    """
+    q = section.strip()
+    chapter = re.fullmatch(r"(?:chapter\s*)?(\d{1,2})", q, re.I)
+    appendix = re.fullmatch(r"appendix\s*([a-z])", q, re.I)
+    if chapter or appendix:
+        sid = f"Chapter {int(chapter.group(1))}" if chapter else f"Appendix {appendix.group(1).upper()}"
+        head = corpus.find("udo", sid)
+        if not head:
+            return f"No UDO {sid}. Use list_districts() or search_ordinance() to explore."
+        lines = [f"# {head.ref} — {head.title}\n", "Sections (request any by number):\n"]
+        for s_ in corpus.subtree(head)[1:]:
+            if s_.sid:
+                lines.append(f"{'  ' * max(s_.level - 2, 0)}- **{s_.sid}** {s_.title}")
+        return "\n".join(lines)
+
+    found = corpus.find("udo", q)
+    if not found:
+        key = corpus.normalize_sid(q)
+        near = [s_.sid for s_ in corpus.all_sections()
+                if s_.corpus == "udo" and s_.sid and corpus.normalize_sid(s_.sid).startswith(key)]
+        hint = f" Subsections that start with it: {', '.join(near[:12])}." if near else ""
+        return (f"No UDO section '{section}'.{hint} Try a chapter (e.g. 'Chapter 10') "
+                "for its table of contents, or search_ordinance().")
+
+    dupes = [s_ for s_ in corpus.all_sections()
+             if s_.corpus == "udo" and s_.sid == found.sid and s_ is not found]
+    note = ""
+    if dupes:
+        note = (f"\n\n> Note: the ordinance itself numbers more than one section {found.sid} "
+                f"(also \"{dupes[0].title}\", {dupes[0].file}:{dupes[0].line}).")
+    trail = " › ".join(found.parents)
+    text = corpus.render(corpus.subtree(found))
+    if len(text) > 20_000:
+        text = text[:20_000] + "\n\n… (truncated — request a subsection by number)"
+    return f"*{found.ref} · {found.file}:{found.line}" + (f" · {trail}" if trail else "") + f"*{note}\n\n{text}"
+
+
+@mcp.tool()
+def define_term(term: str) -> str:
+    """Look up a defined term in UDO Chapter 3 (Definitions).
+
+    Definitions control how the rest of the ordinance is read (e.g. what counts
+    as a "Home Occupation", "Lot, Corner" or "Accessory Dwelling Unit").
+
+    Args:
+        term: The term, e.g. "home occupation", "flag lot", "yard, front", "family".
+    """
+    defs = corpus.definitions()
+    key = corpus.normalize_term(term)
+    if key in defs:
+        name, text = defs[key]
+        return f"## {name}\n*UDO Chapter 3 — Definitions*\n\n{text}"
+    partial = [v for k, v in defs.items() if key and (key in k or k in key)]
+    if len(partial) == 1:
+        name, text = partial[0]
+        return f"## {name}\n*UDO Chapter 3 — Definitions*\n\n{text}"
+    if partial:
+        listing = "\n".join(f"- {name}" for name, _ in partial[:15])
+        return f"Several defined terms match '{term}':\n{listing}\n\nAsk for one by name."
+    close = difflib.get_close_matches(key, list(defs), n=5, cutoff=0.6)
+    hint = ("\nClosest defined terms: " + "; ".join(defs[c][0] for c in close)) if close else ""
+    return f"'{term}' is not a defined term in UDO Chapter 3.{hint}"
 
 
 @mcp.tool()
@@ -786,17 +851,13 @@ def can_i_build(use: str, district: str) -> str:
     if d not in DISTRICT_ORDER:
         return f"Unknown district '{district}'. Valid: {', '.join(DISTRICT_ORDER)}"
 
-    uses = _load_permitted_uses()
-    q = use.lower()
-    matches = [u for u in uses if q in u["use"].lower()]
+    matches, suggestions = _match_uses(use)
 
     if not matches:
-        matches = [u for u in uses if q in u.get("category", "").lower()]
-
-    if not matches:
+        hint = f" Did you mean: {'; '.join(suggestions)}?" if suggestions else ""
         return (
-            f"No use matching '{use}' found in the permitted uses table. "
-            "Try a different search term, or use search_ordinance() for a broader search."
+            f"No use matching '{use}' found in the permitted uses table.{hint} "
+            "Or use search_ordinance() for a broader search."
         )
 
     results = []
@@ -1544,61 +1605,24 @@ def get_160d_section(section: str) -> str:
 
 @mcp.tool()
 def search_160d(query: str) -> str:
-    """Search NCGS Chapter 160D for keywords or phrases.
+    """Search NCGS Chapter 160D for keywords, phrases or questions.
 
     Chapter 160D is the state law that grants and governs local zoning authority
     in North Carolina. Use this to find relevant state law provisions, especially
     when the local UDO may conflict with or be supplemented by state requirements.
+    Results are ranked; read a whole section with get_160d_section().
 
     Args:
-        query: Search term or phrase (e.g., "vested rights", "extraterritorial",
-               "board of adjustment", "variance", "quasi-judicial").
+        query: Keywords or a question (e.g., "vested rights", "extraterritorial",
+               "board member conflict of interest", "quasi-judicial").
     """
-    words = query.lower().split()
-    matches = []
-
     if not STATUTES_DIR.is_dir():
         return "160D statute files not found. Expected in statutes/ directory."
-
-    for md_file in sorted(STATUTES_DIR.glob("*.md")):
-        with open(md_file) as f:
-            file_lines = f.readlines()
-
-        for i, line in enumerate(file_lines, 1):
-            if all(w in line.lower() for w in words):
-                matches.append((md_file.stem, i, line.strip()[:150]))
-
-    # If single-line matching found nothing with multi-word, try 3-line windows
-    if not matches and len(words) > 1:
-        for md_file in sorted(STATUTES_DIR.glob("*.md")):
-            with open(md_file) as f:
-                file_lines = f.readlines()
-            for i in range(len(file_lines)):
-                window = " ".join(file_lines[max(0, i - 1):i + 2])
-                if all(w in window.lower() for w in words):
-                    matches.append((md_file.stem, i + 1, file_lines[i].strip()[:150]))
-
-    if not matches:
+    text = corpus.format_results(query, ["160d"], limit=6,
+                                 reader={"160d": "get_160d_section"})
+    if not text:
         return f"No results found in NCGS 160D for '{query}'."
-
-    # Deduplicate
-    seen = set()
-    unique = []
-    for m in matches:
-        key = (m[0], m[1])
-        if key not in seen:
-            seen.add(key)
-            unique.append(m)
-    matches = unique
-
-    lines = [f"## NCGS 160D — {len(matches)} matches for '{query}'\n"]
-    for fname, lineno, text in matches[:30]:
-        lines.append(f"- **{fname}:{lineno}:** {text}")
-    if len(matches) > 30:
-        lines.append(f"- ... and {len(matches) - 30} more matches")
-    lines.append("\n*Use get_160d_section() to read the full text of a specific section.*")
-
-    return "\n".join(lines)
+    return f"## NCGS 160D — best matches for '{query}'\n\n{text}"
 
 
 @mcp.tool()
@@ -1678,80 +1702,32 @@ def get_ordinance_section(section: str) -> str:
 
 @mcp.tool()
 def search_town_code(query: str) -> str:
-    """Search the China Grove Code of Ordinances (non-zoning chapters) for keywords.
+    """Search the China Grove Code of Ordinances (non-zoning chapters).
 
-    Searches all 18 chapters covering: general provisions, administration,
+    Ranked full-text search over all chapters: general provisions, administration,
     amusements, animals, buildings, businesses, civil emergencies, environment,
-    fire prevention, law enforcement, offenses, parks, alcoholic beverages,
-    solid waste, streets/sidewalks, utilities (water/sewer/stormwater),
-    vehicles/traffic, and vehicles for hire.
+    fire prevention, law enforcement, offenses, parks, alcoholic beverages, solid
+    waste, streets/sidewalks, utilities (water/sewer/stormwater), vehicles/traffic,
+    vehicles for hire, and the Charter. Read a whole section with
+    get_ordinance_section().
 
     Args:
-        query: Search term or phrase (e.g., "towing", "curfew", "false alarm",
-               "taxicab permit", "stream buffer", "leaf collection").
-               All words must appear within a 5-line window to match.
+        query: Keywords or a question (e.g., "towing", "curfew", "false alarm fee",
+               "barking dog", "golf cart on town streets", "leaf collection").
     """
-    words = query.lower().split()
-    index = _load_ordinances_index()
-
-    def _matches_text(text: str) -> bool:
-        t = text.lower()
-        return all(w in t for w in words)
-
-    def _any_word(text: str) -> bool:
-        t = text.lower()
-        return any(w in t for w in words)
-
     sections = []
-
-    # Search section titles in index
-    title_matches = [e for e in index if _any_word(f"{e['title']} {e['chapter_name']}")]
-    if title_matches:
-        lines = [f"## Section Titles ({len(title_matches)} matches)\n"]
-        for e in title_matches[:20]:
+    text = corpus.format_results(query, ["code"], limit=6,
+                                 reader={"code": "get_ordinance_section"})
+    if text:
+        sections.append(f"## Ordinance Text — best matches for '{query}'\n\n{text}")
+    titles = _strict_matches(_load_ordinances_index(),
+                             lambda e: f"{e['title']} {e['chapter_name']}", query, cap=8)
+    if titles:
+        lines = [f"## Section Titles ({len(titles)} matches)\n"]
+        for e in titles:
             lines.append(f"- **§ {e['section']}** (Ch. {e['chapter']} {e['chapter_name']}): {e['title']}")
-        if len(title_matches) > 20:
-            lines.append(f"- ... and {len(title_matches) - 20} more")
         lines.append("\n*Use get_ordinance_section() for full text.*")
         sections.append("\n".join(lines))
-
-    # Full-text search with 5-line sliding window
-    md_matches = []
-    if ORDINANCES_DIR.is_dir():
-        for md_file in sorted(ORDINANCES_DIR.glob("Chapter-*.md")):
-            with open(md_file) as f:
-                file_lines = f.readlines()
-            for i in range(len(file_lines)):
-                window_start = max(0, i - 2)
-                window_end = min(len(file_lines), i + 3)
-                window = " ".join(file_lines[window_start:window_end])
-                if _matches_text(window):
-                    snippet = " ".join(
-                        line.strip() for line in file_lines[window_start:window_end]
-                        if line.strip()
-                    )
-                    md_matches.append((md_file.name, i + 1, snippet[:300]))
-
-    if md_matches:
-        # Deduplicate by proximity
-        unique_matches = []
-        seen_ranges: dict[str, list[int]] = {}
-        for fname, lineno, text in md_matches:
-            if fname in seen_ranges:
-                if any(abs(lineno - prev) < 5 for prev in seen_ranges[fname]):
-                    continue
-                seen_ranges[fname].append(lineno)
-            else:
-                seen_ranges[fname] = [lineno]
-            unique_matches.append((fname, lineno, text))
-
-        lines = [f"## Ordinance Text ({len(unique_matches)} matches)\n"]
-        for fname, lineno, text in unique_matches[:20]:
-            lines.append(f"- **{fname}:{lineno}:**\n  {text}")
-        if len(unique_matches) > 20:
-            lines.append(f"- ... and {len(unique_matches) - 20} more matches")
-        sections.append("\n".join(lines))
-
     if not sections:
         return (
             f"No results found in the Code of Ordinances for '{query}'. "
@@ -1759,45 +1735,30 @@ def search_town_code(query: str) -> str:
             "subdivisions, special requirements), "
             f"try `search_ordinance(\"{query}\")` instead."
         )
-
     return "\n\n---\n\n".join(sections)
 
 
 @mcp.tool()
 def search_all(query: str) -> str:
-    """Search across both the UDO and the Code of Ordinances simultaneously.
+    """Search the UDO and the Code of Ordinances together, ranked as one list.
 
     Use this when you don't know whether a topic is governed by zoning law (UDO)
-    or general municipal law (Code of Ordinances), or when you want comprehensive
-    coverage from both sources with results tagged by origin.
-
-    Results are labeled [UDO] or [Code of Ordinances] so you always know which
-    body of law each match comes from. For state zoning law, use search_160d().
+    or general municipal law (Code of Ordinances). Every result is labeled with its
+    source and section. For state zoning law, use search_160d().
 
     Args:
-        query: Search term or phrase (e.g., "noise", "animals", "signage",
-               "setback", "permit", "vegetation nuisance", "stormwater").
-               All words must appear within a match window.
+        query: Keywords or a question (e.g., "noise", "animals", "signage",
+               "setback", "vegetation nuisance", "stormwater").
     """
-    udo_result = search_ordinance(query)
-    code_result = search_town_code(query)
-
-    udo_empty = udo_result.startswith("No results found in the UDO")
-    code_empty = code_result.startswith("No results found in the Code of Ordinances")
-
-    if udo_empty and code_empty:
+    text = corpus.format_results(
+        query, ["udo", "code"], limit=8,
+        reader={"udo": "get_udo_section", "code": "get_ordinance_section"})
+    if not text:
         return (
             f"No results found in either the UDO or the Code of Ordinances for '{query}'. "
             "Try broader search terms, or use search_160d() for state zoning law (NCGS 160D)."
         )
-
-    sections = []
-    if not udo_empty:
-        sections.append(f"# [UDO — Unified Development Ordinance]\n\n{udo_result}")
-    if not code_empty:
-        sections.append(f"# [Code of Ordinances]\n\n{code_result}")
-
-    return "\n\n---\n\n".join(sections)
+    return f"## UDO + Code of Ordinances — best matches for '{query}'\n\n{text}"
 
 
 # --- Personnel Policies and Procedures ---
@@ -1920,84 +1881,25 @@ def get_personnel_policy(query: str) -> str:
 def search_personnel_policy(query: str) -> str:
     """Search the Town of China Grove Personnel Policies and Procedures (HR manual).
 
-    Covers employment practices (hiring, classification, probation), general
-    personnel policies (conduct, leave, discipline, grievances, appeals), employee
-    benefits, equal employment opportunity, wage and salary administration, safety,
-    pay grade classifications, and appendix forms.
+    Ranked full-text search covering employment practices (hiring, classification,
+    probation), general personnel policies (conduct, leave, discipline, grievances,
+    appeals), employee benefits, equal employment opportunity, wage and salary
+    administration, safety, pay grade classifications and salary scale, and
+    appendix forms. Read a whole provision with get_personnel_policy().
 
     This is internal employment law — distinct from the zoning UDO
     (search_ordinance) and the municipal Code of Ordinances (search_town_code).
 
     Args:
-        query: Search term or phrase (e.g., "sick leave accrual", "FMLA",
-               "disciplinary suspension", "longevity pay", "drug testing").
-               All words must appear within a 5-line window to match.
+        query: Keywords or a question (e.g., "sick leave accrual", "FMLA",
+               "how much vacation after 10 years", "pay grade 12", "longevity pay").
     """
-    words = query.lower().split()
-    index = _load_personnel_index()
-
-    def _matches_text(text: str) -> bool:
-        t = text.lower()
-        return all(w in t for w in words)
-
-    def _any_word(text: str) -> bool:
-        t = text.lower()
-        return any(w in t for w in words)
-
-    sections = []
-
-    # Provision titles
-    title_matches = [e for e in index if _any_word(f"{e['title']} {e['section_name']}")]
-    if title_matches:
-        lines = [f"## Provision Titles ({len(title_matches)} matches)\n"]
-        for e in title_matches[:20]:
-            lines.append(f"- **{e['id']}** ({e['section_name']}): {e['title']}")
-        if len(title_matches) > 20:
-            lines.append(f"- ... and {len(title_matches) - 20} more")
-        lines.append("\n*Use get_personnel_policy() for full text.*")
-        sections.append("\n".join(lines))
-
-    # Full-text search with 5-line sliding window
-    md_matches = []
-    if PERSONNEL_DIR.is_dir():
-        for md_file in sorted(PERSONNEL_DIR.glob("Section-*.md")):
-            with open(md_file) as f:
-                file_lines = f.readlines()
-            for i in range(len(file_lines)):
-                window_start = max(0, i - 2)
-                window_end = min(len(file_lines), i + 3)
-                window = " ".join(file_lines[window_start:window_end])
-                if _matches_text(window):
-                    snippet = " ".join(
-                        line.strip() for line in file_lines[window_start:window_end]
-                        if line.strip()
-                    )
-                    md_matches.append((md_file.name, i + 1, snippet[:300]))
-
-    if md_matches:
-        unique_matches = []
-        seen_ranges: dict[str, list[int]] = {}
-        for fname, lineno, text in md_matches:
-            if fname in seen_ranges:
-                if any(abs(lineno - prev) < 5 for prev in seen_ranges[fname]):
-                    continue
-                seen_ranges[fname].append(lineno)
-            else:
-                seen_ranges[fname] = [lineno]
-            unique_matches.append((fname, lineno, text))
-
-        lines = [f"## Policy Text ({len(unique_matches)} matches)\n"]
-        for fname, lineno, text in unique_matches[:20]:
-            lines.append(f"- **{fname}:{lineno}:**\n  {text}")
-        if len(unique_matches) > 20:
-            lines.append(f"- ... and {len(unique_matches) - 20} more matches")
-        sections.append("\n".join(lines))
-
-    if not sections:
+    text = corpus.format_results(query, ["personnel"], limit=6,
+                                 reader={"personnel": "get_personnel_policy"})
+    if not text:
         return (
             f"No results found in the Personnel Policies for '{query}'. "
             "If this is a zoning/land-use topic try search_ordinance(), or for "
             "general municipal law try search_town_code()."
         )
-
-    return "\n\n---\n\n".join(sections)
+    return f"## Personnel Policy — best matches for '{query}'\n\n{text}"

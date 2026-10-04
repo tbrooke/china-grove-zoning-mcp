@@ -1,0 +1,138 @@
+{
+  "_comment": "Words people use -> the words the ordinances use. Keys are matched as whole words in a query (lowercase); each value is added to the search as a phrase. Edit freely: no code change needed.",
+  "adu": [
+    "accessory dwelling"
+  ],
+  "granny flat": [
+    "accessory dwelling"
+  ],
+  "mother-in-law suite": [
+    "accessory dwelling"
+  ],
+  "in-law suite": [
+    "accessory dwelling"
+  ],
+  "airbnb": [
+    "bed and breakfast",
+    "short term rental"
+  ],
+  "vrbo": [
+    "bed and breakfast",
+    "short term rental"
+  ],
+  "short term rental": [
+    "bed and breakfast"
+  ],
+  "vacation rental": [
+    "bed and breakfast"
+  ],
+  "cell tower": [
+    "telecommunications tower",
+    "wireless telecommunications"
+  ],
+  "cell phone tower": [
+    "telecommunications tower",
+    "wireless telecommunications"
+  ],
+  "antenna": [
+    "telecommunications"
+  ],
+  "microbrewery": [
+    "micro brewery",
+    "micro breweries"
+  ],
+  "brewpub": [
+    "micro brewery",
+    "micro breweries"
+  ],
+  "brewery": [
+    "micro brewery",
+    "micro breweries"
+  ],
+  "food truck": [
+    "mobile food"
+  ],
+  "golf cart": [
+    "low speed vehicle",
+    "cart"
+  ],
+  "solar panels": [
+    "solar"
+  ],
+  "solar farm": [
+    "solar electric generation"
+  ],
+  "fence": [
+    "fence",
+    "wall"
+  ],
+  "driveway": [
+    "driveway",
+    "curb cut"
+  ],
+  "setback": [
+    "setback",
+    "yard"
+  ],
+  "trailer": [
+    "manufactured home"
+  ],
+  "mobile home": [
+    "manufactured home"
+  ],
+  "dog": [
+    "animal"
+  ],
+  "dogs": [
+    "animal"
+  ],
+  "barking": [
+    "noise"
+  ],
+  "chickens": [
+    "fowl",
+    "poultry",
+    "livestock"
+  ],
+  "pto": [
+    "vacation",
+    "leave"
+  ],
+  "paid time off": [
+    "vacation",
+    "leave"
+  ],
+  "salary": [
+    "pay grade",
+    "salary scale"
+  ],
+  "pay": [
+    "pay grade",
+    "salary"
+  ],
+  "rezoning": [
+    "zoning map amendment",
+    "conditional zoning"
+  ],
+  "rezone": [
+    "zoning map amendment",
+    "conditional zoning"
+  ],
+  "sight triangle": [
+    "sight distance"
+  ],
+  "variance": [
+    "variance",
+    "variances"
+  ],
+  "height": [
+    "tall",
+    "taller"
+  ],
+  "tall": [
+    "height"
+  ],
+  "how tall": [
+    "height"
+  ]
+}
