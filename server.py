@@ -960,6 +960,25 @@ def _arcgis_query(url: str, params: dict) -> dict:
         return json.loads(resp.read())
 
 
+def _parcel_query(params: dict) -> dict:
+    """Query the Rowan County parcel layer, one feature per parcel.
+
+    Since the County's mid-September 2026 reload, its cg_parcels layer holds
+    every parcel twice (6,847 features for 3,420 PINs): copies identical but for
+    OBJECTID_1. Counting those as two parcels made an exact-PIN lookup always
+    answer "2 parcels found, requery", and infill averaging count each
+    neighbor twice. Keep the first feature per PIN (or PARCEL_ID, or shape)."""
+    result = _arcgis_query(_PARCEL_URL, params)
+    seen, unique = set(), []
+    for f_ in result.get("features", []):
+        a = f_.get("attributes", {})
+        key = a.get("PIN") or a.get("PARCEL_ID") or json.dumps(f_.get("geometry"), sort_keys=True)
+        if key not in seen:
+            seen.add(key)
+            unique.append(f_)
+    return {**result, "features": unique}
+
+
 def _centroid_from_rings(rings: list) -> tuple[float, float]:
     """Compute a simple centroid from polygon rings (first ring only)."""
     ring = rings[0]
@@ -1043,7 +1062,7 @@ def get_parcel_info(
     if pin:
         pin_val = pin.strip()
         where = f"PIN = '{pin_val}'"
-        result = _arcgis_query(_PARCEL_URL, {
+        result = _parcel_query({
             "where": where,
             "outFields": _PARCEL_OUT_FIELDS,
             "returnGeometry": "true",
@@ -1053,7 +1072,7 @@ def get_parcel_info(
         # Try PARCEL_ID if PIN returned nothing
         if not features:
             where = f"PARCEL_ID = '{pin_val}'"
-            result = _arcgis_query(_PARCEL_URL, {
+            result = _parcel_query({
                 "where": where,
                 "outFields": _PARCEL_OUT_FIELDS,
                 "returnGeometry": "true",
@@ -1068,7 +1087,7 @@ def get_parcel_info(
     elif address:
         addr_val = address.strip().upper()
         where = f"PROP_ADDRE LIKE '%{addr_val}%'"
-        result = _arcgis_query(_PARCEL_URL, {
+        result = _parcel_query({
             "where": where,
             "outFields": _PARCEL_OUT_FIELDS,
             "returnGeometry": "true",
@@ -1080,7 +1099,7 @@ def get_parcel_info(
     else:
         owner_val = owner.strip().upper()
         where = f"OWNNAME LIKE '%{owner_val}%' OR OWN2 LIKE '%{owner_val}%'"
-        result = _arcgis_query(_PARCEL_URL, {
+        result = _parcel_query({
             "where": where,
             "outFields": _PARCEL_OUT_FIELDS,
             "returnGeometry": "true",
@@ -1312,7 +1331,7 @@ def get_infill_context(pin: str) -> str:
     pin_val = pin.strip()
 
     # Step 1: Get the subject parcel with geometry
-    result = _arcgis_query(_PARCEL_URL, {
+    result = _parcel_query({
         "where": f"PIN = '{pin_val}'",
         "outFields": f"{_PARCEL_OUT_FIELDS}",
         "returnGeometry": "true",
@@ -1322,7 +1341,7 @@ def get_infill_context(pin: str) -> str:
 
     # Try PARCEL_ID if PIN didn't work
     if not features:
-        result = _arcgis_query(_PARCEL_URL, {
+        result = _parcel_query({
             "where": f"PARCEL_ID = '{pin_val}'",
             "outFields": f"{_PARCEL_OUT_FIELDS}",
             "returnGeometry": "true",
@@ -1374,7 +1393,7 @@ def get_infill_context(pin: str) -> str:
     }
 
     try:
-        neighbor_result = _arcgis_query(_PARCEL_URL, buffer_params)
+        neighbor_result = _parcel_query(buffer_params)
     except Exception as e:
         return f"Buffer query failed: {e}"
 
@@ -1778,16 +1797,16 @@ _PERSONNEL_SECTION_NUMS = {
 }
 
 
-def _slice_personnel_provision(entry: dict) -> str:
-    """Return the markdown for one provision, sliced from its heading to the next
+def _personnel_span(entry: dict) -> tuple[int, int] | None:
+    """(first, last+1) line indexes of one provision: its heading to the next
     heading of the same or higher rank (so a parent provision keeps its children)."""
     md_path = PERSONNEL_DIR / entry["filename"]
     if not md_path.exists():
-        return ""
+        return None
     md = md_path.read_text().split("\n")
     start = entry["line_start"] - 1
     if start >= len(md):
-        return ""
+        return None
     head = md[start]
     cur_level = len(head) - len(head.lstrip("#")) or 6
     end = len(md)
@@ -1796,7 +1815,27 @@ def _slice_personnel_provision(entry: dict) -> str:
         if m and len(m.group(1)) <= cur_level:
             end = i
             break
-    return "\n".join(md[start:end]).strip()
+    return start, end
+
+
+def _slice_personnel_provision(entry: dict) -> str:
+    """Return the markdown for one provision, including its subsections."""
+    span = _personnel_span(entry)
+    if not span:
+        return ""
+    md = (PERSONNEL_DIR / entry["filename"]).read_text().split("\n")
+    return "\n".join(md[span[0]:span[1]]).strip()
+
+
+def _drop_nested(entries: list[dict]) -> list[dict]:
+    """Leave out provisions already printed inside another match: "grievance"
+    matches III-8.0 and its own 8.01 and 8.02, and III-8.0's text includes them."""
+    spans = {e["id"]: _personnel_span(e) for e in entries}
+    def inside(e, other):
+        a, b = spans[e["id"]], spans[other["id"]]
+        return (e is not other and a and b and e["filename"] == other["filename"]
+                and b[0] < a[0] and a[1] <= b[1])
+    return [e for e in entries if not any(inside(e, o) for o in entries)]
 
 
 @mcp.tool()
@@ -1870,7 +1909,7 @@ def get_personnel_policy(query: str) -> str:
         return "\n".join(lines)
 
     results = []
-    for m in matches:
+    for m in _drop_nested(matches):
         body = _slice_personnel_provision(m)
         context = f"*Personnel Policy · Section {m['section']} ({m['section_name']}) · {m['id']}*"
         results.append(f"{context}\n\n{body}".strip())
